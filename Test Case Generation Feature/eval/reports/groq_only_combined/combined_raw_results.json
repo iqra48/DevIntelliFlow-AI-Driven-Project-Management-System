@@ -1,0 +1,4371 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_001",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Create a new customer record with valid data",
+              "objective": "Verify that a new customer record can be created with valid name, email, and phone number.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "User has necessary permissions"
+              ],
+              "test_data": {
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "phone_number": "1234567890"
+              },
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Click on the 'Create New Customer' button",
+                  "expected_result": "The system navigates to the customer creation page"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter valid name, email, and phone number",
+                  "expected_result": "The system creates a new customer record"
+                }
+              ],
+              "expected_result": "A new customer record is created with valid data",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Create a new customer record",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to create a new customer record with name, email, and phone number."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as exact error messages."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Create a new customer record",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the system can handle valid customer data.",
+              "source_basis": [
+                "The system shall allow a user to create a new customer record with name, email, and phone number."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2344,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_002",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display active projects sorted by most recently updated first",
+              "objective": "Verify that the system displays a list of active projects sorted by most recently updated first",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "The system is logged in with a valid user account"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to the project list page",
+                  "expected_result": "The system displays a list of active projects"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that the projects are sorted by most recently updated first",
+                  "expected_result": "The projects are sorted by most recently updated first"
+                }
+              ],
+              "expected_result": "The system displays a list of active projects sorted by most recently updated first",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display active projects sorted by most recently updated first",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall display a list of active projects sorted by most recently updated first."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying edge cases."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display active projects sorted by most recently updated first",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the list is sorted correctly",
+              "source_basis": [
+                "The system shall display a list of active projects sorted by most recently updated first."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_003",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Update task status from open to completed",
+              "objective": "Verify that the task status can be updated from open to completed",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Task is in open status"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Click on the update status button",
+                  "expected_result": "Task status is updated to completed"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that the task status is displayed as completed",
+                  "expected_result": "Task status is displayed as completed"
+                }
+              ],
+              "expected_result": "Task status is updated to completed",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Update task status",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall let a user update the status of a task from open to completed."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as error message text."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Update task status",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a specific action that the system must perform.",
+              "source_basis": [
+                "The system shall let a user update the status of a task from open to completed."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_004",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Search orders by order number - Positive",
+              "objective": "Verify that the system allows a user to search orders by order number.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Order data is available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter a valid order number in the search field",
+                  "expected_result": "The system displays the search results for the entered order number"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter an invalid order number in the search field",
+                  "expected_result": "The system displays an error message indicating that the order number is invalid"
+                }
+              ],
+              "expected_result": "The system allows a user to search orders by order number.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Search orders by order number",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to search orders by order number."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as an error message for a very long order number."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Search orders by order number",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the search functionality is working correctly.",
+              "source_basis": [
+                "The system shall allow a user to search orders by order number."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_005",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Assign employee to department",
+              "objective": "Verify that a manager can assign an employee to a department.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "Manager is logged in",
+                "Employee is not assigned to a department"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in as a manager",
+                  "expected_result": "Manager is logged in successfully"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Select an employee not assigned to a department",
+                  "expected_result": "Employee is selected successfully"
+                },
+                {
+                  "step_number": 3,
+                  "action": "Assign the selected employee to a department",
+                  "expected_result": "Employee is assigned to the department successfully"
+                }
+              ],
+              "expected_result": "Employee is assigned to the department successfully",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Assign employee to department",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a manager to assign an employee to a department."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as an invalid department."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Assign employee to department",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a positive action, so a positive test is necessary.",
+              "source_basis": [
+                "The system shall allow a manager to assign an employee to a department."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_006",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall show invoice details including invoice date, amount due, and payment status.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Show invoice details",
+              "objective": "Verify that the system displays invoice details correctly.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Invoice exists in the system"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to the invoice details page",
+                  "expected_result": "The invoice details page is displayed with the invoice date, amount due, and payment status."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that the invoice date is displayed correctly",
+                  "expected_result": "The invoice date is displayed correctly."
+                }
+              ],
+              "expected_result": "The system displays invoice details correctly.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Show invoice details",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall show invoice details including invoice date, amount due, and payment status."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming the invoice has a payment status."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall show invoice details including invoice date, amount due, and payment status.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Show invoice details",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure that the system displays the required invoice details.",
+              "source_basis": [
+                "The system shall show invoice details including invoice date, amount due, and payment status."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_007",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Download PDF report",
+              "objective": "Verify the system allows a user to download a monthly activity report as a PDF file.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "User has permission to access the report"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to the report page",
+                  "expected_result": "The report page is displayed"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Click the download button",
+                  "expected_result": "The PDF file is downloaded"
+                }
+              ],
+              "expected_result": "The PDF file is downloaded successfully",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Download PDF report",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to download a monthly activity report as a PDF file."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as error message text."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Download PDF report",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a specific action that the system must perform.",
+              "source_basis": [
+                "The system shall allow a user to download a monthly activity report as a PDF file."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_008",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall send an in-app notification when a submitted request is approved.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Send in-app notification when request is approved",
+              "objective": "Verify that the system sends an in-app notification when a submitted request is approved.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User has submitted a request",
+                "Request has been approved"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit a request",
+                  "expected_result": "Request is submitted successfully"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Approve the submitted request",
+                  "expected_result": "In-app notification is sent to the user"
+                }
+              ],
+              "expected_result": "In-app notification is sent to the user",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Send in-app notification when request is approved",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall send an in-app notification when a submitted request is approved."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying a negative scenario without explicit requirement."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall send an in-app notification when a submitted request is approved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Send in-app notification when request is approved",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a specific action to be taken when a request is approved.",
+              "source_basis": [
+                "The system shall send an in-app notification when a submitted request is approved."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_009",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to archive a completed project.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Archive a completed project",
+              "objective": "Verify that a completed project can be archived",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "Medium",
+              "preconditions": [
+                "User has completed a project"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to the project completion page",
+                  "expected_result": "The project completion page is displayed"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Click the archive button",
+                  "expected_result": "The project is successfully archived"
+                }
+              ],
+              "expected_result": "The project is successfully archived",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Archive a completed project",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to archive a completed project."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as post-state behavior not stated."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to archive a completed project.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Archive a completed project",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "Medium",
+              "rationale": "The requirement specifies a positive action.",
+              "source_basis": [
+                "The system shall allow a user to archive a completed project."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_010",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Add comment to existing support ticket",
+              "objective": "Verify that a user can add a comment to an existing support ticket.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Support ticket exists"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in to the system",
+                  "expected_result": "User is logged in successfully"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Navigate to the support ticket page",
+                  "expected_result": "Support ticket page is displayed"
+                },
+                {
+                  "step_number": 3,
+                  "action": "Click the add comment button",
+                  "expected_result": "Comment input field is displayed"
+                },
+                {
+                  "step_number": 4,
+                  "action": "Enter a comment",
+                  "expected_result": "Comment is saved successfully"
+                }
+              ],
+              "expected_result": "Comment is saved successfully",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Add comment to existing support ticket",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to add a comment to an existing support ticket."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Add comment to existing support ticket",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a positive action, so a positive test is necessary to verify the system's behavior.",
+              "source_basis": [
+                "The system shall allow a user to add a comment to an existing support ticket."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_001",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject invalid email address",
+              "objective": "Verify that the system rejects a customer email address that does not contain an at sign.",
+              "test_type": "Negative",
+              "technique_used": "Invalid input validation",
+              "priority": "High",
+              "preconditions": [
+                "The system is in a normal state"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter an email address without an at sign",
+                  "expected_result": "The system displays an error message indicating that the email address is invalid"
+                }
+              ],
+              "expected_result": "The system rejects the email address",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Reject invalid email address",
+                "technique_used": "Invalid input validation"
+              },
+              "source_basis": [
+                "The system shall reject a customer email address that does not contain an at sign."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as special characters."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Reject invalid email address",
+              "test_type": "Negative",
+              "technique_used": "Invalid input validation",
+              "priority": "High",
+              "rationale": "The requirement explicitly states that the system should reject invalid email addresses.",
+              "source_basis": [
+                "The system shall reject a customer email address that does not contain an at sign."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_002",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Validate start date is not later than end date",
+              "objective": "Verify that the start date is not later than the end date before saving an event.",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "Event creation page is accessible"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter a start date later than the end date",
+                  "expected_result": "System displays an error message indicating that the start date is later than the end date"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter a start date equal to the end date",
+                  "expected_result": "System allows event creation without displaying an error message"
+                }
+              ],
+              "expected_result": "System validates the start date correctly",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Validate start date is not later than end date",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall require the start date to be earlier than or equal to the end date before saving an event."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by stating that the system displays an error message indicating that the start date is later than the end date."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Validate start date is not later than end date",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "This is a basic validation requirement.",
+              "source_basis": [
+                "The system shall require the start date to be earlier than or equal to the end date before saving an event."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2398,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_003",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Prevent negative expense claim",
+              "objective": "Verify that the system prevents a user from submitting an expense claim with a negative amount.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Expense claim form is accessible"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit an expense claim with a negative amount",
+                  "expected_result": "The system displays an error message indicating that the expense claim amount cannot be negative"
+                }
+              ],
+              "expected_result": "The system prevents a user from submitting an expense claim with a negative amount.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Prevent negative expense claim",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall prevent a user from submitting an expense claim with a negative amount."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by including decimal places (e.g., -1.99) in the test data."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Prevent negative expense claim",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "Preventing negative expense claims is a critical business requirement.",
+              "source_basis": [
+                "The system shall prevent a user from submitting an expense claim with a negative amount."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Validate shipping address before marking order ready for dispatch",
+              "objective": "Verify that the system requires a shipping address before marking an order ready for dispatch",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Order is created"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter shipping address",
+                  "expected_result": "Shipping address is validated"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Mark order ready for dispatch",
+                  "expected_result": "System prevents order from being marked ready for dispatch without shipping address"
+                }
+              ],
+              "expected_result": "System requires shipping address before marking order ready for dispatch",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Validate shipping address before marking order ready for dispatch",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall require a shipping address before an order can be marked ready for dispatch."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by testing invalid input."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Validate shipping address before marking order ready for dispatch",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "To ensure the shipping address is valid before dispatching the order.",
+              "source_basis": [
+                "The system shall require a shipping address before an order can be marked ready for dispatch."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_005",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject product quantity greater than available stock count",
+              "objective": "Verify that the system rejects a product quantity greater than the available stock count.",
+              "test_type": "Negative",
+              "technique_used": "Invalid input",
+              "priority": "High",
+              "preconditions": [
+                "The system is in a normal state.",
+                "The available stock count is set to a valid value."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter a product quantity greater than the available stock count.",
+                  "expected_result": "The system displays an error message indicating that the product quantity exceeds the available stock count."
+                }
+              ],
+              "expected_result": "The system rejects the product quantity greater than the available stock count.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Reject product quantity greater than available stock count",
+                "technique_used": "Invalid input"
+              },
+              "source_basis": [
+                "The system shall reject a product quantity greater than the available stock count."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as post-state behavior not stated."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Reject product quantity greater than available stock count",
+              "test_type": "Negative",
+              "technique_used": "Invalid input",
+              "priority": "High",
+              "rationale": "To ensure the system does not allow overstocking.",
+              "source_basis": [
+                "The system shall reject a product quantity greater than the available stock count."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_006",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Error display when required approval comment is left blank",
+              "objective": "Verify that the system displays an error when a required approval comment is left blank",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Approval comment field is required"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Leave the approval comment field blank",
+                  "expected_result": "The system displays an error message"
+                }
+              ],
+              "expected_result": "The system displays an error message",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Error display when required approval comment is left blank",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall display an error when a required approval comment is left blank."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying the exact error message and the system's behavior when preventing submission."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Error display when required approval comment is left blank",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure that the system behaves correctly when a required approval comment is left blank.",
+              "source_basis": [
+                "The system shall display an error when a required approval comment is left blank."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Discount percentage validation - Lower bound",
+              "objective": "Verify that the system validates the discount percentage at the lower bound (0).",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter discount percentage as 0",
+                  "expected_result": "System validates the discount percentage"
+                }
+              ],
+              "expected_result": "System validates the discount percentage",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Discount percentage validation",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall require a discount percentage to be between 0 and 100 inclusive."
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Discount percentage validation - Upper bound",
+              "objective": "Verify that the system validates the discount percentage at the upper bound (100).",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter discount percentage as 100",
+                  "expected_result": "System validates the discount percentage"
+                }
+              ],
+              "expected_result": "System validates the discount percentage",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Discount percentage validation",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall require a discount percentage to be between 0 and 100 inclusive."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Discount percentage validation",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the discount percentage is within the valid range.",
+              "source_basis": [
+                "The system shall require a discount percentage to be between 0 and 100 inclusive."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_008",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Prevent duplicate employee IDs",
+              "objective": "Verify that the system prevents duplicate employee IDs from being saved.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "Employee ID is not already saved in the system"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to save an employee ID that already exists in the system",
+                  "expected_result": "The system prevents the duplicate employee ID from being saved and displays an error message"
+                }
+              ],
+              "expected_result": "The system prevents duplicate employee IDs from being saved.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Prevent duplicate employee IDs",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall prevent duplicate employee IDs from being saved."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by considering edge cases with special characters."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Prevent duplicate employee IDs",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure data consistency and prevent errors.",
+              "source_basis": [
+                "The system shall prevent duplicate employee IDs from being saved."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2240,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Validate uploaded profile image format",
+              "objective": "Verify that uploaded profile images are in JPG or PNG format.",
+              "test_type": "Positive",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in",
+                "Profile image is uploaded"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a profile image with a valid JPG format",
+                  "expected_result": "The system accepts the uploaded image"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Upload a profile image with a valid PNG format",
+                  "expected_result": "The system accepts the uploaded image"
+                }
+              ],
+              "expected_result": "The system only accepts JPG or PNG format images.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Validate uploaded profile image format",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying an exact invalid format (GIF)."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Validate uploaded profile image format",
+              "test_type": "Positive",
+              "technique_used": "...",
+              "priority": "High",
+              "rationale": "...",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Cancellation reason required for approved booking cancellation",
+              "objective": "Verify that a cancellation reason is required when an approved booking is cancelled.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User has an approved booking"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Cancel an approved booking without providing a cancellation reason",
+                  "expected_result": "System should prompt user to enter a cancellation reason"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter a cancellation reason and submit",
+                  "expected_result": "Booking should be cancelled successfully"
+                }
+              ],
+              "expected_result": "Cancellation reason is required for approved booking cancellation",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Cancellation reason required for approved booking cancellation",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall require a cancellation reason when an approved booking is cancelled."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming a non-approved booking can be cancelled without a cancellation reason."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Cancellation reason required for approved booking cancellation",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure that the system enforces the cancellation reason requirement for approved bookings.",
+              "source_basis": [
+                "The system shall require a cancellation reason when an approved booking is cancelled."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_001",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Login with valid email and password",
+              "objective": "Verify that a registered user can log in with a valid email address and password.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "A registered user exists in the system with a valid email address and password.",
+                "The user is not logged in."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "The user navigates to the login page.",
+                  "expected_result": "The login page is displayed."
+                },
+                {
+                  "step_number": 2,
+                  "action": "The user enters a valid email address and password.",
+                  "expected_result": "The system logs the user in successfully."
+                }
+              ],
+              "expected_result": "The user is logged in successfully.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Login with valid email and password",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a registered user to log in with a valid email address and password."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as the exact error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Login with valid email and password",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure secure login functionality",
+              "source_basis": [
+                "The system shall allow a registered user to log in with a valid email address and password."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_002",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display error message for invalid login credentials",
+              "objective": "Verify that the system displays an error message when login credentials are invalid.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter invalid login credentials",
+                  "expected_result": "The system displays an error message"
+                }
+              ],
+              "expected_result": "The system displays an error message",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display error message for invalid login credentials",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall display an error message when login credentials are invalid."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by adding a negative scenario."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display error message for invalid login credentials",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure user experience and prevent unauthorized access",
+              "source_basis": [
+                "The system shall display an error message when login credentials are invalid."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_003",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Request password reset link",
+              "objective": "Verify that the system allows a user to request a password reset link for a registered email address.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated",
+                "User has a registered email address"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "User navigates to the password reset page",
+                  "expected_result": "The password reset page is displayed"
+                },
+                {
+                  "step_number": 2,
+                  "action": "User enters a registered email address and submits the form",
+                  "expected_result": "A password reset link is sent to the user's email address"
+                }
+              ],
+              "expected_result": "A password reset link is sent to the user's email address",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Request password reset link",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to request a password reset link for a registered email address."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as an exact error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Request password reset link",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement explicitly states the need for a password reset link.",
+              "source_basis": [
+                "The system shall allow a user to request a password reset link for a registered email address."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Session ends after logout",
+              "objective": "Verify that the system ends a user's session when the user selects logout.",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Select the logout option",
+                  "expected_result": "The system ends the user's session"
+                }
+              ],
+              "expected_result": "The system ends the user's session",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Session ends after logout",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall end a user's session when the user selects logout."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Session ends after logout",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "The requirement explicitly states the expected behavior.",
+              "source_basis": [
+                "The system shall end a user's session when the user selects logout."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify user is prompted to enter one-time code after submitting valid login credentials",
+              "objective": "To verify that the system prompts the user to enter a one-time code after submitting valid login credentials.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User has valid login credentials",
+                "User has not entered one-time code"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit valid login credentials",
+                  "expected_result": "System prompts user to enter one-time code"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter one-time code",
+                  "expected_result": "System allows user to proceed"
+                }
+              ],
+              "expected_result": "System prompts user to enter one-time code and allows user to proceed after entering correct one-time code",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify user is prompted to enter one-time code after submitting valid login credentials",
+                "technique_used": "Equivalence Partitioning"
+              },
+              "source_basis": [
+                "The system shall require a user to enter a one-time code after submitting valid login credentials."
+              ]
+            }
+          ],
+          "missing_information": [
+            "one-time code",
+            "login credentials"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying the exact error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "one-time code",
+            "login credentials"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify user is prompted to enter one-time code after submitting valid login credentials",
+              "test_type": "Positive",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "rationale": "To ensure the system enforces the one-time code requirement",
+              "source_basis": [
+                "The system shall require a user to enter a one-time code after submitting valid login credentials."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_006",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 1
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Record user ID and login time",
+              "objective": "Verify that the system records the user ID and login time for each successful login.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Login with a valid user ID",
+                  "expected_result": "The system records the user ID and login time"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify the recorded user ID and login time",
+                  "expected_result": "The recorded user ID and login time match the actual values"
+                }
+              ],
+              "expected_result": "The system records the user ID and login time for each successful login.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Record user ID and login time",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall record the time and user ID for each successful login."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming different user IDs."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Record user ID and login time",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure accurate user activity tracking.",
+              "source_basis": [
+                "The system shall record the time and user ID for each successful login."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_008",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Deactivate user account",
+              "objective": "Verify that an administrator can deactivate a user account.",
+              "test_type": "Positive",
+              "technique_used": "Directly from requirement",
+              "priority": "High",
+              "preconditions": [
+                "User account exists",
+                "Administrator is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in as an administrator",
+                  "expected_result": "Administrator is logged in successfully"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Navigate to user account management page",
+                  "expected_result": "User account management page is displayed"
+                },
+                {
+                  "step_number": 3,
+                  "action": "Select user account to deactivate",
+                  "expected_result": "User account is selected for deactivation"
+                },
+                {
+                  "step_number": 4,
+                  "action": "Click deactivate button",
+                  "expected_result": "User account is deactivated successfully"
+                }
+              ],
+              "expected_result": "User account is deactivated successfully",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Deactivate user account",
+                "technique_used": "Directly from requirement"
+              },
+              "source_basis": [
+                "The system shall allow an administrator to deactivate a user account."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Deactivate user account",
+              "test_type": "Positive",
+              "technique_used": "Directly from requirement",
+              "priority": "High",
+              "rationale": "Directly from requirement",
+              "source_basis": [
+                "The system shall allow an administrator to deactivate a user account."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User acceptance of updated terms",
+              "objective": "Verify that users are required to accept updated terms before accessing the dashboard.",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to the dashboard",
+                  "expected_result": "User is prompted to accept updated terms"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Accept updated terms",
+                  "expected_result": "User is granted access to the dashboard"
+                }
+              ],
+              "expected_result": "User is granted access to the dashboard after accepting updated terms",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User acceptance of updated terms",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall require users to accept updated terms before accessing the dashboard."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as the exact outcome of rejecting updated terms."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User acceptance of updated terms",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "To ensure users understand the updated terms before accessing the dashboard.",
+              "source_basis": [
+                "The system shall require users to accept updated terms before accessing the dashboard."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Notify user on email change",
+              "objective": "Verify that the system notifies a user when their account email address is changed.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Change the user's email address",
+                  "expected_result": "The system notifies the user of the email address change"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that the user receives the notification",
+                  "expected_result": "The user receives the notification"
+                }
+              ],
+              "expected_result": "The system notifies the user of the email address change",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Notify user on email change",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall notify a user when their account email address is changed."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying an invalid email address."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Notify user on email change",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a specific action that the system must take when a user changes their email address.",
+              "source_basis": [
+                "The system shall notify a user when their account email address is changed."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Load project dashboard within three seconds for 95 percent of requests",
+              "objective": "Verify the system loads the project dashboard within three seconds for 95 percent of requests",
+              "test_type": "Performance",
+              "technique_used": "load project dashboard",
+              "priority": "High",
+              "preconditions": [
+                "System is up and running"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Send a request to load the project dashboard",
+                  "expected_result": "The dashboard loads within three seconds"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify the dashboard loads within three seconds for 95 percent of requests",
+                  "expected_result": "Assumption: The system meets the 95 percent threshold"
+                }
+              ],
+              "expected_result": "The system loads the project dashboard within three seconds for 95 percent of requests",
+              "assumption_required": true,
+              "assumptions": [
+                "The system meets the 95 percent threshold"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "load project dashboard within three seconds",
+                "technique_used": "load project dashboard"
+              },
+              "source_basis": [
+                "within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "missing_information": [
+            "response time threshold",
+            "percentage of requests"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming a slow network.",
+            "TC_REQ_1_003: The test case invents unsupported behavior by assuming a high load."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "response time threshold",
+            "percentage of requests"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "load project dashboard within three seconds",
+              "test_type": "Performance",
+              "technique_used": "load project dashboard",
+              "priority": "High",
+              "rationale": "load project dashboard within three seconds for 95 percent of requests is a performance requirement",
+              "source_basis": [
+                "within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Concurrent user support - 100 users",
+              "objective": "Verify the system supports 100 concurrent users without errors.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "500 concurrent users are logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in 100 users",
+                  "expected_result": "No errors occur"
+                }
+              ],
+              "expected_result": "No errors occur",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Concurrent user support",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall support 500 concurrent users viewing reports without errors."
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Concurrent user support - 250 users",
+              "objective": "Verify the system supports 250 concurrent users without errors.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "500 concurrent users are logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in 250 users",
+                  "expected_result": "No errors occur"
+                }
+              ],
+              "expected_result": "No errors occur",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Concurrent user support",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall support 500 concurrent users viewing reports without errors."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case may be usable but depends on missing detail.",
+            "TC_REQ_1_003: The test case invents unsupported behavior."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Concurrent user support",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the system can handle a large number of concurrent users without errors.",
+              "source_basis": [
+                "The system shall support 500 concurrent users viewing reports without errors."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify data encryption in production database",
+              "objective": "Ensure customer data is encrypted in the production database",
+              "test_type": "Security",
+              "technique_used": "Manual review of encryption settings",
+              "priority": "High",
+              "preconditions": [
+                "System is in production mode"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Review encryption settings in production database",
+                  "expected_result": "Encryption settings are enabled"
+                }
+              ],
+              "expected_result": "Data is encrypted in the production database",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Data encryption",
+                "technique_used": "Manual review of encryption settings"
+              },
+              "source_basis": [
+                "The system shall encrypt customer data while it is stored in the production database."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying 'sensitive fields'.",
+            "TC_REQ_1_003: The test case invents unsupported behavior by specifying 'deleted data'."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "High",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Data encryption",
+              "test_type": "Security",
+              "technique_used": "Manual review of encryption settings",
+              "priority": "High",
+              "rationale": "To ensure customer data is protected.",
+              "source_basis": [
+                "The system shall encrypt customer data while it is stored in the production database."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify monthly availability for the reporting module",
+              "objective": "Verify the system maintains 99.5 percent monthly availability for the reporting module",
+              "test_type": "Reliability",
+              "technique_used": "Black box testing",
+              "priority": "High",
+              "preconditions": [
+                "The reporting module is accessible"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Access the reporting module",
+                  "expected_result": "The system is available"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify the system is available for the entire month",
+                  "expected_result": "The system is available for the entire month"
+                }
+              ],
+              "expected_result": "The system maintains 99.5 percent monthly availability for the reporting module",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurable criteria for 99.5 percent monthly availability is not defined"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify monthly availability for the reporting module",
+                "technique_used": "Black box testing"
+              },
+              "source_basis": [
+                "The system shall maintain 99.5 percent monthly availability for the reporting module."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurable criteria for 99.5 percent monthly availability"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as high traffic.",
+            "TC_REQ_1_003: The test case invents unsupported behavior, such as network failure."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurable criteria for 99.5 percent monthly availability"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify monthly availability for the reporting module",
+              "test_type": "Reliability",
+              "technique_used": "Black box testing",
+              "priority": "High",
+              "rationale": "To ensure the system meets the availability requirement",
+              "source_basis": [
+                "The system shall maintain 99.5 percent monthly availability for the reporting module."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Keyboard navigation for primary form fields",
+              "objective": "Verify keyboard navigation for primary form fields",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "Primary form fields are defined in the project context"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to a primary form field using the keyboard",
+                  "expected_result": "The primary form field is focused and editable"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Use the keyboard to navigate to the next primary form field",
+                  "expected_result": "The next primary form field is focused and editable"
+                }
+              ],
+              "expected_result": "Keyboard navigation is provided for all primary form fields",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume primary form fields are defined in the project context"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Keyboard navigation for primary form fields",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall provide keyboard navigation for all primary form fields."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Keyboard navigation for primary form fields not specified in detail."
+          ],
+          "assumptions": [
+            "Assume primary form fields are defined in the project context."
+          ],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as an edge case."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Keyboard navigation for primary form fields not specified in detail."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Keyboard navigation for primary form fields",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "To ensure accessibility and usability of the application.",
+              "source_basis": [
+                "The system shall provide keyboard navigation for all primary form fields."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "Assume primary form fields are defined in the project context."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit log retention for at least seven years",
+              "objective": "To ensure that audit logs are retained for at least seven years",
+              "test_type": "Positive",
+              "technique_used": "Manual review",
+              "priority": "High",
+              "preconditions": [
+                "Audit logs are generated and stored"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Review audit logs for the past seven years",
+                  "expected_result": "Audit logs are available for the past seven years"
+                }
+              ],
+              "expected_result": "Audit logs are retained for at least seven years",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurable criteria for audit log retention are not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify audit log retention for at least seven years",
+                "technique_used": "Manual review"
+              },
+              "source_basis": [
+                "The system shall retain audit logs for at least seven years."
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit log retention for at least seven years (partial)",
+              "objective": "To ensure that audit logs are retained for at least seven years, but with missing information",
+              "test_type": "Positive",
+              "technique_used": "Manual review",
+              "priority": "High",
+              "preconditions": [
+                "Audit logs are generated and stored"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Review audit logs for the past seven years",
+                  "expected_result": "Audit logs are available for the past seven years"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Check for missing information",
+                  "expected_result": "Measurable criteria for audit log retention are not specified"
+                }
+              ],
+              "expected_result": "Audit logs are retained for at least seven years, but with missing information",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurable criteria for audit log retention are not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify audit log retention for at least seven years",
+                "technique_used": "Manual review"
+              },
+              "source_basis": [
+                "The system shall retain audit logs for at least seven years."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurable criteria for audit log retention"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case may be usable but depends on missing detail.",
+            "TC_REQ_1_003: The test case invents unsupported behavior (no logs)."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurable criteria for audit log retention"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify audit log retention for at least seven years",
+              "test_type": "Positive",
+              "technique_used": "Manual review",
+              "priority": "High",
+              "rationale": "To ensure compliance with regulatory requirements",
+              "source_basis": [
+                "The system shall retain audit logs for at least seven years."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System recovers normal service within fifteen minutes after database failover",
+              "objective": "Verify system recovers normal service within fifteen minutes after database failover",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "Database failover occurs"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate database failover",
+                  "expected_result": "System recovers normal service within fifteen minutes"
+                }
+              ],
+              "expected_result": "System recovers normal service within fifteen minutes",
+              "assumption_required": true,
+              "assumptions": [
+                "Database failover timing is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Recover normal service within fifteen minutes",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "System does not recover normal service within fifteen minutes after database failover",
+              "objective": "Verify system does not recover normal service within fifteen minutes after database failover",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "Database failover occurs"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate database failover",
+                  "expected_result": "System does not recover normal service within fifteen minutes"
+                }
+              ],
+              "expected_result": "System does not recover normal service within fifteen minutes",
+              "assumption_required": true,
+              "assumptions": [
+                "Database failover timing is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Recover normal service within fifteen minutes",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "System recovers normal service within a shorter time after database failover",
+              "objective": "Verify system recovers normal service within a shorter time after database failover",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "Database failover occurs"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate database failover",
+                  "expected_result": "System recovers normal service within a shorter time"
+                }
+              ],
+              "expected_result": "System recovers normal service within a shorter time",
+              "assumption_required": true,
+              "assumptions": [
+                "Database failover timing is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Recover normal service within fifteen minutes",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "missing_information": [
+            "database failover timing"
+          ],
+          "assumptions": [
+            "database failover timing is not specified"
+          ],
+          "warnings": [
+            "Reviewer unavailable because Groq-only provider was blocked by governor"
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "database failover timing"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Recover normal service within fifteen minutes",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "rationale": "...",
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": [
+            "database failover timing is not specified"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_008",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display dates and currency values using user's selected locale",
+              "objective": "Verify that dates and currency values are displayed correctly using the user's selected locale",
+              "test_type": "Positive",
+              "technique_used": "equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User has selected a locale"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Select a locale",
+                  "expected_result": "Dates and currency values are displayed correctly using the selected locale"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that dates and currency values are displayed correctly using the selected locale",
+                  "expected_result": "Dates and currency values are displayed correctly using the selected locale"
+                }
+              ],
+              "expected_result": "Dates and currency values are displayed correctly using the selected locale",
+              "assumption_required": true,
+              "assumptions": [
+                "User has selected a locale"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "display dates and currency values using user's selected locale",
+                "technique_used": "equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall display dates and currency values using the user's selected locale."
+              ]
+            }
+          ],
+          "missing_information": [
+            "locale selection",
+            "date and currency formats"
+          ],
+          "assumptions": [
+            "user has selected a locale"
+          ],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by focusing only on date format."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "locale selection",
+            "date and currency formats"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "display dates and currency values using user's selected locale",
+              "test_type": "Positive",
+              "technique_used": "equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure that the system adapts to user preferences.",
+              "source_basis": [
+                "The system shall display dates and currency values using the user's selected locale."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "user has selected a locale"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_009",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Error recording with timestamp",
+              "objective": "Verify that the system records application errors with timestamp.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "The system is in a stable state"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate an application error",
+                  "expected_result": "The system records the error with timestamp"
+                }
+              ],
+              "expected_result": "The system records the error with timestamp",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Error recording",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall record application errors with timestamp, request ID, and severity level."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying a specific request ID.",
+            "TC_REQ_1_003: The test case invents unsupported behavior by specifying a specific severity level."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Error recording",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure that application errors are properly recorded.",
+              "source_basis": [
+                "The system shall record application errors with timestamp, request ID, and severity level."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Nightly report generation completion before 6:00 AM",
+              "objective": "Verify that the system completes nightly report generation before 6:00 AM local time.",
+              "test_type": "Positive",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "System is in a stable state",
+                "Nightly report generation is enabled"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Run nightly report generation",
+                  "expected_result": "Report generation completes before 6:00 AM local time"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify report completion time",
+                  "expected_result": "Report completion time is before 6:00 AM local time"
+                }
+              ],
+              "expected_result": "Report generation completes before 6:00 AM local time",
+              "assumption_required": true,
+              "assumptions": [
+                "Local time zone is assumed to be the system's default time zone"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Nightly report generation completion before 6:00 AM",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "before 6:00 AM local time"
+              ]
+            }
+          ],
+          "missing_information": [
+            "local time zone not specified"
+          ],
+          "assumptions": [
+            "local time zone not specified"
+          ],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as the exact time after 6:00 AM."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "local time zone not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Nightly report generation completion before 6:00 AM",
+              "test_type": "Positive",
+              "technique_used": "...",
+              "priority": "High",
+              "rationale": "...",
+              "source_basis": [
+                "before 6:00 AM local time"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "local time zone not specified"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_001",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be easy to use.",
+          "requirement_type": "NFR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Invalid planner output: recommended_test_case_count must be 0 when safe_to_generate is false"
+          ],
+          "reason": "Invalid planner output: recommended_test_case_count must be 0 when safe_to_generate is false"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be easy to use.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Invalid planner output: recommended_test_case_count must be 0 when safe_to_generate is false"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 1
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_002",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall handle errors properly.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Error Handling Positive Test",
+              "objective": "Verify error handling behavior",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "System is in a normal state"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Trigger an error",
+                  "expected_result": "System displays an error message"
+                }
+              ],
+              "expected_result": "System handles errors properly",
+              "assumption_required": true,
+              "assumptions": [
+                "Error handling behavior is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Error handling",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall handle errors properly."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Error handling behavior is not specified."
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents alternative error handling behavior not stated in the requirement."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall handle errors properly.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Error handling behavior is not specified."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Error handling",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the system can recover from errors.",
+              "source_basis": [
+                "The system shall handle errors properly."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_003",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Performance Test Case 1",
+              "objective": "Verify the system's performance under normal use.",
+              "test_type": "Performance",
+              "technique_used": "Load testing",
+              "priority": "High",
+              "preconditions": [
+                "The system is in a normal state."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Perform load testing on the system.",
+                  "expected_result": "The system responds within a reasonable time frame."
+                }
+              ],
+              "expected_result": "The system responds within a reasonable time frame.",
+              "assumption_required": true,
+              "assumptions": [
+                "The definition of 'normal use' is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Performance",
+                "technique_used": "Load testing"
+              },
+              "source_basis": [
+                "The system shall be fast enough for normal use."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurable criteria for 'fast enough' are missing."
+          ],
+          "assumptions": [
+            "The definition of 'normal use' is not specified."
+          ],
+          "warnings": [
+            "Measurable criteria for 'fast enough' are missing.",
+            "TC_REQ_1_001: The requirement lacks measurable criteria for 'fast enough' and the definition of 'normal use' is not specified.",
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming the system responds within a reasonable time frame without specifying what 'reasonable' means."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurable criteria for 'fast enough' are missing."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Performance",
+              "test_type": "Performance",
+              "technique_used": "Load testing",
+              "priority": "High",
+              "rationale": "The system should respond within a reasonable time frame.",
+              "source_basis": [
+                "The system shall be fast enough for normal use."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "The definition of 'normal use' is not specified."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2228,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_004",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Manage User Data Appropriately",
+              "objective": "Verify that user data is managed appropriately.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Access user data",
+                  "expected_result": "User data is displayed correctly"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Modify user data",
+                  "expected_result": "User data is updated correctly"
+                }
+              ],
+              "expected_result": "User data is managed appropriately",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Manage user data appropriately",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall manage user data appropriately."
+              ]
+            }
+          ],
+          "missing_information": [
+            "project context is not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming user data is not displayed."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "project context is not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Manage user data appropriately",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure data is handled correctly",
+              "source_basis": [
+                "The system shall manage user data appropriately."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_005",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Report Generation",
+              "objective": "Verify report generation functionality",
+              "test_type": "Positive",
+              "technique_used": "equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Generate a report",
+                  "expected_result": "The report is generated successfully"
+                }
+              ],
+              "expected_result": "The report is generated successfully",
+              "assumption_required": true,
+              "assumptions": [
+                "Project context is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "report generation",
+                "technique_used": "equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall provide useful reports."
+              ]
+            }
+          ],
+          "missing_information": [
+            "project context is not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as error handling."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "project context is not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "report generation",
+              "test_type": "Positive",
+              "technique_used": "equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies the generation of useful reports.",
+              "source_basis": [
+                "The system shall provide useful reports."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 3
+      }
+    }
+  }
+]

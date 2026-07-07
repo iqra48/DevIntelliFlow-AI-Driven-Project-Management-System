@@ -1,0 +1,11 @@
+.env
+.env.local
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+tmp_uvicorn_pid.txt
+server_err.log
+server_out.log

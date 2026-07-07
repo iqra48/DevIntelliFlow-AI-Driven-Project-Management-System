@@ -1,0 +1,498 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_001",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case adds a configuration step ('Configure the system to allow a user to create a new customer record') that invents system setup behavior not stated in the requirement. The requirement only specifies that the system shall allow creation of a customer record; it does not require any explicit configuration action.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Create a new customer record with valid name, email, and phone number",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system supports the core functionality of creating a customer record as specified.",
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2344,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_002",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that the displayed list contains only active projects and excludes any inactive projects.",
+              "objective": "To ensure that the system displays a list of active projects only.",
+              "test_type": "Positive",
+              "technique_used": "UI inspection or automated UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that the displayed list contains only active projects.",
+                  "expected_result": "The list contains only active projects."
+                }
+              ],
+              "expected_result": "The list contains only active projects.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has a list of active projects to display."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the displayed list contains only active projects and excludes any inactive projects.",
+                "technique_used": "UI inspection or automated UI test"
+              },
+              "source_basis": [
+                "active projects"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify that the list of active projects is sorted by most recently updated first.",
+              "objective": "To ensure that the system displays a list of active projects sorted correctly.",
+              "test_type": "Positive",
+              "technique_used": "UI inspection or automated UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that the list of active projects is sorted by most recently updated first.",
+                  "expected_result": "The list is sorted by most recently updated first."
+                }
+              ],
+              "expected_result": "The list is sorted by most recently updated first.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has a list of active projects to display."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the list of active projects is sorted by most recently updated first.",
+                "technique_used": "UI inspection or automated UI test"
+              },
+              "source_basis": [
+                "sorted by most recently updated first"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the displayed list contains only active projects and excludes any inactive projects.",
+              "test_type": "Positive",
+              "technique_used": "UI inspection or automated UI test",
+              "priority": "High",
+              "rationale": "Ensures the system shows only the projects that are active as required.",
+              "source_basis": [
+                "active projects"
+              ]
+            },
+            {
+              "coverage_item": "Verify that the list of active projects is sorted by most recently updated first.",
+              "test_type": "Positive",
+              "technique_used": "UI inspection or automated UI test",
+              "priority": "High",
+              "rationale": "Ensures the ordering requirement is met.",
+              "source_basis": [
+                "sorted by most recently updated first"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_003",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Update task status from open to completed",
+              "objective": "Verify that the system allows a user to update the status of a task from open to completed.",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the task with an open status.",
+                  "expected_result": "The task status should be updated to completed."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that the task status has been updated to completed.",
+                  "expected_result": "The task status should be displayed as completed."
+                }
+              ],
+              "expected_result": "The task status should be updated to completed.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the task status can be updated from open to completed."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Update task status from open to completed",
+                "technique_used": "Functional testing"
+              },
+              "source_basis": [
+                "update the status of a task from open to completed"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Update task status from open to completed",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Verify that a user can change a task's status as specified",
+              "source_basis": [
+                "update the status of a task from open to completed"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_004",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test step references a concrete UI element ('search field'), which is not specified in the requirement, project context, or source basis. Introducing a specific UI component constitutes unsupported invention.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Search orders by valid order number returns the correct order",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Verify that the primary functionality of searching by order number works as specified.",
+              "source_basis": [
+                "search orders by order number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_005",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [
+            "A manager role exists",
+            "The employee and department records exist in the system"
+          ],
+          "warnings": [
+            "TC_REQ_1_001: The test case introduces unsupported behavior such as logging in as a manager (authentication) and UI actions like selecting an employee and department, which are not specified in the requirement, project context, or planner coverage.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Manager can assign an employee to a department",
+              "test_type": "Positive",
+              "technique_used": "Functional test of assignment operation",
+              "priority": "High",
+              "rationale": "Core functionality required for organizational management",
+              "source_basis": [
+                "allow a manager to assign an employee to a department"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "A manager role exists",
+            "The employee and department records exist in the system"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  }
+]

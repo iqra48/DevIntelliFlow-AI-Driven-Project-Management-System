@@ -1,0 +1,812 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_001",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Basic create workflow should produce functional test cases."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_002",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall display a list of active projects sorted by most recently updated first.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "List display and sort behavior should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_003",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall let a user update the status of a task from open to completed.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Simple state transition should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_004",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a user to search orders by order number.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Search behavior should generate direct and no-result cases."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_005",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a manager to assign an employee to a department.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Assignment workflow should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_006",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall show invoice details including invoice date, amount due, and payment status.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Detail view fields should be verifiable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_007",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a user to download a monthly activity report as a PDF file.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Download behavior should produce output verification cases."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_008",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall send an in-app notification when a submitted request is approved.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Notification trigger should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_009",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a user to archive a completed project.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Archive action should generate functional coverage."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_010",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a user to add a comment to an existing support ticket.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Comment creation should be straightforward to test."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_001",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall reject a customer email address that does not contain an at sign.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Validation rejection should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_002",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Date ordering rule should generate positive and negative cases."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_003",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Numeric validation should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Required-field rule should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_005",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall reject a product quantity greater than the available stock count.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Business limit validation should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_006",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall display an error when a required approval comment is left blank.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Blank value handling should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Boundary values should be represented."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_008",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall prevent duplicate employee IDs from being saved.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Uniqueness validation should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require uploaded profile images to be JPG or PNG files.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "File type validation should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require a cancellation reason when an approved booking is cancelled.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Conditional required field should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_001",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a registered user to log in with a valid email address and password.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Authentication flow should be testable without invented policy."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_002",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall display an error message when login credentials are invalid.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Invalid credential handling should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_003",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow a user to request a password reset link for a registered email address.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Reset request should be covered without assuming delivery internals."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall end a user's session when the user selects logout.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Logout behavior should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Second-step authentication should be tested from stated behavior."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_006",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall prevent users without administrator permission from opening the user management page.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Authorization behavior should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall record the time and user ID for each successful login.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Audit record behavior should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_008",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall allow an administrator to deactivate a user account.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Administrative account action should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall require users to accept updated terms before accessing the dashboard.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Access gate should be tested as stated."
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application with authenticated business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall notify a user when their account email address is changed.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Account change notification should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Performance threshold should produce measurable test cases."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall support 500 concurrent users viewing reports without errors.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Concurrency target should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall encrypt customer data while it is stored in the production database.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Security quality requirement should generate verification coverage."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Availability metric should be summarized for testing."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall provide keyboard navigation for all primary form fields.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Accessibility requirement should generate verification cases."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall retain audit logs for at least seven years.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Retention rule should be testable with inspection steps."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall recover normal service within fifteen minutes after a database failover.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Recovery target should be represented."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_008",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall display dates and currency values using the user's selected locale.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Localization quality should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_009",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall record application errors with timestamp, request ID, and severity level.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Observability requirement should be covered."
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall complete nightly report generation before 6:00 AM local time.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": true,
+      "expected_status_family": "SUCCESS_OR_NEEDS_REVIEW",
+      "notes": "Batch timing requirement should be testable."
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_001",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall be easy to use.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": false,
+      "expected_status_family": "BLOCKED_OR_NEEDS_REVIEW",
+      "notes": "Vague usability requirement should request clarification or review."
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_002",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall handle errors properly.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": false,
+      "expected_status_family": "BLOCKED_OR_NEEDS_REVIEW",
+      "notes": "Missing error types and expected handling should trigger review."
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_003",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall be fast enough for normal use.",
+        "classification_type": "NFR"
+      }
+    ],
+    "expected": {
+      "should_generate": false,
+      "expected_status_family": "BLOCKED_OR_NEEDS_REVIEW",
+      "notes": "Missing measurable threshold should require review."
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_004",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall manage user data appropriately.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": false,
+      "expected_status_family": "BLOCKED_OR_NEEDS_REVIEW",
+      "notes": "Unclear action and expected behavior should require clarification."
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_005",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "project_context": "Generic web application for business users.",
+    "requirements": [
+      {
+        "id": "REQ_1",
+        "requirement": "The system shall provide useful reports.",
+        "classification_type": "FR"
+      }
+    ],
+    "expected": {
+      "should_generate": false,
+      "expected_status_family": "BLOCKED_OR_NEEDS_REVIEW",
+      "notes": "Report content and usefulness criteria are underspecified."
+    }
+  }
+]

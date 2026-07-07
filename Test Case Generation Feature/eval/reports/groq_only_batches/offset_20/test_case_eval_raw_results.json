@@ -1,0 +1,904 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_001",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Login with valid email and password",
+              "objective": "Verify that a registered user can log in with a valid email address and password.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "A registered user exists in the system with a valid email address and password.",
+                "The user is not logged in."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "The user navigates to the login page.",
+                  "expected_result": "The login page is displayed."
+                },
+                {
+                  "step_number": 2,
+                  "action": "The user enters a valid email address and password.",
+                  "expected_result": "The system logs the user in successfully."
+                }
+              ],
+              "expected_result": "The user is logged in successfully.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Login with valid email and password",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a registered user to log in with a valid email address and password."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as the exact error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Login with valid email and password",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure secure login functionality",
+              "source_basis": [
+                "The system shall allow a registered user to log in with a valid email address and password."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_002",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display error message for invalid login credentials",
+              "objective": "Verify that the system displays an error message when login credentials are invalid.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter invalid login credentials",
+                  "expected_result": "The system displays an error message"
+                }
+              ],
+              "expected_result": "The system displays an error message",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display error message for invalid login credentials",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall display an error message when login credentials are invalid."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by adding a negative scenario."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display error message for invalid login credentials",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure user experience and prevent unauthorized access",
+              "source_basis": [
+                "The system shall display an error message when login credentials are invalid."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_003",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Request password reset link",
+              "objective": "Verify that the system allows a user to request a password reset link for a registered email address.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated",
+                "User has a registered email address"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "User navigates to the password reset page",
+                  "expected_result": "The password reset page is displayed"
+                },
+                {
+                  "step_number": 2,
+                  "action": "User enters a registered email address and submits the form",
+                  "expected_result": "A password reset link is sent to the user's email address"
+                }
+              ],
+              "expected_result": "A password reset link is sent to the user's email address",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Request password reset link",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall allow a user to request a password reset link for a registered email address."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as an exact error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Request password reset link",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement explicitly states the need for a password reset link.",
+              "source_basis": [
+                "The system shall allow a user to request a password reset link for a registered email address."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Session ends after logout",
+              "objective": "Verify that the system ends a user's session when the user selects logout.",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Select the logout option",
+                  "expected_result": "The system ends the user's session"
+                }
+              ],
+              "expected_result": "The system ends the user's session",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Session ends after logout",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall end a user's session when the user selects logout."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Session ends after logout",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "The requirement explicitly states the expected behavior.",
+              "source_basis": [
+                "The system shall end a user's session when the user selects logout."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify user is prompted to enter one-time code after submitting valid login credentials",
+              "objective": "To verify that the system prompts the user to enter a one-time code after submitting valid login credentials.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User has valid login credentials",
+                "User has not entered one-time code"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit valid login credentials",
+                  "expected_result": "System prompts user to enter one-time code"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter one-time code",
+                  "expected_result": "System allows user to proceed"
+                }
+              ],
+              "expected_result": "System prompts user to enter one-time code and allows user to proceed after entering correct one-time code",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify user is prompted to enter one-time code after submitting valid login credentials",
+                "technique_used": "Equivalence Partitioning"
+              },
+              "source_basis": [
+                "The system shall require a user to enter a one-time code after submitting valid login credentials."
+              ]
+            }
+          ],
+          "missing_information": [
+            "one-time code",
+            "login credentials"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying the exact error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "one-time code",
+            "login credentials"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify user is prompted to enter one-time code after submitting valid login credentials",
+              "test_type": "Positive",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "rationale": "To ensure the system enforces the one-time code requirement",
+              "source_basis": [
+                "The system shall require a user to enter a one-time code after submitting valid login credentials."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_006",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 1
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Record user ID and login time",
+              "objective": "Verify that the system records the user ID and login time for each successful login.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Login with a valid user ID",
+                  "expected_result": "The system records the user ID and login time"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify the recorded user ID and login time",
+                  "expected_result": "The recorded user ID and login time match the actual values"
+                }
+              ],
+              "expected_result": "The system records the user ID and login time for each successful login.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Record user ID and login time",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall record the time and user ID for each successful login."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming different user IDs."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Record user ID and login time",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure accurate user activity tracking.",
+              "source_basis": [
+                "The system shall record the time and user ID for each successful login."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_008",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Deactivate user account",
+              "objective": "Verify that an administrator can deactivate a user account.",
+              "test_type": "Positive",
+              "technique_used": "Directly from requirement",
+              "priority": "High",
+              "preconditions": [
+                "User account exists",
+                "Administrator is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in as an administrator",
+                  "expected_result": "Administrator is logged in successfully"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Navigate to user account management page",
+                  "expected_result": "User account management page is displayed"
+                },
+                {
+                  "step_number": 3,
+                  "action": "Select user account to deactivate",
+                  "expected_result": "User account is selected for deactivation"
+                },
+                {
+                  "step_number": 4,
+                  "action": "Click deactivate button",
+                  "expected_result": "User account is deactivated successfully"
+                }
+              ],
+              "expected_result": "User account is deactivated successfully",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Deactivate user account",
+                "technique_used": "Directly from requirement"
+              },
+              "source_basis": [
+                "The system shall allow an administrator to deactivate a user account."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as error message."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Deactivate user account",
+              "test_type": "Positive",
+              "technique_used": "Directly from requirement",
+              "priority": "High",
+              "rationale": "Directly from requirement",
+              "source_basis": [
+                "The system shall allow an administrator to deactivate a user account."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User acceptance of updated terms",
+              "objective": "Verify that users are required to accept updated terms before accessing the dashboard.",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to the dashboard",
+                  "expected_result": "User is prompted to accept updated terms"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Accept updated terms",
+                  "expected_result": "User is granted access to the dashboard"
+                }
+              ],
+              "expected_result": "User is granted access to the dashboard after accepting updated terms",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User acceptance of updated terms",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall require users to accept updated terms before accessing the dashboard."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as the exact outcome of rejecting updated terms."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User acceptance of updated terms",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "To ensure users understand the updated terms before accessing the dashboard.",
+              "source_basis": [
+                "The system shall require users to accept updated terms before accessing the dashboard."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Notify user on email change",
+              "objective": "Verify that the system notifies a user when their account email address is changed.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is authenticated"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Change the user's email address",
+                  "expected_result": "The system notifies the user of the email address change"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that the user receives the notification",
+                  "expected_result": "The user receives the notification"
+                }
+              ],
+              "expected_result": "The system notifies the user of the email address change",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Notify user on email change",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall notify a user when their account email address is changed."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying an invalid email address."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Notify user on email change",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "The requirement specifies a specific action that the system must take when a user changes their email address.",
+              "source_basis": [
+                "The system shall notify a user when their account email address is changed."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  }
+]

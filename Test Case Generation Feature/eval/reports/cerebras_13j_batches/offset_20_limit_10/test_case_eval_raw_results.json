@@ -1,0 +1,878 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_001",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Successful login with valid email address and password",
+              "objective": "Verify that a registered user can authenticate using a valid email address and password.",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Provide a valid email address and password to the login capability.",
+                  "expected_result": "The system authenticates the credentials and grants access to the application."
+                }
+              ],
+              "expected_result": "The user is successfully logged in and gains access to the application.",
+              "assumption_required": true,
+              "assumptions": [
+                "A registered user account with a valid email address and password exists in the system."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Successful login with valid email address and password",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "allow a registered user to log in with a valid email address and password"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Successful login with valid email address and password",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that a registered user can authenticate using valid credentials",
+              "source_basis": [
+                "allow a registered user to log in with a valid email address and password"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_002",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display error message on invalid login credentials",
+              "objective": "Verify that the system displays an error message when login credentials are invalid.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to log in with invalid credentials.",
+                  "expected_result": "System displays an error message indicating the credentials are invalid."
+                }
+              ],
+              "expected_result": "System displays an error message indicating the credentials are invalid.",
+              "assumption_required": true,
+              "assumptions": [
+                "Login interface is accessible and can accept credential input."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display error message on invalid login credentials",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "display an error message when login credentials are invalid"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display error message on invalid login credentials",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify that the system shows the required error message when a user provides invalid login credentials",
+              "source_basis": [
+                "display an error message when login credentials are invalid"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_003",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Request password reset link for a registered email address",
+              "objective": "Verify that a user can request a password reset link using a registered email address.",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "A registered email address exists in the system."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit a password reset request using the registered email address.",
+                  "expected_result": "The system processes the request and sends a password reset link to the email address."
+                }
+              ],
+              "expected_result": "Password reset link is sent to the registered email address.",
+              "assumption_required": true,
+              "assumptions": [
+                "The email delivery mechanism is operational and can deliver the reset link to the registered email address."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User can request a password reset link using a registered email address",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "request a password reset link for a registered email address"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User can request a password reset link using a registered email address",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system provides the reset link functionality for a valid registered email address",
+              "source_basis": [
+                "request a password reset link for a registered email address"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "planner",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call rate-limited: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Generator LLM call rate-limited: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "OTP entry is prompted and required after valid login credentials are submitted.",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Ensures the system enforces OTP as specified.",
+              "source_basis": [
+                "require a user to enter a one-time code after submitting valid login credentials"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 2,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_006",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Prevent non‑admin user from opening user management page",
+              "objective": "Verify that users lacking administrator permission cannot open the user management page.",
+              "test_type": "Negative",
+              "technique_used": "role-based access control verification",
+              "priority": "High",
+              "preconditions": [
+                "A user without administrator permission is available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to open the user management page",
+                  "expected_result": "Access is denied and the page is not opened"
+                }
+              ],
+              "expected_result": "User management page is not accessible to the user without administrator permission.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume a configured user without administrator permission is used for the test."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user without administrator permission cannot open the user management page",
+                "technique_used": "role-based access control verification"
+              },
+              "source_basis": [
+                "prevent users without administrator permission from opening the user management page"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user without administrator permission cannot open the user management page",
+              "test_type": "Negative",
+              "technique_used": "role-based access control verification",
+              "priority": "High",
+              "rationale": "Ensures that unauthorized users are denied access as required",
+              "source_basis": [
+                "prevent users without administrator permission from opening the user management page"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "planner",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_008",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "planner",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User accepts updated terms and accesses dashboard",
+              "objective": "Verify that a user can accept updated terms and then successfully access the dashboard.",
+              "test_type": "Positive",
+              "technique_used": "UI flow verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "User accepts the updated terms.",
+                  "expected_result": "System records acceptance of the updated terms."
+                },
+                {
+                  "step_number": 2,
+                  "action": "User accesses the dashboard.",
+                  "expected_result": "Dashboard is displayed successfully."
+                }
+              ],
+              "expected_result": "Dashboard is displayed successfully after acceptance of updated terms.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume that a mechanism for accepting terms exists and the dashboard is a protected resource."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User accepts updated terms and then accesses the dashboard successfully",
+                "technique_used": "UI flow verification"
+              },
+              "source_basis": [
+                "accept updated terms",
+                "accessing the dashboard"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents a prompt behavior ('prompts the user to accept the updated terms') that is not specified in the requirement."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User accepts updated terms and then accesses the dashboard successfully",
+              "test_type": "Positive",
+              "technique_used": "UI flow verification",
+              "priority": "High",
+              "rationale": "Verifies that the system allows dashboard access after the required acceptance of updated terms.",
+              "source_basis": [
+                "accept updated terms",
+                "accessing the dashboard"
+              ]
+            },
+            {
+              "coverage_item": "User attempts to access the dashboard without accepting updated terms",
+              "test_type": "Negative",
+              "technique_used": "Access control validation",
+              "priority": "High",
+              "rationale": "Ensures the system blocks dashboard access when the acceptance prerequisite has not been met.",
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "planner",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  }
+]

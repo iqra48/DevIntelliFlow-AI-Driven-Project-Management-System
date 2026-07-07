@@ -1,0 +1,359 @@
+[
+  {
+    "eval_id": "EVAL_VAGUE_001",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be easy to use.",
+          "requirement_type": "NFR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be easy to use.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "planner",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_002",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall handle errors properly.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "The requirement does not specify which error conditions need to be handled.",
+            "The requirement does not define the expected behavior for error handling (e.g., user notification, logging, recovery actions)."
+          ],
+          "reason": "The requirement does not specify which error conditions need to be handled."
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall handle errors properly.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "The requirement does not specify which error conditions need to be handled.",
+            "The requirement does not define the expected behavior for error handling (e.g., user notification, logging, recovery actions)."
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 18.46900000000005,
+        "provider_wait_by_stage": {
+          "planner": 18.46900000000005
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 18.46900000000005
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_003",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Performance metric (e.g., response time threshold) not defined"
+          ],
+          "reason": "Performance metric (e.g., response time threshold) not defined"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Performance metric (e.g., response time threshold) not defined"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2228,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 17.90599999999995,
+        "provider_wait_by_stage": {
+          "planner": 17.90599999999995
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 17.90599999999995
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_004",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "The requirement does not specify which user data fields are to be managed.",
+            "The requirement does not define what \"manage\" entails (e.g., create, read, update, delete, archive).",
+            "The requirement does not specify any constraints, rules, or compliance criteria for appropriate handling."
+          ],
+          "reason": "The requirement does not specify which user data fields are to be managed."
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "The requirement does not specify which user data fields are to be managed.",
+            "The requirement does not define what \"manage\" entails (e.g., create, read, update, delete, archive).",
+            "The requirement does not specify any constraints, rules, or compliance criteria for appropriate handling."
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 17.78099999999995,
+        "provider_wait_by_stage": {
+          "planner": 17.78099999999995
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 17.78099999999995
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_005",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Report types, content, format, and criteria for usefulness are not defined",
+            "Delivery mechanism, user roles, and access permissions for reports are not specified"
+          ],
+          "reason": "Report types, content, format, and criteria for usefulness are not defined"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Report types, content, format, and criteria for usefulness are not defined",
+            "Delivery mechanism, user roles, and access permissions for reports are not specified"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 16.75,
+        "provider_wait_by_stage": {
+          "planner": 16.75
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 16.75
+        }
+      }
+    }
+  }
+]

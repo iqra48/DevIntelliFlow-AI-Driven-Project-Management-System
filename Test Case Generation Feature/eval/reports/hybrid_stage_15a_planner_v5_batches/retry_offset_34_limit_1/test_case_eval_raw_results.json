@@ -1,0 +1,117 @@
+[
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify keyboard navigation across primary form fields",
+              "objective": "Confirm that keyboard navigation moves focus sequentially through all primary form fields as defined in the UI.",
+              "test_type": "Usability",
+              "technique_used": "Tab key traversal across form fields",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising keyboard navigation are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Press the Tab key to move focus from the first primary form field to the next, repeating until the last primary form field is reached.",
+                  "expected_result": "Focus moves sequentially to each primary form field in the order defined by the UI."
+                }
+              ],
+              "expected_result": "Keyboard navigation moves focus sequentially through all primary form fields.",
+              "assumption_required": true,
+              "assumptions": [
+                "Primary form fields are defined in the UI and are focusable."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that keyboard navigation (e.g., Tab key) moves focus sequentially through all primary form fields as defined in the UI.",
+                "technique_used": "Tab key traversal across form fields"
+              },
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that keyboard navigation (e.g., Tab key) moves focus sequentially through all primary form fields as defined in the UI.",
+              "test_type": "Usability",
+              "technique_used": "Tab key traversal across form fields",
+              "priority": "High",
+              "rationale": "Ensures the system meets the usability NFR for keyboard accessibility.",
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498190, Requested 2691. Please try again in 2m32.2368s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 86.3279999999977,
+        "provider_wait_by_stage": {
+          "generator": 43.03099999999904,
+          "reviewer": 43.29699999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 86.3279999999977
+        }
+      }
+    }
+  }
+]

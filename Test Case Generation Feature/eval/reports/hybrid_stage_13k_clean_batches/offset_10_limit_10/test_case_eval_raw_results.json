@@ -1,0 +1,831 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_001",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+          ],
+          "reason": "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_002",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2398,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_003",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+          ],
+          "reason": "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+          ],
+          "reason": "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_005",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+          ],
+          "reason": "Planner failed during test case generation: LLM failed after 0 retries: LLM call exceeded timeout"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_006",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: LLM call exceeded timeout"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: LLM call exceeded timeout"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Error displayed for blank approval comment",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify that the system enforces the required comment rule by showing an error when the comment field is left empty",
+              "source_basis": [
+                "display an error when a required approval comment is left blank"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 23.718000000000757,
+        "provider_wait_by_stage": {
+          "planner": 23.718000000000757
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 23.718000000000757
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Invalid planner output: coverage item must be a dict"
+          ],
+          "reason": "Invalid planner output: coverage item must be a dict"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Invalid planner output: coverage item must be a dict"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_008",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: LLM call exceeded timeout"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: LLM call exceeded timeout"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that saving a new employee with a unique ID succeeds",
+              "test_type": "Positive",
+              "technique_used": "Manual data entry of a unique employee ID",
+              "priority": "High",
+              "rationale": "Ensures the system allows valid, non-duplicate employee IDs to be saved, confirming normal operation.",
+              "source_basis": [
+                "prevent duplicate employee IDs"
+              ]
+            },
+            {
+              "coverage_item": "Verify that attempting to save an employee with an existing ID is rejected",
+              "test_type": "Negative",
+              "technique_used": "Manual data entry of a duplicate employee ID",
+              "priority": "High",
+              "rationale": "Validates that the system enforces the duplicate‑ID prevention rule by blocking the save operation for duplicate IDs.",
+              "source_basis": [
+                "prevent duplicate employee IDs from being saved"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2240,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 21.20300000000134,
+        "provider_wait_by_stage": {
+          "planner": 21.20300000000134
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 21.20300000000134
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Upload a valid JPG profile image",
+              "objective": "Verify that a valid JPG profile image is uploaded successfully.",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a JPG profile image",
+                  "expected_result": "The uploaded image is validated as a JPG file."
+                }
+              ],
+              "expected_result": "The uploaded image is validated as a JPG file.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to validate file types."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload a valid JPG profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Upload a valid PNG profile image",
+              "objective": "Verify that a valid PNG profile image is uploaded successfully.",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a PNG profile image",
+                  "expected_result": "The uploaded image is validated as a PNG file."
+                }
+              ],
+              "expected_result": "The uploaded image is validated as a PNG file.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to validate file types."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload a valid PNG profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "Upload an invalid BMP profile image",
+              "objective": "Verify that an invalid BMP profile image is rejected.",
+              "test_type": "Negative",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a BMP profile image",
+                  "expected_result": "The uploaded image is rejected due to invalid file type."
+                }
+              ],
+              "expected_result": "The uploaded image is rejected due to invalid file type.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to reject invalid file types."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload an invalid BMP profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Upload a valid JPG profile image",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system accepts a JPG image as a valid profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "Upload a valid PNG profile image",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system accepts a PNG image as a valid profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "Upload an invalid BMP profile image",
+              "test_type": "Negative",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system rejects a non‑JPG/PNG image (e.g., BMP) as a profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 22.436999999999898,
+        "provider_wait_by_stage": {
+          "reviewer": 22.436999999999898
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 22.436999999999898
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner failed during test case generation: LLM failed after 0 retries: All connection attempts failed"
+          ],
+          "reason": "Planner failed during test case generation: LLM failed after 0 retries: All connection attempts failed"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  }
+]

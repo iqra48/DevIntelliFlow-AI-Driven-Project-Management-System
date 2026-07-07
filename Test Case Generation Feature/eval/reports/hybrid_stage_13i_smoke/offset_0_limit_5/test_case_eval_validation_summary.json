@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "item_count": 45,
+  "errors": [],
+  "category_counts": {
+    "simple_fr": 10,
+    "validation_rule_fr": 10,
+    "login_security_fr": 10,
+    "nfr": 10,
+    "vague_blocked": 5
+  }
+}

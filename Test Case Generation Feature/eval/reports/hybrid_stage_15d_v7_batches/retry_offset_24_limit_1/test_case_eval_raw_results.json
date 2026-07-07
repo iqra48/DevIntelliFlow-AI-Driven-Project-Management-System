@@ -1,0 +1,121 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "One-time code entry required after valid login credentials",
+              "objective": "Verify that the system enforces one-time code entry after valid login credentials are submitted",
+              "test_type": "Negative",
+              "technique_used": "Manual",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit valid login credentials",
+                  "expected_result": "The system should not progress without one-time code entry"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Attempt to proceed without entering one-time code",
+                  "expected_result": "The system should prevent progression"
+                }
+              ],
+              "expected_result": "The system enforces one-time code entry",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for one-time code is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System enforces one-time code entry by preventing progression when the code is omitted after valid login credentials are submitted",
+                "technique_used": "Manual"
+              },
+              "source_basis": [
+                "require a user to enter a one-time code after submitting valid login credentials"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System enforces one-time code entry by preventing progression when the code is omitted after valid login credentials are submitted",
+              "test_type": "Negative",
+              "technique_used": "Manual",
+              "priority": "High",
+              "rationale": "Verifies that the one-time code requirement is enforced as specified",
+              "source_basis": [
+                "require a user to enter a one-time code after submitting valid login credentials"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.59399999999732,
+        "provider_wait_by_stage": {
+          "reviewer": 41.59399999999732
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.59399999999732
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,979 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_001",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject email address lacking '@' character",
+              "objective": "Verify that the system rejects a customer email address that does not contain an '@' character.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Provide an email address that lacks the '@' character as input to the system.",
+                  "expected_result": "The system rejects the input and returns a validation error indicating the email format is invalid."
+                }
+              ],
+              "expected_result": "The system rejects the input and returns a validation error indicating the email format is invalid.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume that the system validates email format according to the requirement."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Reject email address lacking '@' character",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "reject a customer email address that does not contain an at sign"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Reject email address lacking '@' character",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Ensures system correctly identifies and rejects invalid email format as specified.",
+              "source_basis": [
+                "reject a customer email address that does not contain an at sign"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_002",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2398,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_003",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Prevent submission of expense claim with negative amount",
+              "objective": "Verify that the system blocks the submission of an expense claim when the amount entered is negative.",
+              "test_type": "Negative",
+              "technique_used": "Input validation test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to submit an expense claim with a negative amount.",
+                  "expected_result": "The system rejects the submission and prevents the claim from being recorded."
+                }
+              ],
+              "expected_result": "The system rejects the submission and prevents the claim from being recorded.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume an expense claim entry mechanism exists that allows entering an amount."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System prevents submission of expense claim with a negative amount",
+                "technique_used": "Input validation test"
+              },
+              "source_basis": [
+                "prevent a user from submitting an expense claim with a negative amount"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System prevents submission of expense claim with a negative amount",
+              "test_type": "Negative",
+              "technique_used": "Input validation test",
+              "priority": "High",
+              "rationale": "Validate that the system enforces the rule against negative amounts",
+              "source_basis": [
+                "prevent a user from submitting an expense claim with a negative amount"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Planner rate-limited during test case generation: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "planner",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_005",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject product quantity exceeding available stock",
+              "objective": "Verify that the system rejects a product quantity greater than the available stock count.",
+              "test_type": "Negative",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to add a product quantity that exceeds the available stock count.",
+                  "expected_result": "The system rejects the request and does not allow the quantity to be added."
+                }
+              ],
+              "expected_result": "The system rejects the request and does not allow the quantity to be added.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume a product exists with a defined stock count, and the test uses a quantity greater than that count."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Reject product quantity greater than available stock count",
+                "technique_used": "Equivalence Partitioning"
+              },
+              "source_basis": [
+                "reject a product quantity greater than the available stock count"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Reject product quantity greater than available stock count",
+              "test_type": "Negative",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "rationale": "Verify that the system correctly rejects orders where the requested quantity exceeds stock.",
+              "source_basis": [
+                "reject a product quantity greater than the available stock count"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_006",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify error is displayed for blank approval comment",
+              "objective": "Confirm that the system displays an error when the required approval comment is left blank.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Provide a blank approval comment and attempt to submit the approval.",
+                  "expected_result": "The system displays an error indicating that the approval comment is required."
+                }
+              ],
+              "expected_result": "The system displays an error indicating that the approval comment is required.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume the approval process includes a comment field that can be left blank."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Error displayed for blank approval comment",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "display an error when a required approval comment is left blank"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Error displayed for blank approval comment",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify that the system enforces the required comment rule by showing an error when the comment field is left empty",
+              "source_basis": [
+                "display an error when a required approval comment is left blank"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Invalid planner output: coverage item must be a dict"
+          ],
+          "reason": "Invalid planner output: coverage item must be a dict"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Invalid planner output: coverage item must be a dict"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 1,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_008",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call rate-limited: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Generator LLM call rate-limited: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that saving a new employee with a unique ID succeeds",
+              "test_type": "Positive",
+              "technique_used": "Manual data entry of a unique employee ID",
+              "priority": "High",
+              "rationale": "Ensures the system allows valid, non-duplicate employee IDs to be saved, confirming normal operation.",
+              "source_basis": [
+                "prevent duplicate employee IDs"
+              ]
+            },
+            {
+              "coverage_item": "Verify that attempting to save an employee with an existing ID is rejected",
+              "test_type": "Negative",
+              "technique_used": "Manual data entry of a duplicate employee ID",
+              "priority": "High",
+              "rationale": "Validates that the system enforces the duplicate‑ID prevention rule by blocking the save operation for duplicate IDs.",
+              "source_basis": [
+                "prevent duplicate employee IDs from being saved"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2240,
+        "calls_used": 2,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Upload a valid JPG profile image",
+              "objective": "Confirm that a JPG profile image is accepted according to the requirement.",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Provide a profile image file of type JPG and submit it to the system.",
+                  "expected_result": "The system accepts the image and processes it successfully."
+                }
+              ],
+              "expected_result": "The system accepts the JPG profile image.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume the system is configured to accept profile image uploads."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload a valid JPG profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Upload a valid PNG profile image",
+              "objective": "Confirm that a PNG profile image is accepted according to the requirement.",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Provide a profile image file of type PNG and submit it to the system.",
+                  "expected_result": "The system accepts the image and processes it successfully."
+                }
+              ],
+              "expected_result": "The system accepts the PNG profile image.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume the system is configured to accept profile image uploads."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload a valid PNG profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "Upload an invalid BMP profile image",
+              "objective": "Confirm that a BMP profile image is rejected according to the requirement.",
+              "test_type": "Negative",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Provide a profile image file of type BMP and submit it to the system.",
+                  "expected_result": "The system rejects the image and returns a validation error indicating unsupported file type."
+                }
+              ],
+              "expected_result": "The system rejects the BMP profile image with a validation error.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume the system is configured to accept profile image uploads."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload an invalid BMP profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Upload a valid JPG profile image",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system accepts a JPG image as a valid profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "Upload a valid PNG profile image",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system accepts a PNG image as a valid profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "Upload an invalid BMP profile image",
+              "test_type": "Negative",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system rejects a non‑JPG/PNG image (e.g., BMP) as a profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call rate-limited: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+          ],
+          "reason": "Generator LLM call rate-limited: LLM failed after 0 retries: Client error '429 Too Many Requests' for url 'https://api.cerebras.ai/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Cancel approved booking providing a cancellation reason",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system accepts cancellation when a reason is supplied as required.",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            },
+            {
+              "coverage_item": "Attempt to cancel approved booking without providing a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system prevents cancellation when no reason is supplied, enforcing the requirement.",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 2,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit logs retention for at least seven years",
+              "objective": "Validate that audit logs are retained and accessible for a period of at least seven years.",
+              "test_type": "Positive",
+              "technique_used": "Log inspection and date-based query",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that audit logs are retained and accessible for a period of at least seven years.",
+                  "expected_result": "Audit logs are retained and accessible for a period of at least seven years."
+                }
+              ],
+              "expected_result": "Audit logs are retained and accessible for a period of at least seven years.",
+              "assumption_required": true,
+              "assumptions": [
+                "Method for accessing historical audit logs and simulating dates beyond seven years is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that audit logs are retained and accessible for a period of at least seven years.",
+                "technique_used": "Log inspection and date-based query"
+              },
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Method for accessing historical audit logs and simulating dates beyond seven years"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Method for accessing historical audit logs and simulating dates beyond seven years"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that audit logs are retained and accessible for a period of at least seven years.",
+              "test_type": "Positive",
+              "technique_used": "Log inspection and date-based query",
+              "priority": "High",
+              "rationale": "Ensures compliance with retention requirement",
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  }
+]

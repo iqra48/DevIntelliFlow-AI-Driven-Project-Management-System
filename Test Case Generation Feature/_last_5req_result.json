@@ -1,0 +1,279 @@
+﻿{
+    "status":  "BLOCKED_MISSING_INFORMATION",
+    "results":  [
+                    {
+                        "requirement_id":  "REQ_1",
+                        "requirement_text":  "The system shall allow users to register an account.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Planner output could not be parsed. Retry generation."
+                                     ],
+                        "reason":  "Planner output could not be parsed. Retry generation."
+                    },
+                    {
+                        "requirement_id":  "REQ_2",
+                        "requirement_text":  "The system shall allow users to log in using email and password.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Planner output could not be parsed. Retry generation."
+                                     ],
+                        "reason":  "Planner output could not be parsed. Retry generation."
+                    },
+                    {
+                        "requirement_id":  "REQ_3",
+                        "requirement_text":  "The system shall allow users to reset their password.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Planner output could not be parsed. Retry generation."
+                                     ],
+                        "reason":  "Planner output could not be parsed. Retry generation."
+                    },
+                    {
+                        "requirement_id":  "REQ_4",
+                        "requirement_text":  "The system shall allow users to update their profile information.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Planner output could not be parsed. Retry generation."
+                                     ],
+                        "reason":  "Planner output could not be parsed. Retry generation."
+                    },
+                    {
+                        "requirement_id":  "REQ_5",
+                        "requirement_text":  "The system shall allow users to log out of the application.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Planner output could not be parsed. Retry generation."
+                                     ],
+                        "reason":  "Planner output could not be parsed. Retry generation."
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "REQ_1",
+                      "requirement_text":  "The system shall allow users to register an account.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Planner output could not be parsed. Retry generation."
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\"plans\":{\"1\":{\"requirement_id\":\"REQ_1\",\"requirement_text\":\"The system shall allow users to register an account.\",\"requirement_type\":\"FR\",\"testable\":true,\"safe_to_generate\":true,\"risk_ref\":\"RISK_MEDIUM\",\"risk_level\":\"Medium\",\"ambiguity_ref\":\"AMBIGUITY_LOW\",\"ambiguity_level\":\"Low\",\"blocking_missing_information\":[],\"missing_information\":[],\"coverage_items\":[{\"coverage_item\":\"users can register an account with valid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_POSITIVE\",\"test_type\":\"Positive\",\"technique_ref\":\"TECH_FUNCTIONAL\",\"technique_used\":\"Functional verification\",\"priority_ref\":\"PRIORITY_HIGH\",\"priority\":\"High\",\"rationale\":\"Verifies successful use of the registration capability.\"},{\"coverage_item\":\"registration is rejected with invalid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_NEGATIVE\",\"test_type\":\"Negative\",\"technique_ref\":\"TECH_INPUT_VALIDATION\",\"technique_used\":\"Input validation\",\"priority_ref\":\"PRIORITY_H"
+                  },
+                  {
+                      "requirement_id":  "REQ_2",
+                      "requirement_text":  "The system shall allow users to log in using email and password.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Planner output could not be parsed. Retry generation."
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\"plans\":{\"1\":{\"requirement_id\":\"REQ_1\",\"requirement_text\":\"The system shall allow users to register an account.\",\"requirement_type\":\"FR\",\"testable\":true,\"safe_to_generate\":true,\"risk_ref\":\"RISK_MEDIUM\",\"risk_level\":\"Medium\",\"ambiguity_ref\":\"AMBIGUITY_LOW\",\"ambiguity_level\":\"Low\",\"blocking_missing_information\":[],\"missing_information\":[],\"coverage_items\":[{\"coverage_item\":\"users can register an account with valid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_POSITIVE\",\"test_type\":\"Positive\",\"technique_ref\":\"TECH_FUNCTIONAL\",\"technique_used\":\"Functional verification\",\"priority_ref\":\"PRIORITY_HIGH\",\"priority\":\"High\",\"rationale\":\"Verifies successful use of the registration capability.\"},{\"coverage_item\":\"registration is rejected with invalid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_NEGATIVE\",\"test_type\":\"Negative\",\"technique_ref\":\"TECH_INPUT_VALIDATION\",\"technique_used\":\"Input validation\",\"priority_ref\":\"PRIORITY_H"
+                  },
+                  {
+                      "requirement_id":  "REQ_3",
+                      "requirement_text":  "The system shall allow users to reset their password.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Planner output could not be parsed. Retry generation."
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\"plans\":{\"1\":{\"requirement_id\":\"REQ_1\",\"requirement_text\":\"The system shall allow users to register an account.\",\"requirement_type\":\"FR\",\"testable\":true,\"safe_to_generate\":true,\"risk_ref\":\"RISK_MEDIUM\",\"risk_level\":\"Medium\",\"ambiguity_ref\":\"AMBIGUITY_LOW\",\"ambiguity_level\":\"Low\",\"blocking_missing_information\":[],\"missing_information\":[],\"coverage_items\":[{\"coverage_item\":\"users can register an account with valid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_POSITIVE\",\"test_type\":\"Positive\",\"technique_ref\":\"TECH_FUNCTIONAL\",\"technique_used\":\"Functional verification\",\"priority_ref\":\"PRIORITY_HIGH\",\"priority\":\"High\",\"rationale\":\"Verifies successful use of the registration capability.\"},{\"coverage_item\":\"registration is rejected with invalid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_NEGATIVE\",\"test_type\":\"Negative\",\"technique_ref\":\"TECH_INPUT_VALIDATION\",\"technique_used\":\"Input validation\",\"priority_ref\":\"PRIORITY_H"
+                  },
+                  {
+                      "requirement_id":  "REQ_4",
+                      "requirement_text":  "The system shall allow users to update their profile information.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Planner output could not be parsed. Retry generation."
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\"plans\":{\"1\":{\"requirement_id\":\"REQ_1\",\"requirement_text\":\"The system shall allow users to register an account.\",\"requirement_type\":\"FR\",\"testable\":true,\"safe_to_generate\":true,\"risk_ref\":\"RISK_MEDIUM\",\"risk_level\":\"Medium\",\"ambiguity_ref\":\"AMBIGUITY_LOW\",\"ambiguity_level\":\"Low\",\"blocking_missing_information\":[],\"missing_information\":[],\"coverage_items\":[{\"coverage_item\":\"users can register an account with valid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_POSITIVE\",\"test_type\":\"Positive\",\"technique_ref\":\"TECH_FUNCTIONAL\",\"technique_used\":\"Functional verification\",\"priority_ref\":\"PRIORITY_HIGH\",\"priority\":\"High\",\"rationale\":\"Verifies successful use of the registration capability.\"},{\"coverage_item\":\"registration is rejected with invalid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_NEGATIVE\",\"test_type\":\"Negative\",\"technique_ref\":\"TECH_INPUT_VALIDATION\",\"technique_used\":\"Input validation\",\"priority_ref\":\"PRIORITY_H"
+                  },
+                  {
+                      "requirement_id":  "REQ_5",
+                      "requirement_text":  "The system shall allow users to log out of the application.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Planner output could not be parsed. Retry generation."
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\"plans\":{\"1\":{\"requirement_id\":\"REQ_1\",\"requirement_text\":\"The system shall allow users to register an account.\",\"requirement_type\":\"FR\",\"testable\":true,\"safe_to_generate\":true,\"risk_ref\":\"RISK_MEDIUM\",\"risk_level\":\"Medium\",\"ambiguity_ref\":\"AMBIGUITY_LOW\",\"ambiguity_level\":\"Low\",\"blocking_missing_information\":[],\"missing_information\":[],\"coverage_items\":[{\"coverage_item\":\"users can register an account with valid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_POSITIVE\",\"test_type\":\"Positive\",\"technique_ref\":\"TECH_FUNCTIONAL\",\"technique_used\":\"Functional verification\",\"priority_ref\":\"PRIORITY_HIGH\",\"priority\":\"High\",\"rationale\":\"Verifies successful use of the registration capability.\"},{\"coverage_item\":\"registration is rejected with invalid input\",\"source_basis\":[\"allow users to register an account\"],\"test_type_ref\":\"TT_NEGATIVE\",\"test_type\":\"Negative\",\"technique_ref\":\"TECH_INPUT_VALIDATION\",\"technique_used\":\"Input validation\",\"priority_ref\":\"PRIORITY_H"
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  4,
+                   "estimated_tokens":  9600,
+                   "calls_used":  1,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  false,
+                   "fallback_provider":  null,
+                   "fallback_reason":  null,
+                   "rate_limit_stage":  null,
+                   "rate_limit_type":  null,
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  0.0,
+                   "provider_wait_by_stage":  {
+
+                                              },
+                   "provider_wait_by_provider":  {
+
+                                                 }
+               }
+}

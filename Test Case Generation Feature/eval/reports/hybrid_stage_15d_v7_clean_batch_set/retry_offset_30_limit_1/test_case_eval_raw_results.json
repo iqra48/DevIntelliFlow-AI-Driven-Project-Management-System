@@ -1,0 +1,126 @@
+[
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify project dashboard load time",
+              "objective": "Measure the project dashboard load time to ensure it meets the performance requirement.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with response time measurement",
+              "priority": "High",
+              "preconditions": [
+                "Configured measurement approach is available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the project dashboard loads within three seconds for at least 95 percent of requests under representative load."
+                }
+              ],
+              "expected_result": "The project dashboard loads within three seconds for at least 95 percent of requests under representative load.",
+              "assumption_required": true,
+              "assumptions": [
+                "Representative load profile not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95 percent of requests under representative load.",
+                "technique_used": "Load testing with response time measurement"
+              },
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurement tool not specified",
+            "Representative load profile not specified"
+          ],
+          "assumptions": [
+            "Configured measurement approach is available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurement tool not specified",
+            "Representative load profile not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95 percent of requests under representative load.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with response time measurement",
+              "priority": "High",
+              "rationale": "Ensures compliance with the performance NFR.",
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured measurement approach is available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.10899999999674,
+        "provider_wait_by_stage": {
+          "reviewer": 41.10899999999674
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.10899999999674
+        }
+      }
+    }
+  }
+]

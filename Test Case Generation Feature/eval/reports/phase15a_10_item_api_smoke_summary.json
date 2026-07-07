@@ -1,0 +1,92 @@
+[
+    {
+        "id":  "SMOKE15A_001",
+        "status":  "SUCCESS",
+        "test_case_count":  1,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  null,
+        "titles":  "User can log in successfully"
+    },
+    {
+        "id":  "SMOKE15A_002",
+        "status":  "SUCCESS",
+        "test_case_count":  1,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  null,
+        "titles":  "User can reset password via configured recovery method"
+    },
+    {
+        "id":  "SMOKE15A_003",
+        "status":  "SUCCESS",
+        "test_case_count":  1,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  null,
+        "titles":  "System generates monthly sales report"
+    },
+    {
+        "id":  "SMOKE15A_004",
+        "status":  "SUCCESS",
+        "test_case_count":  1,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  null,
+        "titles":  "Checkout is blocked when cart is empty"
+    },
+    {
+        "id":  "SMOKE15A_005",
+        "status":  "SUCCESS",
+        "test_case_count":  1,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  null,
+        "titles":  "User can upload a profile picture"
+    },
+    {
+        "id":  "SMOKE15A_006",
+        "status":  "BLOCKED_MISSING_INFORMATION",
+        "test_case_count":  0,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  "Malformed planner response",
+        "titles":  ""
+    },
+    {
+        "id":  "SMOKE15A_007",
+        "status":  "BLOCKED_MISSING_INFORMATION",
+        "test_case_count":  0,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  "Malformed planner response",
+        "titles":  ""
+    },
+    {
+        "id":  "SMOKE15A_008",
+        "status":  "BLOCKED_MISSING_INFORMATION",
+        "test_case_count":  0,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  "Malformed planner response",
+        "titles":  ""
+    },
+    {
+        "id":  "SMOKE15A_009",
+        "status":  "BLOCKED_MISSING_INFORMATION",
+        "test_case_count":  0,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  "Malformed planner response",
+        "titles":  ""
+    },
+    {
+        "id":  "SMOKE15A_010",
+        "status":  "BLOCKED_MISSING_INFORMATION",
+        "test_case_count":  0,
+        "forbidden_fr_hits":  "",
+        "forbidden_nfr_hits":  "",
+        "reason":  "Malformed planner response",
+        "titles":  ""
+    }
+]

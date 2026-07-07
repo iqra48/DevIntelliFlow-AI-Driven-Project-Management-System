@@ -1,0 +1,244 @@
+{
+    "status":  "BLOCKED_MISSING_INFORMATION",
+    "results":  [
+                    {
+                        "requirement_id":  "SMOKE15A_006",
+                        "requirement_text":  "Profile picture upload shall complete within 5 seconds.",
+                        "requirement_type":  "NFR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_007",
+                        "requirement_text":  "The system shall respond to dashboard requests within 2 seconds.",
+                        "requirement_type":  "NFR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_008",
+                        "requirement_text":  "The application shall be easy to use.",
+                        "requirement_type":  "NFR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_009",
+                        "requirement_text":  "The system shall send an email notification when an order is shipped.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_010",
+                        "requirement_text":  "Managers can approve or reject leave requests.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "SMOKE15A_006",
+                      "requirement_text":  "Profile picture upload shall complete within 5 seconds.",
+                      "requirement_type":  "NFR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_007",
+                      "requirement_text":  "The system shall respond to dashboard requests within 2 seconds.",
+                      "requirement_type":  "NFR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_008",
+                      "requirement_text":  "The application shall be easy to use.",
+                      "requirement_type":  "NFR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_009",
+                      "requirement_text":  "The system shall send an email notification when an order is shipped.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_010",
+                      "requirement_text":  "Managers can approve or reject leave requests.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ]
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  3,
+                   "estimated_tokens":  3764,
+                   "calls_used":  1,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  false,
+                   "fallback_provider":  null,
+                   "fallback_reason":  null,
+                   "rate_limit_stage":  null,
+                   "rate_limit_type":  null,
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  42.46899999999914,
+                   "provider_wait_by_stage":  {
+                                                  "planner":  42.46899999999914
+                                              },
+                   "provider_wait_by_provider":  {
+                                                     "cerebras":  42.46899999999914
+                                                 }
+               }
+}

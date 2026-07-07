@@ -1,0 +1,880 @@
+[
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify project dashboard load time under typical load conditions",
+              "objective": "Verify that the project dashboard loads within three seconds for at least 95% of requests under typical load conditions.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with timing measurement",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Measure the time taken to load the project dashboard under typical load conditions",
+                  "expected_result": "The project dashboard loads within three seconds for at least 95% of requests"
+                }
+              ],
+              "expected_result": "The project dashboard loads within three seconds for at least 95% of requests",
+              "assumption_required": true,
+              "assumptions": [
+                "Test environment specifications are available",
+                "Load profile definition is available",
+                "Measurement tool or method is available"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95% of requests under typical load conditions.",
+                "technique_used": "Load testing with timing measurement"
+              },
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Test environment specifications",
+            "Load profile definition",
+            "Measurement tool or method"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Test environment specifications",
+            "Load profile definition",
+            "Measurement tool or method"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95% of requests under typical load conditions.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with timing measurement",
+              "priority": "High",
+              "rationale": "Ensures performance NFR is met.",
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.21899999999914,
+        "provider_wait_by_stage": {
+          "reviewer": 42.21899999999914
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.21899999999914
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [
+            "Definition of what constitutes an error during report viewing."
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case invents a definition of what constitutes an error during report viewing, which is not specified in the requirement, project context, planner coverage, or source basis.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Definition of what constitutes an error during report viewing."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify the system can support 500 concurrent users viewing reports simultaneously without errors.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with simulated concurrent users",
+              "priority": "High",
+              "rationale": "Ensures the performance NFR is met under expected load.",
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499483, Requested 2216. Please try again in 4m53.5872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 129.65599999999904,
+        "provider_wait_by_stage": {
+          "planner": 43.48500000000058,
+          "generator": 42.88999999999942,
+          "reviewer": 43.28099999999904
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 129.65599999999904
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [
+            "encryption algorithm details",
+            "key management approach",
+            "compliance standards or certifications"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "encryption algorithm details",
+            "key management approach",
+            "compliance standards or certifications"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that customer data stored in the production database is encrypted",
+              "test_type": "Security",
+              "technique_used": "Database inspection and decryption attempt",
+              "priority": "High",
+              "rationale": "Ensures the system meets the encryption-at-rest requirement",
+              "source_basis": [
+                "encrypt customer data while it is stored"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 43.42200000000048,
+        "provider_wait_by_stage": {
+          "planner": 43.42200000000048
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 43.42200000000048
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [
+            "measurement approach not specified",
+            "data source for availability not specified"
+          ],
+          "assumptions": [
+            "Availability is calculated as (total uptime ÷ total time) for the reporting module over the month"
+          ],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "measurement approach not specified",
+            "data source for availability not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the reporting module achieves at least 99.5% availability over a calendar month",
+              "test_type": "Reliability",
+              "technique_used": "Continuous monitoring of uptime/downtime during the month",
+              "priority": "High",
+              "rationale": "Confirms compliance with the stated availability target",
+              "source_basis": [
+                "99.5 percent monthly availability"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Availability is calculated as (total uptime ÷ total time) for the reporting module over the month"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 43.0619999999999,
+        "provider_wait_by_stage": {
+          "planner": 43.0619999999999
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 43.0619999999999
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [
+            "Definition of \"primary form fields\" is not specified."
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Medium",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Definition of \"primary form fields\" is not specified."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that users can move focus between each primary form field using keyboard navigation (e.g., Tab and Shift+Tab).",
+              "test_type": "Usability",
+              "technique_used": "Manual exploratory testing using keyboard only",
+              "priority": "High",
+              "rationale": "Ensures the NFR of keyboard accessibility is met for the key input elements.",
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.89099999999962,
+        "provider_wait_by_stage": {
+          "planner": 42.89099999999962
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.89099999999962
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [
+            "Method for accessing historical audit logs and simulating dates beyond seven years"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Method for accessing historical audit logs and simulating dates beyond seven years"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that audit logs are retained and accessible for a period of at least seven years.",
+              "test_type": "Positive",
+              "technique_used": "Log inspection and date-based query",
+              "priority": "High",
+              "rationale": "Ensures compliance with retention requirement",
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 43.14099999999962,
+        "provider_wait_by_stage": {
+          "planner": 43.14099999999962
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 43.14099999999962
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [
+            "method to initiate database failover",
+            "definition of \"normal service\" criteria",
+            "measurement tools or approach for timing"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq local governor cap exceeded: estimated_tokens=2350 tokens_used=500000 daily_limit=500000"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq local governor cap exceeded: estimated_tokens=2350 tokens_used=500000 daily_limit=500000"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "method to initiate database failover",
+            "definition of \"normal service\" criteria",
+            "measurement tools or approach for timing"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that normal service is restored within fifteen minutes after a database failover",
+              "test_type": "Recovery",
+              "technique_used": "time measurement of service restoration",
+              "priority": "High",
+              "rationale": "Ensures the system meets the recovery time objective specified in the NFR",
+              "source_basis": [
+                "recover normal service within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 43.09399999999914,
+        "provider_wait_by_stage": {
+          "planner": 43.09399999999914
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 43.09399999999914
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_008",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.625,
+        "provider_wait_by_stage": {
+          "planner": 42.625
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.625
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_009",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq local governor cap exceeded: estimated_tokens=2339 tokens_used=500000 daily_limit=500000"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq local governor cap exceeded: estimated_tokens=2339 tokens_used=500000 daily_limit=500000"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that when an application error occurs, a log entry is created containing a timestamp, request ID, and severity level",
+              "test_type": "Positive",
+              "technique_used": "Log inspection via automated script",
+              "priority": "High",
+              "rationale": "Ensures the logging requirement is met and supports troubleshooting",
+              "source_basis": [
+                "record application errors with timestamp, request ID, and severity level"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.89099999999962,
+        "provider_wait_by_stage": {
+          "planner": 42.89099999999962
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.89099999999962
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq local governor cap exceeded: estimated_tokens=2314 tokens_used=500000 daily_limit=500000"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq local governor cap exceeded: estimated_tokens=2314 tokens_used=500000 daily_limit=500000"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time.",
+              "test_type": "Performance",
+              "technique_used": "measure execution time",
+              "priority": "High",
+              "rationale": "Ensures compliance with the time-based NFR",
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.96800000000076,
+        "provider_wait_by_stage": {
+          "planner": 42.96800000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.96800000000076
+        }
+      }
+    }
+  }
+]

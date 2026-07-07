@@ -1,0 +1,5055 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_001",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Create a new customer record with valid name, email, and phone number",
+              "objective": "Verify that a new customer record can be created with valid name, email, and phone number",
+              "test_type": "Positive",
+              "technique_used": "Functional testing of the create operation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the system with valid name, email, and phone number",
+                  "expected_result": "A new customer record is created successfully"
+                }
+              ],
+              "expected_result": "A new customer record is created successfully",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system is configured to allow creation of new customer records"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Create a new customer record with valid name, email, and phone number",
+                "technique_used": "Functional testing of the create operation"
+              },
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Create a new customer record with valid name, email, and phone number",
+              "test_type": "Positive",
+              "technique_used": "Functional testing of the create operation",
+              "priority": "High",
+              "rationale": "Verifies the core functionality described in the requirement",
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2344,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 26.562999999999988,
+        "provider_wait_by_stage": {
+          "reviewer": 26.562999999999988
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 26.562999999999988
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_002",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display only active projects",
+              "objective": "Verify that only active projects are displayed.",
+              "test_type": "Positive",
+              "technique_used": "Automated UI verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that only active projects are displayed.",
+                  "expected_result": "Only active projects are displayed."
+                }
+              ],
+              "expected_result": "Only active projects are displayed.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display only active projects",
+                "technique_used": "Automated UI verification"
+              },
+              "source_basis": [
+                "display a list of active projects"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Projects sorted by most recently updated first",
+              "objective": "Verify that projects are sorted by most recently updated first.",
+              "test_type": "Positive",
+              "technique_used": "Automated UI verification of ordering",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that projects are sorted by most recently updated first.",
+                  "expected_result": "Projects are sorted by most recently updated first."
+                }
+              ],
+              "expected_result": "Projects are sorted by most recently updated first.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Projects sorted by most recently updated first",
+                "technique_used": "Automated UI verification of ordering"
+              },
+              "source_basis": [
+                "sorted by most recently updated first"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display only active projects",
+              "test_type": "Positive",
+              "technique_used": "Automated UI verification",
+              "priority": "High",
+              "rationale": "Verifies that the list excludes inactive projects as required.",
+              "source_basis": [
+                "display a list of active projects"
+              ]
+            },
+            {
+              "coverage_item": "Projects sorted by most recently updated first",
+              "test_type": "Positive",
+              "technique_used": "Automated UI verification of ordering",
+              "priority": "High",
+              "rationale": "Ensures the displayed list respects the required sort order.",
+              "source_basis": [
+                "sorted by most recently updated first"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.124999999999886,
+        "provider_wait_by_stage": {
+          "planner": 26.656999999999925,
+          "reviewer": 26.46799999999996
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.124999999999886
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_003",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Update task status from open to completed",
+              "objective": "Verify that the user can update the status of a task from open to completed.",
+              "test_type": "Positive",
+              "technique_used": "UI interaction",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the task with an open status.",
+                  "expected_result": "The task status is open."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Update the task status to completed.",
+                  "expected_result": "The task status is updated to completed."
+                }
+              ],
+              "expected_result": "The task status is updated to completed.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the task is configured with an open status."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Update task status from open to completed",
+                "technique_used": "UI interaction"
+              },
+              "source_basis": [
+                "update the status of a task from open to completed"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Update task status from open to completed",
+              "test_type": "Positive",
+              "technique_used": "UI interaction",
+              "priority": "High",
+              "rationale": "Verify that a user can successfully change a task's status from open to completed as specified.",
+              "source_basis": [
+                "update the status of a task from open to completed"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.516000000000076,
+        "provider_wait_by_stage": {
+          "planner": 27.71900000000005,
+          "reviewer": 26.797000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.516000000000076
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_004",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test step references a concrete UI element ('search field'), which is not specified in the requirement, project context, or source basis. Introducing a specific UI component constitutes unsupported invention.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Search orders by valid order number returns the correct order",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Verify that the primary functionality of searching by order number works as specified.",
+              "source_basis": [
+                "search orders by order number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.71900000000005,
+        "provider_wait_by_stage": {
+          "planner": 28.125,
+          "reviewer": 26.59400000000005
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.71900000000005
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_005",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [
+            "A manager role exists",
+            "The employee and department records exist in the system"
+          ],
+          "warnings": [
+            "TC_REQ_1_001: The test case introduces unsupported behavior such as logging in as a manager (authentication) and UI actions like selecting an employee and department, which are not specified in the requirement, project context, or planner coverage.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Manager can assign an employee to a department",
+              "test_type": "Positive",
+              "technique_used": "Functional test of assignment operation",
+              "priority": "High",
+              "rationale": "Core functionality required for organizational management",
+              "source_basis": [
+                "allow a manager to assign an employee to a department"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "A manager role exists",
+            "The employee and department records exist in the system"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.39200000000005,
+        "provider_wait_by_stage": {
+          "planner": 27.610000000000014,
+          "reviewer": 26.78200000000004
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.39200000000005
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_006",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall show invoice details including invoice date, amount due, and payment status.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Display invoice details",
+              "objective": "Verify that the system displays invoice details including invoice date, amount due, and payment status.",
+              "test_type": "Positive",
+              "technique_used": "UI verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that the system displays invoice details including invoice date, amount due, and payment status.",
+                  "expected_result": "Invoice details are displayed correctly."
+                }
+              ],
+              "expected_result": "Invoice details are displayed correctly.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display invoice details with invoice date, amount due, and payment status",
+                "technique_used": "UI verification"
+              },
+              "source_basis": [
+                "show invoice details including invoice date, amount due, and payment status"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall show invoice details including invoice date, amount due, and payment status.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display invoice details with invoice date, amount due, and payment status",
+              "test_type": "Positive",
+              "technique_used": "UI verification",
+              "priority": "High",
+              "rationale": "Ensures the core information required by the user is presented correctly on the invoice view screen",
+              "source_basis": [
+                "show invoice details including invoice date, amount due, and payment status"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.89199999999994,
+        "provider_wait_by_stage": {
+          "planner": 27.70399999999995,
+          "reviewer": 27.187999999999988
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.89199999999994
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_007",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case invents concrete UI elements and actions (\"report download page\", \"download link\", navigation and click actions) that are not specified in the requirement, project context, planner coverage, or source basis. These UI specifics constitute unsupported invention.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can successfully download the monthly activity report in PDF format.",
+              "test_type": "Positive",
+              "technique_used": "Manual functional testing",
+              "priority": "High",
+              "rationale": "Ensures the core functionality of report download works as specified.",
+              "source_basis": [
+                "download a monthly activity report as a PDF file"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.6579999999999,
+        "provider_wait_by_stage": {
+          "planner": 27.57899999999995,
+          "reviewer": 27.07899999999995
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.6579999999999
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_008",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall send an in-app notification when a submitted request is approved.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "In-app notification is sent when a submitted request is approved",
+              "objective": "Verify that an in-app notification is sent when a submitted request is approved",
+              "test_type": "Positive",
+              "technique_used": "Functional UI verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit a request and wait for approval",
+                  "expected_result": "An in-app notification is sent to the user"
+                }
+              ],
+              "expected_result": "An in-app notification is sent to the user",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system is configured to send in-app notifications."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "In-app notification is sent when a submitted request is approved",
+                "technique_used": "Functional UI verification"
+              },
+              "source_basis": [
+                "send an in-app notification when a submitted request is approved"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall send an in-app notification when a submitted request is approved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "In-app notification is sent when a submitted request is approved",
+              "test_type": "Positive",
+              "technique_used": "Functional UI verification",
+              "priority": "High",
+              "rationale": "Verify that the system generates the expected in-app notification upon approval of a request",
+              "source_basis": [
+                "send an in-app notification when a submitted request is approved"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.797000000000025,
+        "provider_wait_by_stage": {
+          "planner": 27.5,
+          "reviewer": 27.297000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.797000000000025
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_009",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to archive a completed project.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Archive a completed project",
+              "objective": "Verify that a user can archive a completed project.",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the system to allow archiving of completed projects.",
+                  "expected_result": "The system allows a user to archive a completed project."
+                }
+              ],
+              "expected_result": "The system allows a user to archive a completed project.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system is configured to allow archiving of completed projects."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Archive a completed project",
+                "technique_used": "Functional testing"
+              },
+              "source_basis": [
+                "allow a user to archive a completed project"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to archive a completed project.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Archive a completed project",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Verify that the system enables the user to archive a project that has been marked as completed.",
+              "source_basis": [
+                "allow a user to archive a completed project"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 55.125,
+        "provider_wait_by_stage": {
+          "planner": 28.125,
+          "reviewer": 27.0
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 55.125
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_010",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case introduces a configuration step ('Configure the system to allow adding comments to existing support tickets') that is not specified in the requirement. This invents unsupported system behavior beyond the stated ability to add a comment.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User can add a comment to an existing support ticket",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verify that the system correctly records and displays a comment added to a support ticket",
+              "source_basis": [
+                "allow a user to add a comment to an existing support ticket"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.14099999999985,
+        "provider_wait_by_stage": {
+          "planner": 27.625,
+          "reviewer": 26.51599999999985
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.14099999999985
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_001",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject email address lacking '@' character",
+              "objective": "Verify that the system rejects a customer email address that does not contain an at sign.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter an email address without an '@' character",
+                  "expected_result": "The system rejects the email address"
+                }
+              ],
+              "expected_result": "The system rejects the email address",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system has input validation configured to reject invalid email addresses"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Reject email address lacking '@' character",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "reject a customer email address that does not contain an at sign"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Reject email address lacking '@' character",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Ensures system correctly identifies and rejects invalid email format as specified.",
+              "source_basis": [
+                "reject a customer email address that does not contain an at sign"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 25.077999999999975,
+        "provider_wait_by_stage": {
+          "reviewer": 25.077999999999975
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 25.077999999999975
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_002",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2398,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 27.64099999999985,
+        "provider_wait_by_stage": {
+          "planner": 27.64099999999985
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 27.64099999999985
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_003",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System prevents submission of expense claim with a negative amount",
+              "objective": "Verify that the system prevents a user from submitting an expense claim with a negative amount.",
+              "test_type": "Negative",
+              "technique_used": "Input validation test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Submit an expense claim with a negative amount",
+                  "expected_result": "The system prevents the submission of the expense claim with a negative amount."
+                }
+              ],
+              "expected_result": "The system prevents the submission of the expense claim with a negative amount.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System prevents submission of expense claim with a negative amount",
+                "technique_used": "Input validation test"
+              },
+              "source_basis": [
+                "prevent a user from submitting an expense claim with a negative amount"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System prevents submission of expense claim with a negative amount",
+              "test_type": "Negative",
+              "technique_used": "Input validation test",
+              "priority": "High",
+              "rationale": "Validate that the system enforces the rule against negative amounts",
+              "source_basis": [
+                "prevent a user from submitting an expense claim with a negative amount"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 52.781999999999925,
+        "provider_wait_by_stage": {
+          "planner": 27.781999999999925,
+          "reviewer": 25.0
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 52.781999999999925
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Order can be marked ready for dispatch when a shipping address is provided",
+              "objective": "Verify that a shipping address is required before an order can be marked ready for dispatch",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure a valid shipping address",
+                  "expected_result": "The order can be marked ready for dispatch"
+                }
+              ],
+              "expected_result": "The order can be marked ready for dispatch",
+              "assumption_required": true,
+              "assumptions": [
+                "A shipping address is required before an order can be marked ready for dispatch"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Order can be marked ready for dispatch when a shipping address is provided",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Order cannot be marked ready for dispatch when a shipping address is missing",
+              "objective": "Verify that a shipping address is required before an order can be marked ready for dispatch",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure a missing shipping address",
+                  "expected_result": "The order cannot be marked ready for dispatch"
+                }
+              ],
+              "expected_result": "The order cannot be marked ready for dispatch",
+              "assumption_required": true,
+              "assumptions": [
+                "A shipping address is required before an order can be marked ready for dispatch"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Order cannot be marked ready for dispatch when a shipping address is missing",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Order can be marked ready for dispatch when a shipping address is provided",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies the primary happy‑path behavior that the system allows dispatch readiness once the required shipping address is present.",
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            },
+            {
+              "coverage_item": "Order cannot be marked ready for dispatch when a shipping address is missing",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Ensures the system enforces the requirement by preventing dispatch readiness without a shipping address.",
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.375,
+        "provider_wait_by_stage": {
+          "planner": 27.452999999999975,
+          "reviewer": 25.922000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.375
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_005",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject product quantity greater than available stock count",
+              "objective": "Verify that the system rejects a product quantity greater than the available stock count.",
+              "test_type": "Negative",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure a product with a quantity greater than the available stock count.",
+                  "expected_result": "The system rejects the product quantity."
+                }
+              ],
+              "expected_result": "The system rejects the product quantity.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the product quantity is greater than the available stock count."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Reject product quantity greater than available stock count",
+                "technique_used": "Equivalence Partitioning"
+              },
+              "source_basis": [
+                "reject a product quantity greater than the available stock count"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Reject product quantity greater than available stock count",
+              "test_type": "Negative",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "rationale": "Verify that the system correctly rejects orders where the requested quantity exceeds stock.",
+              "source_basis": [
+                "reject a product quantity greater than the available stock count"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.672000000000025,
+        "provider_wait_by_stage": {
+          "planner": 27.547000000000025,
+          "reviewer": 26.125
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.672000000000025
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_006",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case introduces a specific UI action ('Submit a form with a blank approval comment') that is not mentioned in the requirement, project context, planner coverage, or source basis. This constitutes an unsupported invention of implementation detail.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Error displayed for blank approval comment",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify that the system enforces the required comment rule by showing an error when the comment field is left empty",
+              "source_basis": [
+                "display an error when a required approval comment is left blank"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.3599999999999,
+        "provider_wait_by_stage": {
+          "planner": 26.187999999999874,
+          "reviewer": 27.172000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.3599999999999
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Invalid planner output: coverage item must be a dict"
+          ],
+          "reason": "Invalid planner output: coverage item must be a dict"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Invalid planner output: coverage item must be a dict"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 27.906000000000176,
+        "provider_wait_by_stage": {
+          "planner": 27.906000000000176
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 27.906000000000176
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_008",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that saving a new employee with a unique ID succeeds",
+              "objective": "To ensure that the system prevents duplicate employee IDs from being saved",
+              "test_type": "Positive",
+              "technique_used": "Manual data entry of a unique employee ID",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Save a new employee with a unique ID",
+                  "expected_result": "The employee is saved successfully"
+                }
+              ],
+              "expected_result": "The employee is saved successfully",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system is configured to prevent duplicate employee IDs"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that saving a new employee with a unique ID succeeds",
+                "technique_used": "Manual data entry of a unique employee ID"
+              },
+              "source_basis": [
+                "prevent duplicate employee IDs"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify that attempting to save an employee with an existing ID is rejected",
+              "objective": "To ensure that the system prevents duplicate employee IDs from being saved",
+              "test_type": "Negative",
+              "technique_used": "Manual data entry of a duplicate employee ID",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Save an employee with an existing ID",
+                  "expected_result": "The system rejects the attempt to save the employee"
+                }
+              ],
+              "expected_result": "The system rejects the attempt to save the employee",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system is configured to prevent duplicate employee IDs"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that attempting to save an employee with an existing ID is rejected",
+                "technique_used": "Manual data entry of a duplicate employee ID"
+              },
+              "source_basis": [
+                "prevent duplicate employee IDs from being saved"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that saving a new employee with a unique ID succeeds",
+              "test_type": "Positive",
+              "technique_used": "Manual data entry of a unique employee ID",
+              "priority": "High",
+              "rationale": "Ensures the system allows valid, non-duplicate employee IDs to be saved, confirming normal operation.",
+              "source_basis": [
+                "prevent duplicate employee IDs"
+              ]
+            },
+            {
+              "coverage_item": "Verify that attempting to save an employee with an existing ID is rejected",
+              "test_type": "Negative",
+              "technique_used": "Manual data entry of a duplicate employee ID",
+              "priority": "High",
+              "rationale": "Validates that the system enforces the duplicate‑ID prevention rule by blocking the save operation for duplicate IDs.",
+              "source_basis": [
+                "prevent duplicate employee IDs from being saved"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2240,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 52.7969999999998,
+        "provider_wait_by_stage": {
+          "planner": 27.14099999999985,
+          "reviewer": 25.65599999999995
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 52.7969999999998
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Upload a valid JPG profile image",
+              "objective": "Verify that a valid JPG profile image is uploaded successfully.",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a JPG profile image",
+                  "expected_result": "The uploaded image is validated as a JPG file."
+                }
+              ],
+              "expected_result": "The uploaded image is validated as a JPG file.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to validate file types."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload a valid JPG profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Upload a valid PNG profile image",
+              "objective": "Verify that a valid PNG profile image is uploaded successfully.",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a PNG profile image",
+                  "expected_result": "The uploaded image is validated as a PNG file."
+                }
+              ],
+              "expected_result": "The uploaded image is validated as a PNG file.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to validate file types."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload a valid PNG profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "Upload an invalid BMP profile image",
+              "objective": "Verify that an invalid BMP profile image is rejected.",
+              "test_type": "Negative",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Upload a BMP profile image",
+                  "expected_result": "The uploaded image is rejected due to invalid file type."
+                }
+              ],
+              "expected_result": "The uploaded image is rejected due to invalid file type.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to reject invalid file types."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Upload an invalid BMP profile image",
+                "technique_used": "File type validation"
+              },
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Upload a valid JPG profile image",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system accepts a JPG image as a valid profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "Upload a valid PNG profile image",
+              "test_type": "Positive",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system accepts a PNG image as a valid profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "Upload an invalid BMP profile image",
+              "test_type": "Negative",
+              "technique_used": "File type validation",
+              "priority": "High",
+              "rationale": "Verify that the system rejects a non‑JPG/PNG image (e.g., BMP) as a profile picture.",
+              "source_basis": [
+                "uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.29599999999982,
+        "provider_wait_by_stage": {
+          "planner": 26.983999999999924,
+          "reviewer": 26.311999999999898
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.29599999999982
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Cancel approved booking providing a cancellation reason",
+              "objective": "Verify that the system requires a cancellation reason when cancelling an approved booking",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure an approved booking",
+                  "expected_result": "Booking is approved"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Attempt to cancel the booking without providing a cancellation reason",
+                  "expected_result": "System requires a cancellation reason"
+                },
+                {
+                  "step_number": 3,
+                  "action": "Provide a cancellation reason and cancel the booking",
+                  "expected_result": "Booking is cancelled successfully"
+                }
+              ],
+              "expected_result": "Booking is cancelled successfully",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Cancel approved booking providing a cancellation reason",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Attempt to cancel approved booking without providing a cancellation reason",
+              "objective": "Verify that the system does not allow cancelling an approved booking without a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure an approved booking",
+                  "expected_result": "Booking is approved"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Attempt to cancel the booking without providing a cancellation reason",
+                  "expected_result": "System requires a cancellation reason"
+                }
+              ],
+              "expected_result": "System requires a cancellation reason",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Attempt to cancel approved booking without providing a cancellation reason",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Cancel approved booking providing a cancellation reason",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system accepts cancellation when a reason is supplied as required.",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            },
+            {
+              "coverage_item": "Attempt to cancel approved booking without providing a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system prevents cancellation when no reason is supplied, enforcing the requirement.",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.34400000000005,
+        "provider_wait_by_stage": {
+          "planner": 27.84400000000005,
+          "reviewer": 25.5
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.34400000000005
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_001",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Successful login with valid email and password",
+              "objective": "Verify that a registered user can log in with a valid email address and password.",
+              "test_type": "Positive",
+              "technique_used": "Automated UI functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "A registered user exists with a valid email address and password."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the application to allow a registered user to log in.",
+                  "expected_result": "The application is configured to allow a registered user to log in."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Enter a valid email address and password for a registered user.",
+                  "expected_result": "The application logs in the user successfully."
+                }
+              ],
+              "expected_result": "The user is logged in successfully.",
+              "assumption_required": true,
+              "assumptions": [
+                "The application is configured to allow a registered user to log in."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Successful login with valid email and password",
+                "technique_used": "Automated UI functional test"
+              },
+              "source_basis": [
+                "allow a registered user to log in with a valid email address and password"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Successful login with valid email and password",
+              "test_type": "Positive",
+              "technique_used": "Automated UI functional test",
+              "priority": "High",
+              "rationale": "Verifies that the system permits a registered user to authenticate using valid credentials as specified.",
+              "source_basis": [
+                "allow a registered user to log in with a valid email address and password"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 25.327999999999975,
+        "provider_wait_by_stage": {
+          "reviewer": 25.327999999999975
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 25.327999999999975
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_002",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Error message display on invalid login credentials",
+              "objective": "Verify that an error message is displayed when login credentials are invalid.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Enter invalid login credentials",
+                  "expected_result": "An error message is displayed"
+                }
+              ],
+              "expected_result": "An error message is displayed",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Display error message on invalid login credentials",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "display an error message when login credentials are invalid"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Display error message on invalid login credentials",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify that the system shows the appropriate error message when a user provides invalid login credentials",
+              "source_basis": [
+                "display an error message when login credentials are invalid"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.86000000000013,
+        "provider_wait_by_stage": {
+          "planner": 27.688000000000102,
+          "reviewer": 27.172000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.86000000000013
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_003",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Request password reset link for registered email address",
+              "objective": "Verify that a user can request a password reset link using a registered email address.",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "A user attempts to request a password reset link using a registered email address.",
+                  "expected_result": "The system allows the user to request a password reset link."
+                }
+              ],
+              "expected_result": "The system allows the user to request a password reset link.",
+              "assumption_required": true,
+              "assumptions": [
+                "The email address is registered with the system."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User can request a password reset link using a registered email address",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "request a password reset link for a registered email address"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User can request a password reset link using a registered email address",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies that the system provides the reset link functionality for a valid registered email address",
+              "source_basis": [
+                "request a password reset link for a registered email address"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.51700000000028,
+        "provider_wait_by_stage": {
+          "planner": 27.82900000000018,
+          "reviewer": 26.688000000000102
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.51700000000028
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that selecting logout ends the user's session",
+              "objective": "To verify that the system ends a user's session when the user selects logout.",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Select the logout option",
+                  "expected_result": "The user's session is ended"
+                }
+              ],
+              "expected_result": "The user's session is ended",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the user is logged in and has the necessary permissions to select logout."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that selecting logout ends the user's session",
+                "technique_used": "Functional testing"
+              },
+              "source_basis": [
+                "end a user's session when the user selects logout"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that selecting logout ends the user's session",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Ensures logout functionality works as specified",
+              "source_basis": [
+                "end a user's session when the user selects logout"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.123999999999796,
+        "provider_wait_by_stage": {
+          "planner": 27.717999999999847,
+          "reviewer": 26.40599999999995
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.123999999999796
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case adds post‑state behavior ('the system allows the user to proceed after verifying the one‑time code') which is not specified in the requirement, project context, planner coverage, or source basis.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "OTP entry is prompted and required after valid login credentials are submitted.",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Ensures the system enforces OTP as specified.",
+              "source_basis": [
+                "require a user to enter a one-time code after submitting valid login credentials"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.733999999999924,
+        "provider_wait_by_stage": {
+          "planner": 27.936999999999898,
+          "reviewer": 26.797000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.733999999999924
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_006",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that a user without administrator permission cannot open the user management page",
+              "objective": "To ensure that users without administrator permission are restricted from accessing the user management page",
+              "test_type": "Negative",
+              "technique_used": "role-based access control verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure a user without administrator permission",
+                  "expected_result": "The user management page is not accessible"
+                }
+              ],
+              "expected_result": "The system prevents users without administrator permission from opening the user management page",
+              "assumption_required": true,
+              "assumptions": [
+                "The system has a role-based access control mechanism in place"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user without administrator permission cannot open the user management page",
+                "technique_used": "role-based access control verification"
+              },
+              "source_basis": [
+                "prevent users without administrator permission from opening the user management page"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user without administrator permission cannot open the user management page",
+              "test_type": "Negative",
+              "technique_used": "role-based access control verification",
+              "priority": "High",
+              "rationale": "Ensures that unauthorized users are denied access as required",
+              "source_basis": [
+                "prevent users without administrator permission from opening the user management page"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.65700000000015,
+        "provider_wait_by_stage": {
+          "planner": 28.141000000000076,
+          "reviewer": 26.516000000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.65700000000015
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify successful login record creation",
+              "objective": "Validate that a successful login creates a record containing the timestamp and user ID",
+              "test_type": "Positive",
+              "technique_used": "Inspect audit log entry after login",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Perform a successful login",
+                  "expected_result": "A record containing the timestamp and user ID is created"
+                }
+              ],
+              "expected_result": "A record containing the timestamp and user ID is created",
+              "assumption_required": true,
+              "assumptions": [
+                "System stores login audit entries in an accessible log or database"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a successful login creates a record containing the timestamp and user ID",
+                "technique_used": "Inspect audit log entry after login"
+              },
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [
+            "System stores login audit entries in an accessible log or database"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a successful login creates a record containing the timestamp and user ID",
+              "test_type": "Positive",
+              "technique_used": "Inspect audit log entry after login",
+              "priority": "High",
+              "rationale": "Ensures the system complies with the logging requirement for auditability",
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "System stores login audit entries in an accessible log or database"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.54599999999982,
+        "provider_wait_by_stage": {
+          "planner": 27.842999999999847,
+          "reviewer": 25.702999999999975
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.54599999999982
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_008",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [
+            "An administrator role with appropriate permissions exists.",
+            "User accounts are identifiable within the system."
+          ],
+          "warnings": [
+            "TC_REQ_1_001: The test case invents concrete UI elements and actions (e.g., 'user account management page', 'selects the option to deactivate the user account') that are not specified in the requirement, project context, planner coverage, or source basis.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Administrator deactivates a user account successfully",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Verifies the core functionality described in the requirement.",
+              "source_basis": [
+                "allow an administrator to deactivate a user account"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "An administrator role with appropriate permissions exists.",
+            "User accounts are identifiable within the system."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 55.345000000000255,
+        "provider_wait_by_stage": {
+          "planner": 28.07900000000018,
+          "reviewer": 27.266000000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 55.345000000000255
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User accepts updated terms and successfully accesses the dashboard.",
+              "objective": "Verify that users can access the dashboard after accepting updated terms.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "User accepts updated terms.",
+                  "expected_result": "The system allows the user to access the dashboard."
+                }
+              ],
+              "expected_result": "The system allows the user to access the dashboard.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User accepts updated terms and successfully accesses the dashboard.",
+                "technique_used": "Functional UI test"
+              },
+              "source_basis": [
+                "accept updated terms before accessing the dashboard"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "User does not accept updated terms and is prevented from accessing the dashboard.",
+              "objective": "Verify that users are prevented from accessing the dashboard if they do not accept updated terms.",
+              "test_type": "Negative",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "User does not accept updated terms.",
+                  "expected_result": "The system prevents the user from accessing the dashboard."
+                }
+              ],
+              "expected_result": "The system prevents the user from accessing the dashboard.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User does not accept updated terms and is prevented from accessing the dashboard.",
+                "technique_used": "Functional UI test"
+              },
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User accepts updated terms and successfully accesses the dashboard.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "rationale": "Verifies that acceptance enables dashboard access as required.",
+              "source_basis": [
+                "accept updated terms before accessing the dashboard"
+              ]
+            },
+            {
+              "coverage_item": "User does not accept updated terms and is prevented from accessing the dashboard.",
+              "test_type": "Negative",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "rationale": "Ensures system enforces acceptance requirement by blocking access.",
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.29599999999982,
+        "provider_wait_by_stage": {
+          "planner": 28.061999999999898,
+          "reviewer": 26.233999999999924
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.29599999999982
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Notification after email address change",
+              "objective": "Verify that the system notifies a user when their account email address is changed.",
+              "test_type": "Positive",
+              "technique_used": "Functional verification of notification (e.g., email or in-app alert)",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Change the user's account email address.",
+                  "expected_result": "The system notifies the user of the email address change."
+                }
+              ],
+              "expected_result": "The system notifies the user of the email address change.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has the necessary configuration to send notifications."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User receives notification after email address change",
+                "technique_used": "Functional verification of notification (e.g., email or in-app alert)"
+              },
+              "source_basis": [
+                "notify a user when their account email address is changed"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "User receives notification after email address change",
+              "test_type": "Positive",
+              "technique_used": "Functional verification of notification (e.g., email or in-app alert)",
+              "priority": "High",
+              "rationale": "Ensures the system fulfills the notification requirement when the email is updated.",
+              "source_basis": [
+                "notify a user when their account email address is changed"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 55.28099999999995,
+        "provider_wait_by_stage": {
+          "planner": 28.110000000000127,
+          "reviewer": 27.17099999999982
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 55.28099999999995
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify project dashboard load time",
+              "objective": "Verify that the project dashboard loads within three seconds for at least 95% of requests",
+              "test_type": "Performance",
+              "technique_used": "Load testing with timing measurement",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Measure the time taken to load the project dashboard",
+                  "expected_result": "The project dashboard loads within three seconds for at least 95% of requests"
+                }
+              ],
+              "expected_result": "The project dashboard loads within three seconds for at least 95% of requests",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system is configured to measure load times."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95% of requests",
+                "technique_used": "Load testing with timing measurement"
+              },
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95% of requests",
+              "test_type": "Performance",
+              "technique_used": "Load testing with timing measurement",
+              "priority": "High",
+              "rationale": "Performance requirement directly specifies load time and success threshold",
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 27.125,
+        "provider_wait_by_stage": {
+          "reviewer": 27.125
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 27.125
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify system performance under load",
+              "objective": "To ensure the system can handle 500 concurrent users viewing reports without errors",
+              "test_type": "Performance",
+              "technique_used": "Load testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the system to handle 500 concurrent users",
+                  "expected_result": "The system handles 500 concurrent users without errors"
+                }
+              ],
+              "expected_result": "The system handles 500 concurrent users without errors",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system is configured to handle 500 concurrent users"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Support 500 concurrent users viewing reports without errors",
+                "technique_used": "Load testing"
+              },
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Support 500 concurrent users viewing reports without errors",
+              "test_type": "Performance",
+              "technique_used": "Load testing",
+              "priority": "High",
+              "rationale": "Verify the system can handle the required concurrency without errors",
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.59299999999985,
+        "provider_wait_by_stage": {
+          "planner": 27.764999999999873,
+          "reviewer": 26.827999999999975
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.59299999999985
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify customer data encryption at rest in production database",
+              "objective": "Ensure customer data is encrypted while stored in the production database",
+              "test_type": "Security",
+              "technique_used": "Inspect database encryption configuration and attempt to read raw data bytes",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Inspect database encryption configuration",
+                  "expected_result": "Encryption configuration is in place"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Attempt to read raw data bytes",
+                  "expected_result": "Raw data bytes are encrypted"
+                }
+              ],
+              "expected_result": "Customer data is encrypted at rest in the production database",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Encryption configuration is correctly implemented"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that customer data is encrypted at rest in the production database.",
+                "technique_used": "Inspect database encryption configuration and attempt to read raw data bytes"
+              },
+              "source_basis": [
+                "encrypt customer data while it is stored in the production database"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "High",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that customer data is encrypted at rest in the production database.",
+              "test_type": "Security",
+              "technique_used": "Inspect database encryption configuration and attempt to read raw data bytes",
+              "priority": "High",
+              "rationale": "Ensures compliance with the encryption NFR",
+              "source_basis": [
+                "encrypt customer data while it is stored in the production database"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.92099999999982,
+        "provider_wait_by_stage": {
+          "planner": 27.764999999999873,
+          "reviewer": 26.15599999999995
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.92099999999982
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify reporting module availability",
+              "objective": "Verify that the reporting module achieves at least 99.5% availability over a calendar month",
+              "test_type": "Reliability",
+              "technique_used": "Monitoring and statistical analysis of uptime over the month",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify the reporting module's uptime over a calendar month",
+                  "expected_result": "At least 99.5% availability"
+                }
+              ],
+              "expected_result": "At least 99.5% availability",
+              "assumption_required": true,
+              "assumptions": [
+                "Availability is measured over a calendar month"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the reporting module achieves at least 99.5% availability over a calendar month",
+                "technique_used": "Monitoring and statistical analysis of uptime over the month"
+              },
+              "source_basis": [
+                "maintain 99.5 percent monthly availability for the reporting module"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the reporting module achieves at least 99.5% availability over a calendar month",
+              "test_type": "Reliability",
+              "technique_used": "Monitoring and statistical analysis of uptime over the month",
+              "priority": "High",
+              "rationale": "Ensures the system meets the specified availability NFR",
+              "source_basis": [
+                "maintain 99.5 percent monthly availability for the reporting module"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.4380000000001,
+        "provider_wait_by_stage": {
+          "planner": 28.172000000000025,
+          "reviewer": 26.266000000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.4380000000001
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Keyboard Navigation for Primary Form Fields",
+              "objective": "Verify that users can navigate between all primary form fields using keyboard.",
+              "test_type": "Usability",
+              "technique_used": "Manual keyboard navigation test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Use the Tab key to navigate between primary form fields.",
+                  "expected_result": "The focus moves between primary form fields using the Tab key."
+                }
+              ],
+              "expected_result": "Keyboard navigation is functional for all primary form fields.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The Tab key is the default navigation key for primary form fields."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that users can navigate between all primary form fields using keyboard (e.g., Tab key).",
+                "technique_used": "Manual keyboard navigation test"
+              },
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that users can navigate between all primary form fields using keyboard (e.g., Tab key).",
+              "test_type": "Usability",
+              "technique_used": "Manual keyboard navigation test",
+              "priority": "High",
+              "rationale": "Ensures accessibility and usability for business users.",
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.28099999999995,
+        "provider_wait_by_stage": {
+          "planner": 27.641000000000076,
+          "reviewer": 26.639999999999873
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.28099999999995
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit log retention period",
+              "objective": "Validate that audit logs are retained for at least seven years",
+              "test_type": "Positive",
+              "technique_used": "Log retention inspection",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that audit logs are retained for at least seven years",
+                  "expected_result": "Audit logs are retained for at least seven years"
+                }
+              ],
+              "expected_result": "Audit logs are retained for at least seven years",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that audit logs are retained for at least seven years",
+                "technique_used": "Log retention inspection"
+              },
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that audit logs are retained for at least seven years",
+              "test_type": "Positive",
+              "technique_used": "Log retention inspection",
+              "priority": "High",
+              "rationale": "Ensures compliance with the retention requirement",
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 53.983999999999924,
+        "provider_wait_by_stage": {
+          "planner": 26.75,
+          "reviewer": 27.233999999999924
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 53.983999999999924
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify normal service restoration after database failover",
+              "objective": "To verify that normal service is restored within fifteen minutes after a database failover",
+              "test_type": "Recovery",
+              "technique_used": "Simulated database failover followed by measurement of service restoration time",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate a database failover",
+                  "expected_result": "Normal service is restored within fifteen minutes"
+                }
+              ],
+              "expected_result": "Normal service is restored within fifteen minutes",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: The system has been configured to recover normal service within fifteen minutes after a database failover."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that normal service is restored within fifteen minutes after a database failover",
+                "technique_used": "Simulated database failover followed by measurement of service restoration time"
+              },
+              "source_basis": [
+                "recover normal service within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that normal service is restored within fifteen minutes after a database failover",
+              "test_type": "Recovery",
+              "technique_used": "Simulated database failover followed by measurement of service restoration time",
+              "priority": "High",
+              "rationale": "Confirms compliance with the recovery time objective defined in the NFR",
+              "source_basis": [
+                "recover normal service within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.452999999999975,
+        "provider_wait_by_stage": {
+          "planner": 27.483999999999924,
+          "reviewer": 26.96900000000005
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.452999999999975
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_008",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify dates are displayed according to the user's selected locale format.",
+              "objective": "Validate that dates are displayed correctly based on the user's locale settings.",
+              "test_type": "Positive",
+              "technique_used": "Locale formatting verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the user's locale settings.",
+                  "expected_result": "Dates are displayed in the correct format according to the user's locale settings."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that dates are displayed correctly.",
+                  "expected_result": "Dates are displayed in the correct format according to the user's locale settings."
+                }
+              ],
+              "expected_result": "Dates are displayed in the correct format according to the user's locale settings.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the user's locale settings are correctly configured."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify dates are displayed according to the user's selected locale format.",
+                "technique_used": "Locale formatting verification"
+              },
+              "source_basis": [
+                "display dates and currency values using the user's selected locale."
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify currency values are displayed with correct symbols and formatting per the user's selected locale.",
+              "objective": "Validate that currency values are displayed correctly based on the user's locale settings.",
+              "test_type": "Positive",
+              "technique_used": "Locale formatting verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure the user's locale settings.",
+                  "expected_result": "Currency values are displayed with correct symbols and formatting according to the user's locale settings."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify that currency values are displayed correctly.",
+                  "expected_result": "Currency values are displayed with correct symbols and formatting according to the user's locale settings."
+                }
+              ],
+              "expected_result": "Currency values are displayed with correct symbols and formatting according to the user's locale settings.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the user's locale settings are correctly configured."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify currency values are displayed with correct symbols and formatting per the user's selected locale.",
+                "technique_used": "Locale formatting verification"
+              },
+              "source_basis": [
+                "display dates and currency values using the user's selected locale."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify dates are displayed according to the user's selected locale format.",
+              "test_type": "Positive",
+              "technique_used": "Locale formatting verification",
+              "priority": "High",
+              "rationale": "Ensures date formatting matches locale settings.",
+              "source_basis": [
+                "display dates and currency values using the user's selected locale."
+              ]
+            },
+            {
+              "coverage_item": "Verify currency values are displayed with correct symbols and formatting per the user's selected locale.",
+              "test_type": "Positive",
+              "technique_used": "Locale formatting verification",
+              "priority": "High",
+              "rationale": "Ensures monetary values are correctly localized.",
+              "source_basis": [
+                "display dates and currency values using the user's selected locale."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 54.422000000000025,
+        "provider_wait_by_stage": {
+          "planner": 28.25,
+          "reviewer": 26.172000000000025
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 54.422000000000025
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_009",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify error logging includes timestamp, request ID, and severity level",
+              "objective": "To ensure that the system records application errors with the required details",
+              "test_type": "Positive",
+              "technique_used": "Log inspection",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Inspect the system logs for application errors",
+                  "expected_result": "The logs should include timestamp, request ID, and severity level for each error"
+                }
+              ],
+              "expected_result": "The system logs should include timestamp, request ID, and severity level for each application error",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system logs are properly configured and accessible"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify error logging includes timestamp, request ID, and severity level",
+                "technique_used": "Log inspection"
+              },
+              "source_basis": [
+                "record application errors with timestamp, request ID, and severity level"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify error logging includes timestamp, request ID, and severity level",
+              "test_type": "Positive",
+              "technique_used": "Log inspection",
+              "priority": "High",
+              "rationale": "Ensures that the system meets the NFR to record errors with required fields",
+              "source_basis": [
+                "record application errors with timestamp, request ID, and severity level"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 55.047000000000025,
+        "provider_wait_by_stage": {
+          "planner": 27.702999999999975,
+          "reviewer": 27.34400000000005
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 55.047000000000025
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Nightly Report Generation Completion Time",
+              "objective": "Verify that nightly report generation completes before 6:00 AM local time",
+              "test_type": "Performance",
+              "technique_used": "time measurement",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Verify that the system completes nightly report generation",
+                  "expected_result": "The system completes nightly report generation before 6:00 AM local time"
+                }
+              ],
+              "expected_result": "The system completes nightly report generation before 6:00 AM local time",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system is configured to generate nightly reports"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time",
+                "technique_used": "time measurement"
+              },
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time",
+              "test_type": "Performance",
+              "technique_used": "time measurement",
+              "priority": "High",
+              "rationale": "Ensures compliance with the timing NFR",
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 52.6880000000001,
+        "provider_wait_by_stage": {
+          "planner": 28.125,
+          "reviewer": 24.563000000000102
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 52.6880000000001
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_001",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be easy to use.",
+          "requirement_type": "NFR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Usability criteria (e.g., task completion time, error rate) not defined."
+          ],
+          "reason": "Usability criteria (e.g., task completion time, error rate) not defined."
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be easy to use.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Usability criteria (e.g., task completion time, error rate) not defined."
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_002",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall handle errors properly.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "The requirement does not specify which error conditions need to be handled",
+            "The requirement does not define the expected behavior for error handling (e.g., user notification, logging, recovery actions)"
+          ],
+          "reason": "The requirement does not specify which error conditions need to be handled"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall handle errors properly.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "The requirement does not specify which error conditions need to be handled",
+            "The requirement does not define the expected behavior for error handling (e.g., user notification, logging, recovery actions)"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.28200000000015,
+        "provider_wait_by_stage": {
+          "planner": 41.28200000000015
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.28200000000015
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_003",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Performance metric (e.g., response time threshold) not defined"
+          ],
+          "reason": "Performance metric (e.g., response time threshold) not defined"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Performance metric (e.g., response time threshold) not defined"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2228,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.70299999999952,
+        "provider_wait_by_stage": {
+          "planner": 41.70299999999952
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.70299999999952
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_004",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Missing details on what \"manage\" entails (e.g., create, read, update, delete).",
+            "Missing definition of \"appropriately\" (e.g., compliance, privacy, security).",
+            "Missing specifications of user data types, storage, access controls."
+          ],
+          "reason": "Missing details on what \"manage\" entails (e.g., create, read, update, delete)."
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Missing details on what \"manage\" entails (e.g., create, read, update, delete).",
+            "Missing definition of \"appropriately\" (e.g., compliance, privacy, security).",
+            "Missing specifications of user data types, storage, access controls."
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 35.07800000000043,
+        "provider_wait_by_stage": {
+          "planner": 35.07800000000043
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 35.07800000000043
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_005",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Missing definition of which reports are required",
+            "Missing criteria for what makes a report \"useful\"",
+            "Missing details on report format, delivery method, and access permissions"
+          ],
+          "reason": "Missing definition of which reports are required"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Missing definition of which reports are required",
+            "Missing criteria for what makes a report \"useful\"",
+            "Missing details on report format, delivery method, and access permissions"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.32800000000043,
+        "provider_wait_by_stage": {
+          "planner": 42.32800000000043
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.32800000000043
+        }
+      }
+    }
+  }
+]

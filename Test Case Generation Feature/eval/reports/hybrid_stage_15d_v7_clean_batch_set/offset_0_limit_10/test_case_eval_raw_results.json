@@ -1,0 +1,1172 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_001",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Create a new customer record with name, email, and phone number",
+              "objective": "Verify the system allows creation of a new customer record with name, email, and phone number",
+              "test_type": "Positive",
+              "technique_used": "Functional UI form submission",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify the system creates a new customer record with name, email, and phone number."
+                }
+              ],
+              "expected_result": "The system creates a new customer record with name, email, and phone number.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System allows creation of a new customer record with name, email, and phone number",
+                "technique_used": "Functional UI form submission"
+              },
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System allows creation of a new customer record with name, email, and phone number",
+              "test_type": "Positive",
+              "technique_used": "Functional UI form submission",
+              "priority": "High",
+              "rationale": "Ensures the core create operation works as specified",
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2344,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.34300000000076,
+        "provider_wait_by_stage": {
+          "reviewer": 41.34300000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.34300000000076
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_002",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that the displayed list includes only active projects",
+              "objective": "Verify that the system displays a list of active projects",
+              "test_type": "Positive",
+              "technique_used": "UI verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The displayed list includes only active projects."
+                }
+              ],
+              "expected_result": "The displayed list includes only active projects.",
+              "assumption_required": true,
+              "assumptions": [
+                "The exact entry point for exercising this capability is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the displayed list includes only active projects",
+                "technique_used": "UI verification"
+              },
+              "source_basis": [
+                "list of active projects"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify that the displayed list is sorted by most recently updated first",
+              "objective": "Verify that the system displays a list of active projects sorted by most recently updated first",
+              "test_type": "Positive",
+              "technique_used": "UI verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The displayed list is sorted by most recently updated first."
+                }
+              ],
+              "expected_result": "The displayed list is sorted by most recently updated first.",
+              "assumption_required": true,
+              "assumptions": [
+                "The exact entry point for exercising this capability is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the displayed list is sorted by most recently updated first",
+                "technique_used": "UI verification"
+              },
+              "source_basis": [
+                "sorted by most recently updated first"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display a list of active projects sorted by most recently updated first.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the displayed list includes only active projects",
+              "test_type": "Positive",
+              "technique_used": "UI verification",
+              "priority": "High",
+              "rationale": "Ensures the system displays only active projects as required",
+              "source_basis": [
+                "list of active projects"
+              ]
+            },
+            {
+              "coverage_item": "Verify that the displayed list is sorted by most recently updated first",
+              "test_type": "Positive",
+              "technique_used": "UI verification",
+              "priority": "High",
+              "rationale": "Ensures the sorting order meets the requirement",
+              "source_basis": [
+                "sorted by most recently updated first"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.375,
+        "provider_wait_by_stage": {
+          "planner": 42.57800000000134,
+          "reviewer": 40.79699999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.375
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_003",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Update task status from open to completed",
+              "objective": "Verify that a user can change a task status from open to completed.",
+              "test_type": "Positive",
+              "technique_used": "Manual functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the task status has been updated from open to completed."
+                }
+              ],
+              "expected_result": "The task status has been updated from open to completed.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for updating task status is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user can change a task status from open to completed.",
+                "technique_used": "Manual functional test"
+              },
+              "source_basis": [
+                "let a user update the status of a task from open to completed"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall let a user update the status of a task from open to completed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can change a task status from open to completed.",
+              "test_type": "Positive",
+              "technique_used": "Manual functional test",
+              "priority": "High",
+              "rationale": "Ensures the core task status update functionality works as specified.",
+              "source_basis": [
+                "let a user update the status of a task from open to completed"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.9690000000046,
+        "provider_wait_by_stage": {
+          "planner": 42.86000000000058,
+          "reviewer": 41.109000000004016
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.9690000000046
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_004",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Search orders by order number",
+              "objective": "Verify that a user can retrieve order details when searching by a valid order number",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the system retrieves order details when searching by a valid order number."
+                }
+              ],
+              "expected_result": "Verify that the system retrieves order details when searching by a valid order number.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for searching orders is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user can retrieve order details when searching by a valid order number",
+                "technique_used": "Functional testing"
+              },
+              "source_basis": [
+                "allow a user to search orders by order number"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to search orders by order number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can retrieve order details when searching by a valid order number",
+              "test_type": "Positive",
+              "technique_used": "Functional testing",
+              "priority": "High",
+              "rationale": "Ensures the core search functionality works as specified",
+              "source_basis": [
+                "allow a user to search orders by order number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.13999999999942,
+        "provider_wait_by_stage": {
+          "planner": 42.79699999999866,
+          "reviewer": 41.34300000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.13999999999942
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_005",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Manager assigns employee to department",
+              "objective": "Verify the system allows a manager to assign an employee to a department",
+              "test_type": "Positive",
+              "technique_used": "Standard functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement",
+                  "expected_result": "The system allows a manager to assign an employee to a department"
+                }
+              ],
+              "expected_result": "The system allows a manager to assign an employee to a department",
+              "assumption_required": true,
+              "assumptions": [
+                "User interface for assignment not specified",
+                "Authentication and authorization details not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System allows a manager to assign an employee to a department",
+                "technique_used": "Standard functional test"
+              },
+              "source_basis": [
+                "allow a manager to assign an employee to a department"
+              ]
+            }
+          ],
+          "missing_information": [
+            "User interface for assignment not specified",
+            "Authentication and authorization details not specified"
+          ],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a manager to assign an employee to a department.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "User interface for assignment not specified",
+            "Authentication and authorization details not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "System allows a manager to assign an employee to a department",
+              "test_type": "Positive",
+              "technique_used": "Standard functional test",
+              "priority": "High",
+              "rationale": "Verify that a manager can successfully assign an employee to a department as required",
+              "source_basis": [
+                "allow a manager to assign an employee to a department"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.01499999999214,
+        "provider_wait_by_stage": {
+          "planner": 42.9059999999954,
+          "reviewer": 41.10899999999674
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.01499999999214
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_006",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall show invoice details including invoice date, amount due, and payment status.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify invoice details are displayed",
+              "objective": "To verify that invoice details are displayed correctly",
+              "test_type": "Positive",
+              "technique_used": "UI display verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that invoice details are displayed with invoice date, amount due, and payment status."
+                }
+              ],
+              "expected_result": "Invoice details are displayed correctly.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that invoice details are displayed with invoice date, amount due, and payment status",
+                "technique_used": "UI display verification"
+              },
+              "source_basis": [
+                "show invoice details including invoice date, amount due, and payment status"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall show invoice details including invoice date, amount due, and payment status.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that invoice details are displayed with invoice date, amount due, and payment status",
+              "test_type": "Positive",
+              "technique_used": "UI display verification",
+              "priority": "High",
+              "rationale": "Ensures the system presents required invoice information to the user",
+              "source_basis": [
+                "show invoice details including invoice date, amount due, and payment status"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.49999999999272,
+        "provider_wait_by_stage": {
+          "planner": 42.57799999999406,
+          "reviewer": 41.92199999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.49999999999272
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_007",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that a user can download the monthly activity report in PDF format.",
+              "objective": "To ensure that the system allows users to download the monthly activity report in PDF format.",
+              "test_type": "Positive",
+              "technique_used": "Manual download via web interface",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system allows the user to download the monthly activity report in PDF format."
+                }
+              ],
+              "expected_result": "The system allows the user to download the monthly activity report in PDF format.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user can download the monthly activity report in PDF format.",
+                "technique_used": "Manual download via web interface"
+              },
+              "source_basis": [
+                "allow a user to download a monthly activity report as a PDF file"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can download the monthly activity report in PDF format.",
+              "test_type": "Positive",
+              "technique_used": "Manual download via web interface",
+              "priority": "High",
+              "rationale": "Ensures the core functionality of providing the report in the required format.",
+              "source_basis": [
+                "allow a user to download a monthly activity report as a PDF file"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.89100000000326,
+        "provider_wait_by_stage": {
+          "planner": 42.61000000000058,
+          "reviewer": 41.28100000000268
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.89100000000326
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_008",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall send an in-app notification when a submitted request is approved.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System sends in-app notification upon request approval",
+              "objective": "Verify the system sends an in-app notification when a submitted request is approved.",
+              "test_type": "Positive",
+              "technique_used": "Functional verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "Configured prerequisite request exists and can be approved."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify the system sends an in-app notification."
+                }
+              ],
+              "expected_result": "The system sends an in-app notification when a submitted request is approved.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System sends in-app notification upon request approval",
+                "technique_used": "Functional verification"
+              },
+              "source_basis": [
+                "send an in-app notification when a submitted request is approved"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [
+            "Configured prerequisite request exists and can be approved"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall send an in-app notification when a submitted request is approved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System sends in-app notification upon request approval",
+              "test_type": "Positive",
+              "technique_used": "Functional verification",
+              "priority": "High",
+              "rationale": "Verify that the system sends an in-app notification when a submitted request is approved as required",
+              "source_basis": [
+                "send an in-app notification when a submitted request is approved"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisite request exists and can be approved"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.31300000000192,
+        "provider_wait_by_stage": {
+          "planner": 42.95300000000134,
+          "reviewer": 40.36000000000058
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.31300000000192
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_009",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to archive a completed project.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Archive completed project - positive",
+              "objective": "Verify that a user can archive a completed project.",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability to archive a completed project using a valid request.",
+                  "expected_result": "The system archives the completed project successfully."
+                }
+              ],
+              "expected_result": "The completed project is archived.",
+              "assumption_required": true,
+              "assumptions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user can archive a completed project",
+                "technique_used": "Functional test"
+              },
+              "source_basis": [
+                "The system shall allow a user to archive a completed project."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to archive a completed project.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can archive a completed project",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "rationale": "Ensures the archiving capability works as specified.",
+              "source_basis": [
+                "The system shall allow a user to archive a completed project."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499084, Requested 3551. Please try again in 7m35.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 127.0630000000092,
+        "provider_wait_by_stage": {
+          "planner": 42.90600000000268,
+          "generator": 41.86000000000058,
+          "reviewer": 42.29700000000594
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 127.0630000000092
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_010",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+          ],
+          "reason": "Generator LLM call failed: LLM failed after 0 retries: Groq is in local cooldown after a rate-limit response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can add a comment to an existing support ticket",
+              "test_type": "Positive",
+              "technique_used": "Functional test via UI or API",
+              "priority": "High",
+              "rationale": "Ensures the core comment functionality works as specified",
+              "source_basis": [
+                "allow a user to add a comment to an existing support ticket"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.29700000000594,
+        "provider_wait_by_stage": {
+          "planner": 42.29700000000594
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.29700000000594
+        }
+      }
+    }
+  }
+]

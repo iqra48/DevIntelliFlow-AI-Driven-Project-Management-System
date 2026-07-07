@@ -1,0 +1,1235 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_001",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject email address without an at sign",
+              "objective": "Verify the system rejects a customer email address that does not contain an at sign.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using an email address without an at sign.",
+                  "expected_result": "The system rejects the email address."
+                }
+              ],
+              "expected_result": "The system rejects the email address.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact email address format is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System rejects email address without an at sign",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "reject a customer email address that does not contain an at sign"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a customer email address that does not contain an at sign.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System rejects email address without an at sign",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verifies that the system enforces the required email format by rejecting addresses missing the '@' character",
+              "source_basis": [
+                "reject a customer email address that does not contain an at sign"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.59300000000076,
+        "provider_wait_by_stage": {
+          "reviewer": 41.59300000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.59300000000076
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_002",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Save event with valid start and end dates",
+              "objective": "Verify the system allows saving an event when start date is earlier than or equal to end date",
+              "test_type": "Positive",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system saves the event without error."
+                }
+              ],
+              "expected_result": "The system saves the event without error.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System allows saving an event when start date is earlier than or equal to end date",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "require the start date to be earlier than or equal to the end date before saving an event"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Save event with invalid start and end dates",
+              "objective": "Verify the system rejects saving an event when start date is later than end date",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using invalid input consistent with the requirement.",
+                  "expected_result": "The system rejects the event save attempt."
+                }
+              ],
+              "expected_result": "The system rejects the event save attempt.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System rejects saving an event when start date is later than end date",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "require the start date to be earlier than or equal to the end date before saving an event"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require the start date to be earlier than or equal to the end date before saving an event.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System allows saving an event when start date is earlier than or equal to end date",
+              "test_type": "Positive",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verifies that the system permits saving when the date constraint is satisfied.",
+              "source_basis": [
+                "require the start date to be earlier than or equal to the end date before saving an event"
+              ]
+            },
+            {
+              "coverage_item": "System rejects saving an event when start date is later than end date",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verifies that the system enforces the date constraint by preventing save when violated.",
+              "source_basis": [
+                "require the start date to be earlier than or equal to the end date before saving an event"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2398,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.78100000000268,
+        "provider_wait_by_stage": {
+          "planner": 42.984000000004016,
+          "reviewer": 41.79699999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.78100000000268
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_003",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Negative expense claim submission",
+              "objective": "Verify that the system prevents a user from submitting an expense claim with a negative amount.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system prevents the user from submitting the expense claim with a negative amount."
+                }
+              ],
+              "expected_result": "The system prevents the user from submitting the expense claim with a negative amount.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System enforces that an expense claim with a negative amount cannot be submitted.",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "prevent a user from submitting an expense claim with a negative amount"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent a user from submitting an expense claim with a negative amount.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System enforces that an expense claim with a negative amount cannot be submitted.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verifies business rule that disallows negative expense amounts.",
+              "source_basis": [
+                "prevent a user from submitting an expense claim with a negative amount"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.9059999999954,
+        "provider_wait_by_stage": {
+          "planner": 43.23399999999674,
+          "reviewer": 41.67199999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.9059999999954
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify shipping address is required before order can be marked ready for dispatch",
+              "objective": "Ensure that a shipping address is provided before an order can be marked ready for dispatch",
+              "test_type": "Negative",
+              "technique_used": "Attempt to transition an order to ready for dispatch without supplying a shipping address",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to transition an order to ready for dispatch without supplying a shipping address",
+                  "expected_result": "The system should prevent the order from being marked ready for dispatch due to missing shipping address"
+                }
+              ],
+              "expected_result": "The system enforces a shipping address is provided before allowing an order to be marked ready for dispatch",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for transitioning an order to ready for dispatch is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the system enforces a shipping address is provided before allowing an order to be marked ready for dispatch.",
+                "technique_used": "Attempt to transition an order to ready for dispatch without supplying a shipping address"
+              },
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the system enforces a shipping address is provided before allowing an order to be marked ready for dispatch.",
+              "test_type": "Negative",
+              "technique_used": "Attempt to transition an order to ready for dispatch without supplying a shipping address",
+              "priority": "High",
+              "rationale": "Ensures the required shipping address constraint is enforced",
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.21799999999348,
+        "provider_wait_by_stage": {
+          "planner": 43.57799999999406,
+          "reviewer": 41.63999999999942
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.21799999999348
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_005",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Reject product quantity greater than available stock count",
+              "objective": "Verify the system rejects a product quantity greater than the available stock count.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using a product quantity greater than the available stock count.",
+                  "expected_result": "The system rejects the product quantity."
+                }
+              ],
+              "expected_result": "The system rejects the product quantity.",
+              "assumption_required": true,
+              "assumptions": [
+                "The exact entry point for exercising this capability is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System rejects product quantity greater than available stock count",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "reject a product quantity greater than the available stock count"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall reject a product quantity greater than the available stock count.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System rejects product quantity greater than available stock count",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Ensures the system enforces stock limits by rejecting excessive quantity requests",
+              "source_basis": [
+                "reject a product quantity greater than the available stock count"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.56299999999464,
+        "provider_wait_by_stage": {
+          "planner": 41.796999999991385,
+          "reviewer": 41.76600000000326
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.56299999999464
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_006",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Error display when required approval comment is left blank",
+              "objective": "Verify the system displays an error when a required approval comment is left blank.",
+              "test_type": "Negative",
+              "technique_used": "UI validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system displays an error message."
+                }
+              ],
+              "expected_result": "The system displays an error message.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for exercising this capability is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System displays an error when a required approval comment is left blank",
+                "technique_used": "UI validation"
+              },
+              "source_basis": [
+                "display an error when a required approval comment is left blank"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error when a required approval comment is left blank.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System displays an error when a required approval comment is left blank",
+              "test_type": "Negative",
+              "technique_used": "UI validation",
+              "priority": "High",
+              "rationale": "Verifies that the system enforces the required comment constraint by showing an error for blank input",
+              "source_basis": [
+                "display an error when a required approval comment is left blank"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.75,
+        "provider_wait_by_stage": {
+          "planner": 43.28100000000268,
+          "reviewer": 41.46899999999732
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.75
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System enforces discount percentage within valid range",
+              "objective": "Verify that the system accepts discount percentage values within 0 to 100 inclusive.",
+              "test_type": "Positive",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system accepts the input without error."
+                }
+              ],
+              "expected_result": "The system accepts the input without error.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System enforces that discount percentage values within 0 to 100 inclusive are accepted.",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "discount percentage to be between 0 and 100 inclusive"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "System enforces boundary values for discount percentage",
+              "objective": "Verify that the system enforces boundary values 0 and 100 for discount percentage.",
+              "test_type": "Boundary",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using input at boundary values consistent with the requirement.",
+                  "expected_result": "The system accepts the input without error."
+                }
+              ],
+              "expected_result": "The system accepts the input without error.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System enforces boundary values 0 and 100 for discount percentage.",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "discount percentage to be between 0 and 100 inclusive"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "System rejects discount percentage outside valid range",
+              "objective": "Verify that the system rejects discount percentage values outside 0 to 100 range.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using invalid input outside the valid range consistent with the requirement.",
+                  "expected_result": "The system rejects the input with an error."
+                }
+              ],
+              "expected_result": "The system rejects the input with an error.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System rejects discount percentage values outside 0 to 100 range.",
+                "technique_used": "Input validation"
+              },
+              "source_basis": [
+                "discount percentage to be between 0 and 100 inclusive"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System enforces that discount percentage values within 0 to 100 inclusive are accepted.",
+              "test_type": "Positive",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify normal valid values are accepted.",
+              "source_basis": [
+                "discount percentage to be between 0 and 100 inclusive"
+              ]
+            },
+            {
+              "coverage_item": "System enforces boundary values 0 and 100 for discount percentage.",
+              "test_type": "Boundary",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Verify inclusive boundaries are accepted.",
+              "source_basis": [
+                "discount percentage to be between 0 and 100 inclusive"
+              ]
+            },
+            {
+              "coverage_item": "System rejects discount percentage values outside 0 to 100 range.",
+              "test_type": "Negative",
+              "technique_used": "Input validation",
+              "priority": "High",
+              "rationale": "Ensure out-of-range values are not accepted.",
+              "source_basis": [
+                "discount percentage to be between 0 and 100 inclusive"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.57799999999406,
+        "provider_wait_by_stage": {
+          "planner": 42.09399999999732,
+          "reviewer": 41.48399999999674
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.57799999999406
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_008",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Prevent saving duplicate employee ID",
+              "objective": "Verify the system prevents saving an employee record when the employee ID already exists",
+              "test_type": "Negative",
+              "technique_used": "Data entry validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system prevents saving the employee record."
+                }
+              ],
+              "expected_result": "The system prevents saving the employee record.",
+              "assumption_required": true,
+              "assumptions": [
+                "UI location for entering employee ID not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System prevents saving an employee record when the employee ID already exists",
+                "technique_used": "Data entry validation"
+              },
+              "source_basis": [
+                "prevent duplicate employee IDs from being saved"
+              ]
+            }
+          ],
+          "missing_information": [
+            "UI location for entering employee ID not specified"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent duplicate employee IDs from being saved.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "UI location for entering employee ID not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "System prevents saving an employee record when the employee ID already exists",
+              "test_type": "Negative",
+              "technique_used": "Data entry validation",
+              "priority": "High",
+              "rationale": "Ensures data integrity by enforcing uniqueness constraint",
+              "source_basis": [
+                "prevent duplicate employee IDs from being saved"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2240,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.37500000001455,
+        "provider_wait_by_stage": {
+          "planner": 43.17200000000594,
+          "reviewer": 41.203000000008615
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.37500000001455
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "BLOCKED_MISSING_INFORMATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "BLOCKED_MISSING_INFORMATION",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Malformed planner response"
+          ],
+          "reason": "Malformed planner response"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Malformed planner response"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.92200000000594,
+        "provider_wait_by_stage": {
+          "planner": 42.92200000000594
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.92200000000594
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Cancellation reason required for approved booking cancellation",
+              "objective": "Verify that a cancellation reason is required when cancelling an approved booking",
+              "test_type": "Negative",
+              "technique_used": "Input validation enforcement",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to cancel an approved booking without providing a cancellation reason",
+                  "expected_result": "The system enforces that a cancellation reason must be provided"
+                }
+              ],
+              "expected_result": "The system enforces that a cancellation reason must be provided",
+              "assumption_required": true,
+              "assumptions": [
+                "UI element for entering cancellation reason not specified",
+                "Mechanism for providing cancellation reason not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System enforces that a cancellation reason must be provided when cancelling an approved booking",
+                "technique_used": "Input validation enforcement"
+              },
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "missing_information": [
+            "UI element for entering cancellation reason not specified",
+            "Mechanism for providing cancellation reason not specified"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "UI element for entering cancellation reason not specified",
+            "Mechanism for providing cancellation reason not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "System enforces that a cancellation reason must be provided when cancelling an approved booking",
+              "test_type": "Negative",
+              "technique_used": "Input validation enforcement",
+              "priority": "High",
+              "rationale": "Verifies that the system blocks cancellation without a reason, satisfying the requirement",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.5620000000199,
+        "provider_wait_by_stage": {
+          "planner": 42.21800000000803,
+          "reviewer": 41.344000000011874
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.5620000000199
+        }
+      }
+    }
+  }
+]

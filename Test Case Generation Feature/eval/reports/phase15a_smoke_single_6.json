@@ -1,0 +1,129 @@
+{
+    "status":  "NEEDS_REVIEW",
+    "results":  [
+                    {
+                        "requirement_id":  "SMOKE15A_006_SINGLE",
+                        "requirement_text":  "Profile picture upload shall complete within 5 seconds.",
+                        "requirement_type":  "NFR",
+                        "status":  "NEEDS_REVIEW",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_NFR_1_001",
+                                               "requirement_id":  "SMOKE15A_006_SINGLE",
+                                               "title":  "Verify profile picture upload completes within 5 seconds",
+                                               "objective":  "To ensure the profile picture upload process meets the performance requirement",
+                                               "test_type":  "Performance",
+                                               "technique_used":  "Measure upload response time using a performance testing tool",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Upload a profile picture",
+                                                                 "expected_result":  "The upload process completes within 5 seconds"
+                                                             }
+                                                         ],
+                                               "expected_result":  "The upload process completes within 5 seconds",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Profile picture size not specified",
+                                                                   "Network conditions or bandwidth not specified"
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_006_SINGLE",
+                                                                    "coverage_item":  "Verify that uploading a profile picture completes within 5 seconds",
+                                                                    "technique_used":  "Measure upload response time using a performance testing tool"
+                                                                },
+                                               "source_basis":  [
+                                                                    "Profile picture upload shall complete within 5 seconds"
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+                                                    "profile picture size not specified",
+                                                    "network conditions or bandwidth not specified"
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "SMOKE15A_006_SINGLE",
+                      "requirement_text":  "Profile picture upload shall complete within 5 seconds.",
+                      "requirement_type":  "NFR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+                                                  "profile picture size not specified",
+                                                  "network conditions or bandwidth not specified"
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "Verify that uploading a profile picture completes within 5 seconds",
+                                                 "test_type":  "Performance",
+                                                 "technique_used":  "Measure upload response time using a performance testing tool",
+                                                 "priority":  "High",
+                                                 "rationale":  "Ensures the NFR performance target is met",
+                                                 "source_basis":  [
+                                                                      "Profile picture upload shall complete within 5 seconds"
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  1,
+                      "assumptions":  [
+
+                                      ]
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  3,
+                   "estimated_tokens":  2216,
+                   "calls_used":  3,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras",
+                                                  "generator":  "groq",
+                                                  "reviewer":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  false,
+                   "fallback_provider":  null,
+                   "fallback_reason":  null,
+                   "rate_limit_stage":  null,
+                   "rate_limit_type":  null,
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  60.71899999999914,
+                   "provider_wait_by_stage":  {
+                                                  "planner":  20.79699999999866,
+                                                  "reviewer":  39.92200000000048
+                                              },
+                   "provider_wait_by_provider":  {
+                                                     "cerebras":  60.71899999999914
+                                                 }
+               }
+}

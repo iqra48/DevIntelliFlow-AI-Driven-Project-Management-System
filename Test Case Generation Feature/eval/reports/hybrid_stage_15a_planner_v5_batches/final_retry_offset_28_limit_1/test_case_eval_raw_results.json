@@ -1,0 +1,159 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that after accepting the updated terms, the user can access the dashboard.",
+              "objective": "Validate that the user can access the dashboard after accepting the updated terms.",
+              "test_type": "Positive",
+              "technique_used": "UI functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for accessing the dashboard are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Accept the updated terms.",
+                  "expected_result": "The user can access the dashboard."
+                }
+              ],
+              "expected_result": "The user can access the dashboard.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the updated terms are correctly displayed to the user."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that after accepting the updated terms, the user can access the dashboard.",
+                "technique_used": "UI functional test"
+              },
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify that without accepting the updated terms, the user is prevented from accessing the dashboard.",
+              "objective": "Validate that the user is prevented from accessing the dashboard without accepting the updated terms.",
+              "test_type": "Negative",
+              "technique_used": "UI functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for accessing the dashboard are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to access the dashboard without accepting the updated terms.",
+                  "expected_result": "The user is prevented from accessing the dashboard."
+                }
+              ],
+              "expected_result": "The user is prevented from accessing the dashboard.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the updated terms are correctly displayed to the user."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that without accepting the updated terms, the user is prevented from accessing the dashboard.",
+                "technique_used": "UI functional test"
+              },
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that after accepting the updated terms, the user can access the dashboard.",
+              "test_type": "Positive",
+              "technique_used": "UI functional test",
+              "priority": "High",
+              "rationale": "Ensures the acceptance flow permits dashboard access as required.",
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            },
+            {
+              "coverage_item": "Verify that without accepting the updated terms, the user is prevented from accessing the dashboard.",
+              "test_type": "Negative",
+              "technique_used": "UI functional test",
+              "priority": "High",
+              "rationale": "Ensures the system enforces the acceptance requirement.",
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.54700000000594,
+        "provider_wait_by_stage": {
+          "reviewer": 41.54700000000594
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.54700000000594
+        }
+      }
+    }
+  }
+]

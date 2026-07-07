@@ -1,0 +1,83 @@
+[
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "FAILED_SCHEMA_VALIDATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "FAILED_SCHEMA_VALIDATION",
+          "test_cases": [],
+          "missing_information": [
+            "Definition of which form fields are considered \"primary\" is not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Malformed generator response"
+          ],
+          "reason": "All generated test cases failed structural validation"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Definition of which form fields are considered \"primary\" is not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that keyboard navigation (Tab/Shift+Tab) moves focus sequentially through all primary form fields",
+              "test_type": "Usability",
+              "technique_used": "Manual exploratory testing using keyboard navigation",
+              "priority": "High",
+              "rationale": "Ensures the system meets the stated usability requirement for keyboard accessibility",
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "eval_id": "EVAL_VAGUE_003",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Performance Test Case 1",
+              "objective": "Verify the system's performance under normal use.",
+              "test_type": "Performance",
+              "technique_used": "Load testing",
+              "priority": "High",
+              "preconditions": [
+                "The system is in a normal state."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Perform load testing on the system.",
+                  "expected_result": "The system responds within a reasonable time frame."
+                }
+              ],
+              "expected_result": "The system responds within a reasonable time frame.",
+              "assumption_required": true,
+              "assumptions": [
+                "The definition of 'normal use' is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Performance",
+                "technique_used": "Load testing"
+              },
+              "source_basis": [
+                "The system shall be fast enough for normal use."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurable criteria for 'fast enough' are missing."
+          ],
+          "assumptions": [
+            "The definition of 'normal use' is not specified."
+          ],
+          "warnings": [
+            "Measurable criteria for 'fast enough' are missing.",
+            "TC_REQ_1_001: The requirement lacks measurable criteria for 'fast enough' and the definition of 'normal use' is not specified.",
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming the system responds within a reasonable time frame without specifying what 'reasonable' means."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall be fast enough for normal use.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurable criteria for 'fast enough' are missing."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Performance",
+              "test_type": "Performance",
+              "technique_used": "Load testing",
+              "priority": "High",
+              "rationale": "The system should respond within a reasonable time frame.",
+              "source_basis": [
+                "The system shall be fast enough for normal use."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "The definition of 'normal use' is not specified."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2228,
+        "calls_used": 3
+      }
+    }
+  }
+]

@@ -1,0 +1,461 @@
+{
+    "status":  "SUCCESS",
+    "results":  [
+                    {
+                        "requirement_id":  "SMOKE15A_001",
+                        "requirement_text":  "The system shall allow users to log in.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_1_001",
+                                               "requirement_id":  "SMOKE15A_001",
+                                               "title":  "User can log in successfully",
+                                               "objective":  "Verify that the system allows users to log in",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional test of login endpoint",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "The system is configured to allow user login",
+                                                                 "expected_result":  "The user is logged in successfully"
+                                                             }
+                                                         ],
+                                               "expected_result":  "The user is logged in successfully",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assumption: The system is configured to allow user login"
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_001",
+                                                                    "coverage_item":  "User can log in successfully",
+                                                                    "technique_used":  "Functional test of login endpoint"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log in."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_002",
+                        "requirement_text":  "The system shall allow users to reset their password using the configured recovery method.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_2_001",
+                                               "requirement_id":  "SMOKE15A_002",
+                                               "title":  "User can reset password via configured recovery method",
+                                               "objective":  "Verify that the system allows users to reset their password using the configured recovery method",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional test of password reset flow",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "The system is configured to allow user password reset",
+                                                                 "expected_result":  "The user\u0027s password is reset successfully"
+                                                             }
+                                                         ],
+                                               "expected_result":  "The user\u0027s password is reset successfully",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assumption: The system is configured to allow user password reset"
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_002",
+                                                                    "coverage_item":  "User can reset password via configured recovery method",
+                                                                    "technique_used":  "Functional test of password reset flow"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to reset their password using the configured recovery method."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_003",
+                        "requirement_text":  "The system shall generate a monthly sales report.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_3_001",
+                                               "requirement_id":  "SMOKE15A_003",
+                                               "title":  "System generates monthly sales report",
+                                               "objective":  "Verify that the system generates a monthly sales report",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional test of report generation schedule",
+                                               "priority":  "Medium",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "The system is configured to generate a monthly sales report",
+                                                                 "expected_result":  "The monthly sales report is generated successfully"
+                                                             }
+                                                         ],
+                                               "expected_result":  "The monthly sales report is generated successfully",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assumption: The system is configured to generate a monthly sales report"
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_003",
+                                                                    "coverage_item":  "System generates monthly sales report",
+                                                                    "technique_used":  "Functional test of report generation schedule"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall generate a monthly sales report."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_004",
+                        "requirement_text":  "The system shall prevent checkout if the cart is empty.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_4_001",
+                                               "requirement_id":  "SMOKE15A_004",
+                                               "title":  "Checkout is blocked when cart is empty",
+                                               "objective":  "Verify that the system prevents checkout if the cart is empty",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional test of checkout validation logic",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "The cart is empty",
+                                                                 "expected_result":  "Checkout is blocked"
+                                                             }
+                                                         ],
+                                               "expected_result":  "Checkout is blocked",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assumption: The cart is empty"
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_004",
+                                                                    "coverage_item":  "Checkout is blocked when cart is empty",
+                                                                    "technique_used":  "Functional test of checkout validation logic"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall prevent checkout if the cart is empty."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    },
+                    {
+                        "requirement_id":  "SMOKE15A_005",
+                        "requirement_text":  "The system shall allow users to upload profile pictures.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_5_001",
+                                               "requirement_id":  "SMOKE15A_005",
+                                               "title":  "User can upload a profile picture",
+                                               "objective":  "Verify that the system allows users to upload profile pictures",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional test of file upload endpoint",
+                                               "priority":  "Medium",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "The system is configured to allow user profile picture upload",
+                                                                 "expected_result":  "The user\u0027s profile picture is uploaded successfully"
+                                                             }
+                                                         ],
+                                               "expected_result":  "The user\u0027s profile picture is uploaded successfully",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assumption: The system is configured to allow user profile picture upload"
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_005",
+                                                                    "coverage_item":  "User can upload a profile picture",
+                                                                    "technique_used":  "Functional test of file upload endpoint"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to upload profile pictures."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "SMOKE15A_001",
+                      "requirement_text":  "The system shall allow users to log in.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "User can log in successfully",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional test of login endpoint",
+                                                 "priority":  "High",
+                                                 "rationale":  "Verifies the primary authentication capability.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log in."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  1,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_002",
+                      "requirement_text":  "The system shall allow users to reset their password using the configured recovery method.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "User can reset password via configured recovery method",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional test of password reset flow",
+                                                 "priority":  "High",
+                                                 "rationale":  "Ensures password recovery functionality works as specified.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to reset their password using the configured recovery method."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  1,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_003",
+                      "requirement_text":  "The system shall generate a monthly sales report.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "System generates monthly sales report",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional test of report generation schedule",
+                                                 "priority":  "Medium",
+                                                 "rationale":  "Validates that the reporting feature produces the expected monthly output.",
+                                                 "source_basis":  [
+                                                                      "The system shall generate a monthly sales report."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  1,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_004",
+                      "requirement_text":  "The system shall prevent checkout if the cart is empty.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "Checkout is blocked when cart is empty",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional test of checkout validation logic",
+                                                 "priority":  "High",
+                                                 "rationale":  "Ensures business rule preventing empty-cart checkout is enforced.",
+                                                 "source_basis":  [
+                                                                      "The system shall prevent checkout if the cart is empty."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  1,
+                      "assumptions":  [
+
+                                      ]
+                  },
+                  {
+                      "requirement_id":  "SMOKE15A_005",
+                      "requirement_text":  "The system shall allow users to upload profile pictures.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "User can upload a profile picture",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional test of file upload endpoint",
+                                                 "priority":  "Medium",
+                                                 "rationale":  "Confirms that the profile picture upload feature works as intended.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to upload profile pictures."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  1,
+                      "assumptions":  [
+
+                                      ]
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  3,
+                   "estimated_tokens":  3794,
+                   "calls_used":  3,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras",
+                                                  "generator":  "groq",
+                                                  "reviewer":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  false,
+                   "fallback_provider":  null,
+                   "fallback_reason":  null,
+                   "rate_limit_stage":  null,
+                   "rate_limit_type":  null,
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  40.375,
+                   "provider_wait_by_stage":  {
+                                                  "reviewer":  40.375
+                                              },
+                   "provider_wait_by_provider":  {
+                                                     "cerebras":  40.375
+                                                 }
+               }
+}

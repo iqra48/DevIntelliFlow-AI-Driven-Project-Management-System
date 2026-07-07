@@ -1,0 +1,122 @@
+[
+  {
+    "eval_id": "EVAL_NFR_008",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify dates and currency values are displayed according to the user's selected locale",
+              "objective": "Validate that dates and currency values are formatted correctly based on the user's locale",
+              "test_type": "Positive",
+              "technique_used": "Locale-based formatting verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that dates and currency values are displayed according to the user's selected locale."
+                }
+              ],
+              "expected_result": "Dates and currency values are displayed correctly based on the user's locale.",
+              "assumption_required": true,
+              "assumptions": [
+                "Supported locale list not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that dates and currency values are displayed according to the user's selected locale",
+                "technique_used": "Locale-based formatting verification"
+              },
+              "source_basis": [
+                "display dates and currency values using the user's selected locale"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Supported locale list not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents behavior for an unsupported locale, which is not specified in the requirement. It adds a negative scenario that the system should not display dates and currency values correctly for an unsupported locale, which is beyond the stated NFR."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Supported locale list not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that dates and currency values are displayed according to the user's selected locale",
+              "test_type": "Positive",
+              "technique_used": "Locale-based formatting verification",
+              "priority": "High",
+              "rationale": "Ensures UI respects user locale settings",
+              "source_basis": [
+                "display dates and currency values using the user's selected locale"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 40.20300000000009,
+        "provider_wait_by_stage": {
+          "reviewer": 40.20300000000009
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 40.20300000000009
+        }
+      }
+    }
+  }
+]

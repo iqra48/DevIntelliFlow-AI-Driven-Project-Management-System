@@ -1,0 +1,706 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_001",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Create a new customer record with name, email, and phone number",
+              "objective": "Verify the system allows a user to create a new customer record with name, email, and phone number",
+              "test_type": "Positive",
+              "technique_used": "Functional verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement",
+                  "expected_result": "Verify the system creates a new customer record containing the provided name, email, and phone number"
+                }
+              ],
+              "expected_result": "The system creates a new customer record containing the provided name, email, and phone number",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for creating a new customer record is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System creates a new customer record containing the provided name, email, and phone number.",
+                "technique_used": "Functional verification"
+              },
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to create a new customer record with name, email, and phone number.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System creates a new customer record containing the provided name, email, and phone number.",
+              "test_type": "Positive",
+              "technique_used": "Functional verification",
+              "priority": "High",
+              "rationale": "Verifies that the create operation succeeds and stores the specified fields.",
+              "source_basis": [
+                "allow a user to create a new customer record with name, email, and phone number"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2344,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 38.483999999999924,
+        "provider_wait_by_stage": {
+          "reviewer": 38.483999999999924
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 38.483999999999924
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_SIMPLE_007",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Download monthly activity report",
+              "objective": "Verify the system allows a user to download a monthly activity report",
+              "test_type": "Positive",
+              "technique_used": "Functional verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system enables a user to download a monthly activity report."
+                }
+              ],
+              "expected_result": "The system enables a user to download a monthly activity report.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for downloading the report is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "The system enables a user to download a monthly activity report",
+                "technique_used": "Functional verification"
+              },
+              "source_basis": [
+                "allow a user to download a monthly activity report"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify report format",
+              "objective": "Verify the downloaded report is provided in PDF format",
+              "test_type": "Positive",
+              "technique_used": "Output format verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The downloaded report is provided in PDF format."
+                }
+              ],
+              "expected_result": "The downloaded report is provided in PDF format.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for downloading the report is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "The downloaded report is provided in PDF format",
+                "technique_used": "Output format verification"
+              },
+              "source_basis": [
+                "as a PDF file"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to download a monthly activity report as a PDF file.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "The system enables a user to download a monthly activity report",
+              "test_type": "Positive",
+              "technique_used": "Functional verification",
+              "priority": "High",
+              "rationale": "Verifies the core download capability",
+              "source_basis": [
+                "allow a user to download a monthly activity report"
+              ]
+            },
+            {
+              "coverage_item": "The downloaded report is provided in PDF format",
+              "test_type": "Positive",
+              "technique_used": "Output format verification",
+              "priority": "High",
+              "rationale": "Ensures the output conforms to the required PDF format",
+              "source_basis": [
+                "as a PDF file"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.452999999999975,
+        "provider_wait_by_stage": {
+          "reviewer": 41.452999999999975
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.452999999999975
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System accepts uploaded profile images that are JPG files.",
+              "objective": "Verify that the system accepts uploaded profile images that are JPG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system accepts the uploaded profile image."
+                }
+              ],
+              "expected_result": "The system accepts the uploaded profile image.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System accepts uploaded profile images that are JPG files.",
+                "technique_used": "Constraint enforcement verification"
+              },
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "System accepts uploaded profile images that are PNG files.",
+              "objective": "Verify that the system accepts uploaded profile images that are PNG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system accepts the uploaded profile image."
+                }
+              ],
+              "expected_result": "The system accepts the uploaded profile image.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System accepts uploaded profile images that are PNG files.",
+                "technique_used": "Constraint enforcement verification"
+              },
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "System rejects uploaded profile images that are not JPG or PNG files.",
+              "objective": "Verify that the system rejects uploaded profile images that are not JPG or PNG files.",
+              "test_type": "Negative",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using invalid input that does not meet the requirement.",
+                  "expected_result": "The system rejects the uploaded profile image."
+                }
+              ],
+              "expected_result": "The system rejects the uploaded profile image.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System rejects uploaded profile images that are not JPG or PNG files.",
+                "technique_used": "Constraint enforcement verification"
+              },
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System accepts uploaded profile images that are JPG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "rationale": "Verify that allowed file types are accepted.",
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "System accepts uploaded profile images that are PNG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "rationale": "Verify that allowed file types are accepted.",
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "System rejects uploaded profile images that are not JPG or PNG files.",
+              "test_type": "Negative",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "rationale": "Verify that disallowed file types are rejected.",
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.625,
+        "provider_wait_by_stage": {
+          "reviewer": 41.625
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.625
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Keyboard navigation for primary form fields",
+              "objective": "Verify keyboard navigation is functional for all primary form fields.",
+              "test_type": "Positive",
+              "technique_used": "Usability and accessibility verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Keyboard navigation is functional for all primary form fields."
+                }
+              ],
+              "expected_result": "Keyboard navigation is functional for all primary form fields.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for keyboard navigation is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Keyboard navigation is functional for all primary form fields.",
+                "technique_used": "Usability and accessibility verification"
+              },
+              "source_basis": [
+                "provide keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Keyboard navigation is functional for all primary form fields.",
+              "test_type": "Positive",
+              "technique_used": "Usability and accessibility verification",
+              "priority": "High",
+              "rationale": "Verifies compliance with the keyboard navigation usability requirement.",
+              "source_basis": [
+                "provide keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.391000000000076,
+        "provider_wait_by_stage": {
+          "reviewer": 42.391000000000076
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.391000000000076
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Nightly report generation completes before 6:00 AM local time",
+              "objective": "Verify that the system completes nightly report generation before 6:00 AM local time",
+              "test_type": "Performance",
+              "technique_used": "Performance measurement",
+              "priority": "High",
+              "preconditions": [
+                "Configured measurement approach is available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Measure the time taken for nightly report generation",
+                  "expected_result": "The time taken for nightly report generation is less than 6:00 AM local time"
+                }
+              ],
+              "expected_result": "The system completes nightly report generation before 6:00 AM local time",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact start time of nightly report generation not specified",
+                "Definition of the nightly report generation process not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Report generation completes before 6:00 AM local time",
+                "technique_used": "Performance measurement"
+              },
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Exact start time of nightly report generation not specified",
+            "Definition of the nightly report generation process not specified"
+          ],
+          "assumptions": [
+            "Configured measurement approach is available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Exact start time of nightly report generation not specified",
+            "Definition of the nightly report generation process not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Report generation completes before 6:00 AM local time",
+              "test_type": "Performance",
+              "technique_used": "Performance measurement",
+              "priority": "High",
+              "rationale": "Verify that the nightly report generation finishes within the required time window.",
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured measurement approach is available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.983999999999924,
+        "provider_wait_by_stage": {
+          "reviewer": 41.983999999999924
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.983999999999924
+        }
+      }
+    }
+  }
+]

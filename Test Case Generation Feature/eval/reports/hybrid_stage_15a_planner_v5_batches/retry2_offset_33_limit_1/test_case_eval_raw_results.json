@@ -1,0 +1,126 @@
+[
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify reporting module availability",
+              "objective": "Verify that the reporting module achieves at least 99.5% availability over a month.",
+              "test_type": "Reliability",
+              "technique_used": "Continuous uptime monitoring over the month",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Monitor the reporting module's uptime over a month.",
+                  "expected_result": "The reporting module achieves at least 99.5% availability over the month."
+                }
+              ],
+              "expected_result": "The reporting module achieves at least 99.5% availability over the month.",
+              "assumption_required": true,
+              "assumptions": [
+                "Availability is calculated as (uptime / total time) * 100 for the reporting module."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the reporting module achieves at least 99.5% availability over a month.",
+                "technique_used": "Continuous uptime monitoring over the month"
+              },
+              "source_basis": [
+                "maintain 99.5 percent monthly availability"
+              ]
+            }
+          ],
+          "missing_information": [
+            "measurement_method",
+            "monitoring_tool"
+          ],
+          "assumptions": [
+            "Availability is calculated as (uptime / total time) * 100 for the reporting module."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "measurement_method",
+            "monitoring_tool"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the reporting module achieves at least 99.5% availability over a month.",
+              "test_type": "Reliability",
+              "technique_used": "Continuous uptime monitoring over the month",
+              "priority": "High",
+              "rationale": "Ensure compliance with the specified availability target.",
+              "source_basis": [
+                "maintain 99.5 percent monthly availability"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Availability is calculated as (uptime / total time) * 100 for the reporting module."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.09399999999732,
+        "provider_wait_by_stage": {
+          "reviewer": 42.09399999999732
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.09399999999732
+        }
+      }
+    }
+  }
+]

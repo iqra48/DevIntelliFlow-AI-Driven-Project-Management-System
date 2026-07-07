@@ -1,0 +1,49 @@
+# Environment files
+*.env
+.env
+.env.*
+!.env.example
+
+# Python virtual environments and caches
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+**/.mypy_cache/
+.ruff_cache/
+**/.ruff_cache/
+
+# Node / Next.js
+Frontend/node_modules/
+Frontend/.next/
+Frontend/out/
+Frontend/build/
+Frontend/.vercel/
+Frontend/*.tsbuildinfo
+
+# Logs and runtime files
+*.log
+*_pid.txt
+tmp_*.txt
+server_*.log
+_backend_live.log
+*_out.log
+*_err.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Local tooling metadata
+.agents/
+.codex/

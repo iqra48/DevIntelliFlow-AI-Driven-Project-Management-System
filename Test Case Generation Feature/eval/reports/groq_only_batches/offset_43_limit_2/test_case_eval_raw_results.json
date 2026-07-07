@@ -1,0 +1,148 @@
+[
+  {
+    "eval_id": "EVAL_VAGUE_004",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Manage User Data Appropriately",
+              "objective": "Verify that user data is managed appropriately.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "User is logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Access user data",
+                  "expected_result": "User data is displayed correctly"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Modify user data",
+                  "expected_result": "User data is updated correctly"
+                }
+              ],
+              "expected_result": "User data is managed appropriately",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Manage user data appropriately",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall manage user data appropriately."
+              ]
+            }
+          ],
+          "missing_information": [
+            "project context is not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming user data is not displayed."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall manage user data appropriately.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "project context is not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Manage user data appropriately",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure data is handled correctly",
+              "source_basis": [
+                "The system shall manage user data appropriately."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2204,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_VAGUE_005",
+    "category": "vague_blocked",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "RATE_LIMITED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "status": "RATE_LIMITED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner rate-limited during test case generation: Groq-only provider failed; fallback providers are disabled. Original error [RateLimitError]: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498806, Requested 1645. Please try again in 1m17.9328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+          ],
+          "reason": "Planner rate-limited during test case generation: Groq-only provider failed; fallback providers are disabled. Original error [RateLimitError]: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498806, Requested 1645. Please try again in 1m17.9328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide useful reports.",
+          "requirement_type": "FR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2192,
+        "calls_used": 1
+      }
+    }
+  }
+]

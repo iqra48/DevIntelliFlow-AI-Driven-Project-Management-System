@@ -1,0 +1,196 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_009",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System accepts uploaded profile images that are JPG files.",
+              "objective": "Verify that the system accepts uploaded profile images that are JPG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system accepts the uploaded profile image."
+                }
+              ],
+              "expected_result": "The system accepts the uploaded profile image.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System accepts uploaded profile images that are JPG files.",
+                "technique_used": "Constraint enforcement verification"
+              },
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "System accepts uploaded profile images that are PNG files.",
+              "objective": "Verify that the system accepts uploaded profile images that are PNG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system accepts the uploaded profile image."
+                }
+              ],
+              "expected_result": "The system accepts the uploaded profile image.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System accepts uploaded profile images that are PNG files.",
+                "technique_used": "Constraint enforcement verification"
+              },
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "System rejects uploaded profile images that are not JPG or PNG files.",
+              "objective": "Verify that the system rejects uploaded profile images that are not JPG or PNG files.",
+              "test_type": "Negative",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using invalid input that does not meet the requirement.",
+                  "expected_result": "The system rejects the uploaded profile image."
+                }
+              ],
+              "expected_result": "The system rejects the uploaded profile image.",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System rejects uploaded profile images that are not JPG or PNG files.",
+                "technique_used": "Constraint enforcement verification"
+              },
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require uploaded profile images to be JPG or PNG files.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "System accepts uploaded profile images that are JPG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "rationale": "Verify that allowed file types are accepted.",
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "System accepts uploaded profile images that are PNG files.",
+              "test_type": "Positive",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "rationale": "Verify that allowed file types are accepted.",
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            },
+            {
+              "coverage_item": "System rejects uploaded profile images that are not JPG or PNG files.",
+              "test_type": "Negative",
+              "technique_used": "Constraint enforcement verification",
+              "priority": "High",
+              "rationale": "Verify that disallowed file types are rejected.",
+              "source_basis": [
+                "require uploaded profile images to be JPG or PNG files"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.625,
+        "provider_wait_by_stage": {
+          "reviewer": 41.625
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.625
+        }
+      }
+    }
+  }
+]

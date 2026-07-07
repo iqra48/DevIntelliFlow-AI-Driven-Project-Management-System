@@ -1,0 +1,116 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify successful login timestamp and user ID recording",
+              "objective": "Validate that the system records the login timestamp and user ID for each successful login.",
+              "test_type": "Positive",
+              "technique_used": "Inspect audit log or database entry for login event",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the system records the login timestamp and user ID."
+                }
+              ],
+              "expected_result": "The system records the login timestamp and user ID.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for login is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that after a successful login the system records the login timestamp and user identifier.",
+                "technique_used": "Inspect audit log or database entry for login event"
+              },
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that after a successful login the system records the login timestamp and user identifier.",
+              "test_type": "Positive",
+              "technique_used": "Inspect audit log or database entry for login event",
+              "priority": "High",
+              "rationale": "Ensures compliance with the requirement to capture login audit information.",
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.437000000005355,
+        "provider_wait_by_stage": {
+          "reviewer": 41.437000000005355
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.437000000005355
+        }
+      }
+    }
+  }
+]

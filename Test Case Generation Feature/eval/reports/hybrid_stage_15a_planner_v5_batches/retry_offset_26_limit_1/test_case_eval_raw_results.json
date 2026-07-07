@@ -1,0 +1,116 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Successful login audit record creation",
+              "objective": "Verify that a successful login creates an audit record containing the login timestamp and user ID.",
+              "test_type": "Positive",
+              "technique_used": "Log verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "A successful login is performed",
+                  "expected_result": "An audit record containing the login timestamp and user ID is created"
+                }
+              ],
+              "expected_result": "An audit record containing the login timestamp and user ID is created",
+              "assumption_required": true,
+              "assumptions": [
+                "Assumption: Configured prerequisites for exercising this capability are available."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a successful login creates an audit record containing the login timestamp and user ID.",
+                "technique_used": "Log verification"
+              },
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a successful login creates an audit record containing the login timestamp and user ID.",
+              "test_type": "Positive",
+              "technique_used": "Log verification",
+              "priority": "High",
+              "rationale": "Ensures audit logging of successful logins as required.",
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.54700000000048,
+        "provider_wait_by_stage": {
+          "reviewer": 42.54700000000048
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.54700000000048
+        }
+      }
+    }
+  }
+]

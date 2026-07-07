@@ -1,0 +1,78 @@
+{
+  "total_eval_items": 30,
+  "schema_pass_rate": 1.0,
+  "requirement_id_mismatch_total": 0,
+  "coverage_item_mismatch_total": 0,
+  "unsupported_invention_rate": null,
+  "average_test_cases_per_requirement": 0.8666666666666667,
+  "average_calls_used": 2.566666666666667,
+  "average_estimated_tokens": 2291.266666666667,
+  "rate_limit_failures": 5,
+  "provider_failures": 0,
+  "blocked_results": 2,
+  "failed_schema_results": 0,
+  "status_counts": {
+    "SUCCESS": 17,
+    "NEEDS_REVIEW": 6,
+    "BLOCKED_MISSING_INFORMATION": 2,
+    "RATE_LIMITED": 5
+  },
+  "category_counts": {
+    "simple_fr": 10,
+    "validation_rule_fr": 10,
+    "login_security_fr": 10
+  },
+  "provider_signature_counts": {
+    "planner=cerebras|generator=cerebras|reviewer=cerebras": 30
+  },
+  "primary_provider_counts": {
+    "cerebras": 30
+  },
+  "planner_provider_counts": {
+    "cerebras": 30
+  },
+  "generator_provider_counts": {
+    "cerebras": 30
+  },
+  "reviewer_provider_counts": {
+    "cerebras": 30
+  },
+  "fallback_used_count": 0,
+  "fallback_provider_counts": {},
+  "rate_limit_type_counts": {
+    "unknown": 7
+  },
+  "quality_gates": {
+    "schema_pass_rate_gte_95": true,
+    "requirement_id_mismatch_zero": true,
+    "coverage_item_mismatch_zero": true,
+    "unsupported_invention_lte_5_percent": null,
+    "no_rate_limit_failures": false
+  },
+  "total_expected_eval_items": 45,
+  "total_merged_eval_items": 30,
+  "missing_eval_ids": [
+    "EVAL_NFR_001",
+    "EVAL_NFR_002",
+    "EVAL_NFR_003",
+    "EVAL_NFR_004",
+    "EVAL_NFR_005",
+    "EVAL_NFR_006",
+    "EVAL_NFR_007",
+    "EVAL_NFR_008",
+    "EVAL_NFR_009",
+    "EVAL_NFR_010",
+    "EVAL_VAGUE_001",
+    "EVAL_VAGUE_002",
+    "EVAL_VAGUE_003",
+    "EVAL_VAGUE_004",
+    "EVAL_VAGUE_005"
+  ],
+  "duplicate_eval_ids": [],
+  "extra_eval_ids": [],
+  "incomplete_batch_dirs": [],
+  "provider": null,
+  "strict_provider": null,
+  "warnings": [],
+  "groq_only_combined_complete": false
+}

@@ -1,0 +1,171 @@
+{
+    "status":  "SUCCESS",
+    "results":  [
+                    {
+                        "requirement_id":  "SMOKE15A_010_SINGLE",
+                        "requirement_text":  "Managers can approve or reject leave requests.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_1_001",
+                                               "requirement_id":  "SMOKE15A_010_SINGLE",
+                                               "title":  "Managers can approve leave requests.",
+                                               "objective":  "Verify that managers can approve leave requests.",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Manual or automated UI/API interaction",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Configure the leave request for approval.",
+                                                                 "expected_result":  "The leave request is approved."
+                                                             }
+                                                         ],
+                                               "expected_result":  "The leave request is approved.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assuming that the leave request is properly configured for approval."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_010_SINGLE",
+                                                                    "coverage_item":  "Approve leave request",
+                                                                    "technique_used":  "Manual or automated UI/API interaction"
+                                                                },
+                                               "source_basis":  [
+                                                                    "Managers can approve or reject leave requests."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_1_002",
+                                               "requirement_id":  "SMOKE15A_010_SINGLE",
+                                               "title":  "Managers can reject leave requests.",
+                                               "objective":  "Verify that managers can reject leave requests.",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Manual or automated UI/API interaction",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Configure the leave request for rejection.",
+                                                                 "expected_result":  "The leave request is rejected."
+                                                             }
+                                                         ],
+                                               "expected_result":  "The leave request is rejected.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Assuming that the leave request is properly configured for rejection."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "SMOKE15A_010_SINGLE",
+                                                                    "coverage_item":  "Reject leave request",
+                                                                    "technique_used":  "Manual or automated UI/API interaction"
+                                                                },
+                                               "source_basis":  [
+                                                                    "Managers can approve or reject leave requests."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "SMOKE15A_010_SINGLE",
+                      "requirement_text":  "Managers can approve or reject leave requests.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "Approve leave request",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Manual or automated UI/API interaction",
+                                                 "priority":  "High",
+                                                 "rationale":  "Verify that a manager can successfully approve a leave request.",
+                                                 "source_basis":  [
+                                                                      "Managers can approve or reject leave requests."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Reject leave request",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Manual or automated UI/API interaction",
+                                                 "priority":  "High",
+                                                 "rationale":  "Verify that a manager can successfully reject a leave request.",
+                                                 "source_basis":  [
+                                                                      "Managers can approve or reject leave requests."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  2,
+                      "assumptions":  [
+
+                                      ]
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  3,
+                   "estimated_tokens":  2204,
+                   "calls_used":  3,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras",
+                                                  "generator":  "groq",
+                                                  "reviewer":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  false,
+                   "fallback_provider":  null,
+                   "fallback_reason":  null,
+                   "rate_limit_stage":  null,
+                   "rate_limit_type":  null,
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  85.46800000000076,
+                   "provider_wait_by_stage":  {
+                                                  "planner":  43.4369999999999,
+                                                  "reviewer":  42.03100000000086
+                                              },
+                   "provider_wait_by_provider":  {
+                                                     "cerebras":  85.46800000000076
+                                                 }
+               }
+}

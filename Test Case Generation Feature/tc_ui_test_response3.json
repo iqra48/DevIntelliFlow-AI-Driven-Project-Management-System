@@ -1,0 +1,585 @@
+﻿{
+    "status":  "SUCCESS",
+    "results":  [
+                    {
+                        "requirement_id":  "REQ_2",
+                        "requirement_text":  "The system shall allow users to log in using email and password.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_2_001",
+                                               "requirement_id":  "REQ_2",
+                                               "title":  "Valid login with correct email and password",
+                                               "objective":  "Verify that the system allows a user to log in using a valid email and password.",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional verification",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Provide a valid email and password to the login capability.",
+                                                                 "expected_result":  "System authenticates the user and establishes a session."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System authenticates the user and establishes a session.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Login mechanism details are not specified; using a generic login capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_2",
+                                                                    "coverage_item":  "Valid login with correct email and password",
+                                                                    "technique_used":  "Functional verification"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log in using email and password."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_2_002",
+                                               "requirement_id":  "REQ_2",
+                                               "title":  "Invalid login with incorrect credentials",
+                                               "objective":  "Verify that the system rejects a login attempt when incorrect credentials are supplied.",
+                                               "test_type":  "Negative",
+                                               "technique_used":  "Input validation",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Provide an invalid email and/or password to the login capability.",
+                                                                 "expected_result":  "System rejects the authentication attempt."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System rejects the authentication attempt.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Login mechanism details are not specified; using a generic login capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_2",
+                                                                    "coverage_item":  "Invalid login with incorrect credentials",
+                                                                    "technique_used":  "Input validation"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log in using email and password."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_2_003",
+                                               "requirement_id":  "REQ_2",
+                                               "title":  "Boundary login with extreme email length",
+                                               "objective":  "Verify that the system can handle a login request where the email length is at its maximum allowed value.",
+                                               "test_type":  "Boundary",
+                                               "technique_used":  "Boundary value analysis",
+                                               "priority":  "High",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Provide an email address at the maximum allowed length together with a valid password to the login capability.",
+                                                                 "expected_result":  "System processes the login request without error and authenticates the user."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System processes the login request without error and authenticates the user.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Login mechanism details are not specified; using a generic login capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_2",
+                                                                    "coverage_item":  "Boundary login with extreme email length",
+                                                                    "technique_used":  "Boundary value analysis"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log in using email and password."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    },
+                    {
+                        "requirement_id":  "REQ_4",
+                        "requirement_text":  "The system shall allow users to update their profile information.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_4_001",
+                                               "requirement_id":  "REQ_4",
+                                               "title":  "Valid profile update with correct data",
+                                               "objective":  "Verify that the system allows a user to update their profile with valid information.",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional verification",
+                                               "priority":  "Medium",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Provide valid profile information to the update capability.",
+                                                                 "expected_result":  "System updates the profile successfully."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System updates the profile successfully.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Profile update mechanism details are not specified; using a generic update capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_4",
+                                                                    "coverage_item":  "Valid profile update with correct data",
+                                                                    "technique_used":  "Functional verification"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to update their profile information."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_4_002",
+                                               "requirement_id":  "REQ_4",
+                                               "title":  "Invalid profile update with malformed data",
+                                               "objective":  "Verify that the system rejects a profile update when malformed data is supplied.",
+                                               "test_type":  "Negative",
+                                               "technique_used":  "Input validation",
+                                               "priority":  "Medium",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Provide malformed profile data to the update capability.",
+                                                                 "expected_result":  "System rejects the update request."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System rejects the update request.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Profile update mechanism details are not specified; using a generic update capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_4",
+                                                                    "coverage_item":  "Invalid profile update with malformed data",
+                                                                    "technique_used":  "Input validation"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to update their profile information."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_4_003",
+                                               "requirement_id":  "REQ_4",
+                                               "title":  "Boundary profile update with maximum field lengths",
+                                               "objective":  "Verify that the system can handle a profile update where each field is at its maximum allowed length.",
+                                               "test_type":  "Boundary",
+                                               "technique_used":  "Boundary value analysis",
+                                               "priority":  "Medium",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Provide profile information where each field is at its maximum length to the update capability.",
+                                                                 "expected_result":  "System processes the update without error and updates the profile."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System processes the update without error and updates the profile.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Profile update mechanism details are not specified; using a generic update capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_4",
+                                                                    "coverage_item":  "Boundary profile update with maximum field lengths",
+                                                                    "technique_used":  "Boundary value analysis"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to update their profile information."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    },
+                    {
+                        "requirement_id":  "REQ_5",
+                        "requirement_text":  "The system shall allow users to log out of the application.",
+                        "requirement_type":  "FR",
+                        "status":  "SUCCESS",
+                        "test_cases":  [
+                                           {
+                                               "test_case_id":  "TC_REQ_5_001",
+                                               "requirement_id":  "REQ_5",
+                                               "title":  "Valid logout for an authenticated user",
+                                               "objective":  "Verify that an authenticated user can successfully log out of the application.",
+                                               "test_type":  "Positive",
+                                               "technique_used":  "Functional verification",
+                                               "priority":  "Low",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Invoke the logout capability for an authenticated session.",
+                                                                 "expected_result":  "System terminates the session."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System terminates the session.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Logout mechanism details are not specified; using a generic logout capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_5",
+                                                                    "coverage_item":  "Valid logout for an authenticated user",
+                                                                    "technique_used":  "Functional verification"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log out of the application."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_5_002",
+                                               "requirement_id":  "REQ_5",
+                                               "title":  "Invalid logout request without an active session",
+                                               "objective":  "Verify that a logout request without an active session is handled appropriately.",
+                                               "test_type":  "Negative",
+                                               "technique_used":  "Input validation",
+                                               "priority":  "Low",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Invoke the logout capability when no session is active.",
+                                                                 "expected_result":  "System reports that no session is active."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System reports that no session is active.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Logout mechanism details are not specified; using a generic logout capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_5",
+                                                                    "coverage_item":  "Invalid logout request without an active session",
+                                                                    "technique_used":  "Input validation"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log out of the application."
+                                                                ]
+                                           },
+                                           {
+                                               "test_case_id":  "TC_REQ_5_003",
+                                               "requirement_id":  "REQ_5",
+                                               "title":  "Boundary logout with extreme session token length",
+                                               "objective":  "Verify that the system can handle a logout request where the session token length is at its maximum allowed value.",
+                                               "test_type":  "Boundary",
+                                               "technique_used":  "Boundary value analysis",
+                                               "priority":  "Low",
+                                               "preconditions":  [
+                                                                     "Configured prerequisites for exercising this capability are available."
+                                                                 ],
+                                               "test_data":  {
+
+                                                             },
+                                               "steps":  [
+                                                             {
+                                                                 "step_number":  1,
+                                                                 "action":  "Invoke the logout capability using a session token of maximum length.",
+                                                                 "expected_result":  "System processes the logout request without error and terminates the session."
+                                                             }
+                                                         ],
+                                               "expected_result":  "System processes the logout request without error and terminates the session.",
+                                               "assumption_required":  true,
+                                               "assumptions":  [
+                                                                   "Logout mechanism details are not specified; using a generic logout capability."
+                                                               ],
+                                               "traceability":  {
+                                                                    "requirement_id":  "REQ_5",
+                                                                    "coverage_item":  "Boundary logout with extreme session token length",
+                                                                    "technique_used":  "Boundary value analysis"
+                                                                },
+                                               "source_basis":  [
+                                                                    "The system shall allow users to log out of the application."
+                                                                ]
+                                           }
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+
+                                     ],
+                        "reason":  null
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "REQ_2",
+                      "requirement_text":  "The system shall allow users to log in using email and password.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Low",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "Valid login with correct email and password",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional verification",
+                                                 "priority":  "High",
+                                                 "rationale":  "Ensures the primary login functionality works as specified.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log in using email and password."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Invalid login with incorrect credentials",
+                                                 "test_type":  "Negative",
+                                                 "technique_used":  "Input validation",
+                                                 "priority":  "High",
+                                                 "rationale":  "Verifies that the system rejects unauthorized access.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log in using email and password."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Boundary login with extreme email length",
+                                                 "test_type":  "Boundary",
+                                                 "technique_used":  "Boundary value analysis",
+                                                 "priority":  "High",
+                                                 "rationale":  "Checks handling of edgeâcase input sizes.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log in using email and password."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  3,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  "",
+                      "why_boundary_not_generated":  "",
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\n  \"plans\": {\n    \"1\": {\n      \"requirement_id\": \"REQ_2\",\n      \"requirement_text\": \"The system shall allow users to log in using email and password.\",\n      \"requirement_type\": \"FR\",\n      \"testable\": true,\n      \"safe_to_generate\": true,\n      \"risk_ref\": \"RISK_LOW\",\n      \"risk_level\": \"Low\",\n      \"ambiguity_ref\": \"AMBIGUITY_LOW\",\n      \"ambiguity_level\": \"Low\",\n      \"blocking_missing_information\": false,\n      \"missing_information\": [],\n      \"coverage_items\": [\n        {\n          \"coverage_item\": \"Valid login with correct email and password\",\n          \"source_basis\": \"The system shall allow users to log in using email and password.\",\n          \"test_type_ref\": \"TT_POSITIVE\",\n          \"test_type\": \"Positive\",\n          \"technique_ref\": \"TECH_FUNCTIONAL\",\n          \"technique_used\": \"Functional verification\",\n          \"priority_ref\": \"PRIORITY_HIGH\",\n          \"priority\": \"High\",\n          \"rationale\": \"Ensures the primary login functionality works as specified.\"\n        },\n "
+                  },
+                  {
+                      "requirement_id":  "REQ_4",
+                      "requirement_text":  "The system shall allow users to update their profile information.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Low",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "Valid profile update with correct data",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional verification",
+                                                 "priority":  "Medium",
+                                                 "rationale":  "Confirms that legitimate profile changes are persisted.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to update their profile information."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Invalid profile update with malformed data",
+                                                 "test_type":  "Negative",
+                                                 "technique_used":  "Input validation",
+                                                 "priority":  "Medium",
+                                                 "rationale":  "Ensures the system rejects invalid or malformed profile inputs.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to update their profile information."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Boundary profile update with maximum field lengths",
+                                                 "test_type":  "Boundary",
+                                                 "technique_used":  "Boundary value analysis",
+                                                 "priority":  "Medium",
+                                                 "rationale":  "Validates handling of edgeâcase field length limits.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to update their profile information."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  3,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  "",
+                      "why_boundary_not_generated":  "",
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\n  \"plans\": {\n    \"1\": {\n      \"requirement_id\": \"REQ_2\",\n      \"requirement_text\": \"The system shall allow users to log in using email and password.\",\n      \"requirement_type\": \"FR\",\n      \"testable\": true,\n      \"safe_to_generate\": true,\n      \"risk_ref\": \"RISK_LOW\",\n      \"risk_level\": \"Low\",\n      \"ambiguity_ref\": \"AMBIGUITY_LOW\",\n      \"ambiguity_level\": \"Low\",\n      \"blocking_missing_information\": false,\n      \"missing_information\": [],\n      \"coverage_items\": [\n        {\n          \"coverage_item\": \"Valid login with correct email and password\",\n          \"source_basis\": \"The system shall allow users to log in using email and password.\",\n          \"test_type_ref\": \"TT_POSITIVE\",\n          \"test_type\": \"Positive\",\n          \"technique_ref\": \"TECH_FUNCTIONAL\",\n          \"technique_used\": \"Functional verification\",\n          \"priority_ref\": \"PRIORITY_HIGH\",\n          \"priority\": \"High\",\n          \"rationale\": \"Ensures the primary login functionality works as specified.\"\n        },\n "
+                  },
+                  {
+                      "requirement_id":  "REQ_5",
+                      "requirement_text":  "The system shall allow users to log out of the application.",
+                      "requirement_type":  "FR",
+                      "testable":  true,
+                      "safe_to_generate":  true,
+                      "risk_level":  "Low",
+                      "ambiguity_level":  "Low",
+                      "blocking_missing_information":  [
+
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+                                             {
+                                                 "coverage_item":  "Valid logout for an authenticated user",
+                                                 "test_type":  "Positive",
+                                                 "technique_used":  "Functional verification",
+                                                 "priority":  "Low",
+                                                 "rationale":  "Verifies that a loggedâin user can successfully terminate the session.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log out of the application."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Invalid logout request without an active session",
+                                                 "test_type":  "Negative",
+                                                 "technique_used":  "Input validation",
+                                                 "priority":  "Low",
+                                                 "rationale":  "Ensures the system handles logout attempts when no session exists.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log out of the application."
+                                                                  ]
+                                             },
+                                             {
+                                                 "coverage_item":  "Boundary logout with extreme session token length",
+                                                 "test_type":  "Boundary",
+                                                 "technique_used":  "Boundary value analysis",
+                                                 "priority":  "Low",
+                                                 "rationale":  "Tests the logout process with edgeâcase token sizes.",
+                                                 "source_basis":  [
+                                                                      "The system shall allow users to log out of the application."
+                                                                  ]
+                                             }
+                                         ],
+                      "recommended_test_case_count":  3,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  "",
+                      "why_boundary_not_generated":  "",
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null,
+                      "planner_parse_attempts":  1,
+                      "planner_raw_response_excerpt":  "{\n  \"plans\": {\n    \"1\": {\n      \"requirement_id\": \"REQ_2\",\n      \"requirement_text\": \"The system shall allow users to log in using email and password.\",\n      \"requirement_type\": \"FR\",\n      \"testable\": true,\n      \"safe_to_generate\": true,\n      \"risk_ref\": \"RISK_LOW\",\n      \"risk_level\": \"Low\",\n      \"ambiguity_ref\": \"AMBIGUITY_LOW\",\n      \"ambiguity_level\": \"Low\",\n      \"blocking_missing_information\": false,\n      \"missing_information\": [],\n      \"coverage_items\": [\n        {\n          \"coverage_item\": \"Valid login with correct email and password\",\n          \"source_basis\": \"The system shall allow users to log in using email and password.\",\n          \"test_type_ref\": \"TT_POSITIVE\",\n          \"test_type\": \"Positive\",\n          \"technique_ref\": \"TECH_FUNCTIONAL\",\n          \"technique_used\": \"Functional verification\",\n          \"priority_ref\": \"PRIORITY_HIGH\",\n          \"priority\": \"High\",\n          \"rationale\": \"Ensures the primary login functionality works as specified.\"\n        },\n "
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  4,
+                   "estimated_tokens":  14156,
+                   "calls_used":  3,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras",
+                                                  "generator":  "cerebras",
+                                                  "reviewer":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  true,
+                   "fallback_provider":  "cerebras",
+                   "fallback_reason":  "Error code: 413 - {\u0027error\u0027: {\u0027message\u0027: \u0027Request too large for model `llama-3.1-8b-instant` in organization `org_01krpqggbdeh38ajy2rxgfwd9q` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 7498, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\u0027, \u0027type\u0027: \u0027tokens\u0027, \u0027code\u0027: \u0027rate_limit_exceeded\u0027}}",
+                   "rate_limit_stage":  "generator",
+                   "rate_limit_type":  "TPM",
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  111.17199999999866,
+                   "provider_wait_by_stage":  {
+                                                  "generator":  56.25,
+                                                  "reviewer":  54.92199999999866
+                                              },
+                   "provider_wait_by_provider":  {
+                                                     "cerebras":  111.17199999999866
+                                                 }
+               }
+}

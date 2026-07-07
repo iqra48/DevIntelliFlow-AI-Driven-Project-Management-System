@@ -1,0 +1,123 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Cancellation reason required for approved booking cancellation",
+              "objective": "Verify that a cancellation reason is required when cancelling an approved booking",
+              "test_type": "Negative",
+              "technique_used": "Input validation enforcement",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to cancel an approved booking without providing a cancellation reason",
+                  "expected_result": "The system enforces that a cancellation reason must be provided"
+                }
+              ],
+              "expected_result": "The system enforces that a cancellation reason must be provided",
+              "assumption_required": true,
+              "assumptions": [
+                "UI element for entering cancellation reason not specified",
+                "Mechanism for providing cancellation reason not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System enforces that a cancellation reason must be provided when cancelling an approved booking",
+                "technique_used": "Input validation enforcement"
+              },
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "missing_information": [
+            "UI element for entering cancellation reason not specified",
+            "Mechanism for providing cancellation reason not specified"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "UI element for entering cancellation reason not specified",
+            "Mechanism for providing cancellation reason not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "System enforces that a cancellation reason must be provided when cancelling an approved booking",
+              "test_type": "Negative",
+              "technique_used": "Input validation enforcement",
+              "priority": "High",
+              "rationale": "Verifies that the system blocks cancellation without a reason, satisfying the requirement",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 40.4690000000046,
+        "provider_wait_by_stage": {
+          "reviewer": 40.4690000000046
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 40.4690000000046
+        }
+      }
+    }
+  }
+]

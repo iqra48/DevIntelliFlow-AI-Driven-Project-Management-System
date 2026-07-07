@@ -1,0 +1,164 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_007",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Accept discount percentage when value is within 0 to 100 inclusive",
+              "objective": "Verify that the system accepts a discount percentage within the valid range.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure a discount percentage within the valid range.",
+                  "expected_result": "The system accepts the discount percentage without error."
+                }
+              ],
+              "expected_result": "The system accepts the discount percentage within the valid range.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system is configured to accept discount percentages within the valid range."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Accept discount percentage when value is within 0 to 100 inclusive",
+                "technique_used": "Equivalence Partitioning"
+              },
+              "source_basis": [
+                "between 0 and 100 inclusive"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Accept discount percentage at boundary values 0 and 100",
+              "objective": "Verify that the system accepts discount percentages at the boundary values.",
+              "test_type": "Boundary",
+              "technique_used": "Boundary Value Analysis",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Configure a discount percentage at the boundary value 0.",
+                  "expected_result": "The system accepts the discount percentage without error."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Configure a discount percentage at the boundary value 100.",
+                  "expected_result": "The system accepts the discount percentage without error."
+                }
+              ],
+              "expected_result": "The system accepts the discount percentages at the boundary values.",
+              "assumption_required": true,
+              "assumptions": [
+                "Assuming that the system is configured to accept discount percentages at the boundary values."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Accept discount percentage at boundary values 0 and 100",
+                "technique_used": "Boundary Value Analysis"
+              },
+              "source_basis": [
+                "between 0 and 100 inclusive"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a discount percentage to be between 0 and 100 inclusive.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Accept discount percentage when value is within 0 to 100 inclusive",
+              "test_type": "Positive",
+              "technique_used": "Equivalence Partitioning",
+              "priority": "High",
+              "rationale": "Validate that the system accepts valid discount values within the specified range.",
+              "source_basis": [
+                "between 0 and 100 inclusive"
+              ]
+            },
+            {
+              "coverage_item": "Accept discount percentage at boundary values 0 and 100",
+              "test_type": "Boundary",
+              "technique_used": "Boundary Value Analysis",
+              "priority": "High",
+              "rationale": "Verify that the inclusive boundaries 0 and 100 are correctly accepted by the system.",
+              "source_basis": [
+                "between 0 and 100 inclusive"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 40.79699999999866,
+        "provider_wait_by_stage": {
+          "reviewer": 40.79699999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 40.79699999999866
+        }
+      }
+    }
+  }
+]

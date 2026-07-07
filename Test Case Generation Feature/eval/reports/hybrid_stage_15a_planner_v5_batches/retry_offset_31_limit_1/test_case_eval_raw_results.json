@@ -1,0 +1,127 @@
+[
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify system performance with 500 concurrent users",
+              "objective": "Validate system performance under heavy load",
+              "test_type": "Performance",
+              "technique_used": "Load testing with simulated users",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "Test environment is set up to simulate 500 concurrent users"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate 500 concurrent users viewing reports",
+                  "expected_result": "System handles the load without errors"
+                }
+              ],
+              "expected_result": "System performance meets the requirement",
+              "assumption_required": true,
+              "assumptions": [
+                "Test environment specifications (hardware, network, browser configurations) are adequate",
+                "Load generation tool or framework to simulate 500 concurrent users is available",
+                "Metrics collection method for error detection is in place"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the system can handle 500 concurrent users viewing reports simultaneously without any errors",
+                "technique_used": "Load testing with simulated users"
+              },
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Test environment specifications (hardware, network, browser configurations)",
+            "Load generation tool or framework to simulate 500 concurrent users",
+            "Metrics collection method for error detection"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Test environment specifications (hardware, network, browser configurations)",
+            "Load generation tool or framework to simulate 500 concurrent users",
+            "Metrics collection method for error detection"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the system can handle 500 concurrent users viewing reports simultaneously without any errors",
+              "test_type": "Performance",
+              "technique_used": "Load testing with simulated users",
+              "priority": "High",
+              "rationale": "Ensures the performance NFR is met under the specified concurrent load",
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 28.17200000000048,
+        "provider_wait_by_stage": {
+          "reviewer": 28.17200000000048
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 28.17200000000048
+        }
+      }
+    }
+  }
+]

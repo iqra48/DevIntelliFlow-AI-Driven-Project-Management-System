@@ -1,0 +1,121 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that selecting logout ends the user's session.",
+              "objective": "To ensure that the system ends a user's session when the logout option is selected.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The user's session is ended."
+                }
+              ],
+              "expected_result": "The user's session is ended.",
+              "assumption_required": true,
+              "assumptions": [
+                "Logout UI element (button/link) not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that selecting logout ends the user's session.",
+                "technique_used": "Functional UI test"
+              },
+              "source_basis": [
+                "end a user's session when the user selects logout"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Logout UI element (button/link) not specified"
+          ],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ],
+          "warnings": [
+            "Reviewer unavailable; generated cases require human review"
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Logout UI element (button/link) not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that selecting logout ends the user's session.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "rationale": "Logout functionality is critical for security and session management.",
+              "source_basis": [
+                "end a user's session when the user selects logout"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  }
+]

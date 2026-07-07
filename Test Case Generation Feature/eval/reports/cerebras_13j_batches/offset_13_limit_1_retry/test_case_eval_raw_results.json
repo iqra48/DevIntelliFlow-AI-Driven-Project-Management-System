@@ -1,0 +1,158 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_004",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Mark order ready for dispatch when shipping address is provided",
+              "objective": "Verify that an order can be marked ready for dispatch when a shipping address has been supplied.",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Supply a valid shipping address to the order.",
+                  "expected_result": "The shipping address is associated with the order."
+                },
+                {
+                  "step_number": 2,
+                  "action": "Mark the order as ready for dispatch.",
+                  "expected_result": "The order status changes to 'ready for dispatch'."
+                }
+              ],
+              "expected_result": "The order status changes to 'ready for dispatch' after a shipping address is provided.",
+              "assumption_required": true,
+              "assumptions": [
+                "An order entity exists and can accept a shipping address."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Order can be marked ready for dispatch when a shipping address is provided",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Prevent marking order ready for dispatch when shipping address is missing",
+              "objective": "Verify that the system does not allow an order to be marked ready for dispatch without a shipping address.",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Attempt to mark the order as ready for dispatch without supplying a shipping address.",
+                  "expected_result": "The system rejects the operation and indicates that a shipping address is required."
+                }
+              ],
+              "expected_result": "The order cannot be marked ready for dispatch and the system reports the missing shipping address requirement.",
+              "assumption_required": true,
+              "assumptions": [
+                "An order entity exists but has no shipping address associated."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Order cannot be marked ready for dispatch when a shipping address is missing",
+                "technique_used": "Functional"
+              },
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Reviewer unavailable because Groq-only provider hit a rate limit"
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a shipping address before an order can be marked ready for dispatch.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Order can be marked ready for dispatch when a shipping address is provided",
+              "test_type": "Positive",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Verifies the primary happy‑path behavior that the system allows dispatch readiness once the required shipping address is present.",
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            },
+            {
+              "coverage_item": "Order cannot be marked ready for dispatch when a shipping address is missing",
+              "test_type": "Negative",
+              "technique_used": "Functional",
+              "priority": "High",
+              "rationale": "Ensures the system enforces the requirement by preventing dispatch readiness without a shipping address.",
+              "source_basis": [
+                "require a shipping address before an order can be marked ready for dispatch"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "cerebras",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": "reviewer",
+        "rate_limit_type": "unknown",
+        "retry_attempts": 0
+      }
+    }
+  }
+]

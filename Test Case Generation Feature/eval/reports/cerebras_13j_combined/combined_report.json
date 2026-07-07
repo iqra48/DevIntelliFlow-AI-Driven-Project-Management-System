@@ -1,0 +1,76 @@
+{
+  "total_eval_items": 45,
+  "schema_pass_rate": 1.0,
+  "requirement_id_mismatch_total": 0,
+  "coverage_item_mismatch_total": 0,
+  "unsupported_invention_rate": null,
+  "average_test_cases_per_requirement": 0.7555555555555555,
+  "average_calls_used": 2.4444444444444446,
+  "average_estimated_tokens": 2276.8444444444444,
+  "rate_limit_failures": 5,
+  "provider_failures": 3,
+  "blocked_results": 6,
+  "failed_schema_results": 0,
+  "status_counts": {
+    "SUCCESS": 23,
+    "NEEDS_REVIEW": 8,
+    "BLOCKED_MISSING_INFORMATION": 6,
+    "RATE_LIMITED": 5,
+    "PROVIDER_FAILED": 3
+  },
+  "category_counts": {
+    "simple_fr": 10,
+    "validation_rule_fr": 10,
+    "login_security_fr": 10,
+    "nfr": 10,
+    "vague_blocked": 5
+  },
+  "provider_signature_counts": {
+    "planner=cerebras|generator=cerebras|reviewer=cerebras": 45
+  },
+  "primary_provider_counts": {
+    "cerebras": 45
+  },
+  "planner_provider_counts": {
+    "cerebras": 45
+  },
+  "generator_provider_counts": {
+    "cerebras": 45
+  },
+  "reviewer_provider_counts": {
+    "cerebras": 45
+  },
+  "fallback_used_count": 0,
+  "fallback_provider_counts": {},
+  "rate_limit_type_counts": {
+    "unknown": 7
+  },
+  "provider_wait_seconds_total": 465.98299999999927,
+  "provider_wait_by_stage": {
+    "generator": 173.10799999999927,
+    "reviewer": 124.23500000000058,
+    "planner": 168.63999999999942
+  },
+  "provider_wait_by_provider": {
+    "cerebras": 465.98299999999927
+  },
+  "quality_gates": {
+    "schema_pass_rate_gte_95": true,
+    "requirement_id_mismatch_zero": true,
+    "coverage_item_mismatch_zero": true,
+    "unsupported_invention_lte_5_percent": null,
+    "no_rate_limit_failures": false
+  },
+  "total_expected_eval_items": 45,
+  "total_merged_eval_items": 45,
+  "missing_eval_ids": [],
+  "duplicate_eval_ids": [
+    "EVAL_FR_LOGIN_SECURITY_010"
+  ],
+  "extra_eval_ids": [],
+  "incomplete_batch_dirs": [],
+  "provider": null,
+  "strict_provider": null,
+  "warnings": [],
+  "groq_only_combined_complete": false
+}

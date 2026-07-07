@@ -1,0 +1,173 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that cancelling an approved booking prompts for a cancellation reason and accepts a provided reason",
+              "objective": "Validate that the system requires a cancellation reason when cancelling an approved booking",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for cancelling an approved booking are available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability to cancel an approved booking",
+                  "expected_result": "The system prompts for a cancellation reason and accepts a provided reason"
+                }
+              ],
+              "expected_result": "The system requires a cancellation reason when cancelling an approved booking",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact location of cancellation action not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that cancelling an approved booking prompts for a cancellation reason and accepts a provided reason",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "require a cancellation reason",
+                "when an approved booking is cancelled"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify that the system prevents cancellation of an approved booking without a cancellation reason",
+              "objective": "Validate that the system prevents cancellation of an approved booking without a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for cancelling an approved booking are available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability to cancel an approved booking without providing a cancellation reason",
+                  "expected_result": "The system prevents cancellation of the approved booking"
+                }
+              ],
+              "expected_result": "The system prevents cancellation of an approved booking without a cancellation reason",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact location of cancellation action not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the system prevents cancellation of an approved booking without a cancellation reason",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "require a cancellation reason",
+                "when an approved booking is cancelled"
+              ]
+            }
+          ],
+          "missing_information": [
+            "UI element for entering cancellation reason not specified",
+            "Exact location of cancellation action not specified"
+          ],
+          "assumptions": [
+            "Configured entry point for cancelling an approved booking is available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "UI element for entering cancellation reason not specified",
+            "Exact location of cancellation action not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that cancelling an approved booking prompts for a cancellation reason and accepts a provided reason",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "Ensures the system captures the required cancellation reason as mandated",
+              "source_basis": [
+                "require a cancellation reason",
+                "when an approved booking is cancelled"
+              ]
+            },
+            {
+              "coverage_item": "Verify that the system prevents cancellation of an approved booking without a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "Ensures the requirement that a reason is mandatory is enforced",
+              "source_basis": [
+                "require a cancellation reason",
+                "when an approved booking is cancelled"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "Configured entry point for cancelling an approved booking is available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 40.328999999997905,
+        "provider_wait_by_stage": {
+          "reviewer": 40.328999999997905
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 40.328999999997905
+        }
+      }
+    }
+  }
+]

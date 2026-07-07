@@ -1,0 +1,1131 @@
+[
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify project dashboard load time",
+              "objective": "Measure the time it takes for the project dashboard to load",
+              "test_type": "Performance",
+              "technique_used": "Load testing with representative traffic",
+              "priority": "High",
+              "preconditions": [
+                "Configured measurement approach is available",
+                "Representative operating conditions are available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement",
+                  "expected_result": "Verify the measured result satisfies the stated threshold of three seconds for at least 95% of requests"
+                }
+              ],
+              "expected_result": "The project dashboard loads within three seconds for at least 95% of requests",
+              "assumption_required": true,
+              "assumptions": [
+                "Test environment specifications not provided",
+                "Load profile and traffic pattern not defined"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95% of requests under typical load.",
+                "technique_used": "Load testing with representative traffic"
+              },
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Test environment specifications not provided",
+            "Load profile and traffic pattern not defined"
+          ],
+          "assumptions": [
+            "Configured measurement approach is available",
+            "Representative operating conditions are available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Test environment specifications not provided",
+            "Load profile and traffic pattern not defined"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the project dashboard loads within three seconds for at least 95% of requests under typical load.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with representative traffic",
+              "priority": "High",
+              "rationale": "Ensures the performance NFR is met.",
+              "source_basis": [
+                "load the project dashboard within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured measurement approach is available",
+            "Representative operating conditions are available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.45300000000134,
+        "provider_wait_by_stage": {
+          "reviewer": 41.45300000000134
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.45300000000134
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify system performance under load",
+              "objective": "Verify the system can support 500 concurrent users viewing reports simultaneously without errors.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with simulated concurrent users",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "Configured measurement approach is available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify the measured result satisfies the stated threshold."
+                }
+              ],
+              "expected_result": "The system supports 500 concurrent users viewing reports without errors.",
+              "assumption_required": true,
+              "assumptions": [
+                "Test environment specifications (hardware, network) are assumed to be sufficient for load testing.",
+                "Load testing tool or measurement method is assumed to be configured correctly."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify the system can support 500 concurrent users viewing reports simultaneously without errors.",
+                "technique_used": "Load testing with simulated concurrent users"
+              },
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Test environment specifications (hardware, network) not provided",
+            "Load testing tool or measurement method not specified"
+          ],
+          "assumptions": [
+            "Configured measurement approach is available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Test environment specifications (hardware, network) not provided",
+            "Load testing tool or measurement method not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify the system can support 500 concurrent users viewing reports simultaneously without errors.",
+              "test_type": "Performance",
+              "technique_used": "Load testing with simulated concurrent users",
+              "priority": "High",
+              "rationale": "Ensures the performance NFR is met under the specified concurrency load.",
+              "source_basis": [
+                "support 500 concurrent users viewing reports without errors"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured measurement approach is available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.11000000000786,
+        "provider_wait_by_stage": {
+          "planner": 43.01600000000326,
+          "reviewer": 41.0940000000046
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.11000000000786
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify customer data encryption in production database",
+              "objective": "Ensure customer data is encrypted in the production database",
+              "test_type": "Security",
+              "technique_used": "Inspect database records or use a decryption tool to confirm data is not stored in plaintext",
+              "priority": "High",
+              "preconditions": [
+                "Configured measurement approach and representative operating conditions are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Measure the encryption of customer data stored in the production database",
+                  "expected_result": "Verify that customer data is encrypted"
+                }
+              ],
+              "expected_result": "Customer data is encrypted in the production database",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that customer data stored in the production database is encrypted",
+                "technique_used": "Inspect database records or use a decryption tool to confirm data is not stored in plaintext"
+              },
+              "source_basis": [
+                "encrypt customer data while it is stored in the production database"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that customer data stored in the production database is encrypted",
+              "test_type": "Security",
+              "technique_used": "Inspect database records or use a decryption tool to confirm data is not stored in plaintext",
+              "priority": "High",
+              "rationale": "Ensures compliance with the encryption NFR and protects sensitive customer information",
+              "source_basis": [
+                "encrypt customer data while it is stored in the production database"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.0769999999975,
+        "provider_wait_by_stage": {
+          "planner": 43.26499999999942,
+          "reviewer": 41.81199999999808
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.0769999999975
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify monthly availability meets 99.5% threshold",
+              "objective": "Measure the monthly availability of the reporting module to ensure it meets the 99.5% threshold.",
+              "test_type": "Reliability",
+              "technique_used": "Monitor system uptime over a month and calculate availability percentage",
+              "priority": "High",
+              "preconditions": [
+                "Configured measurement approach and representative operating conditions are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Measure the monthly availability of the reporting module.",
+                  "expected_result": "Verify the measured result satisfies the 99.5% threshold."
+                }
+              ],
+              "expected_result": "The monthly availability of the reporting module meets the 99.5% threshold.",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurement method for availability not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify monthly availability meets 99.5% threshold",
+                "technique_used": "Monitor system uptime over a month and calculate availability percentage"
+              },
+              "source_basis": [
+                "maintain 99.5 percent monthly availability"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurement method for availability not specified"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurement method for availability not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify monthly availability meets 99.5% threshold",
+              "test_type": "Reliability",
+              "technique_used": "Monitor system uptime over a month and calculate availability percentage",
+              "priority": "High",
+              "rationale": "Ensures the reporting module complies with the specified availability NFR",
+              "source_basis": [
+                "maintain 99.5 percent monthly availability"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.29700000000594,
+        "provider_wait_by_stage": {
+          "planner": 43.20300000000134,
+          "reviewer": 42.0940000000046
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.29700000000594
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "FAILED_SCHEMA_VALIDATION",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "FAILED_SCHEMA_VALIDATION",
+          "test_cases": [],
+          "missing_information": [
+            "Definition of which form fields are considered \"primary\" is not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Malformed generator response"
+          ],
+          "reason": "All generated test cases failed structural validation"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Definition of which form fields are considered \"primary\" is not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that keyboard navigation (Tab/Shift+Tab) moves focus sequentially through all primary form fields",
+              "test_type": "Usability",
+              "technique_used": "Manual exploratory testing using keyboard navigation",
+              "priority": "High",
+              "rationale": "Ensures the system meets the stated usability requirement for keyboard accessibility",
+              "source_basis": [
+                "keyboard navigation for all primary form fields"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 2,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 43.234000000004016,
+        "provider_wait_by_stage": {
+          "planner": 43.234000000004016
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 43.234000000004016
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit log retention for at least seven years",
+              "objective": "Confirm that audit logs are retained for the specified duration",
+              "test_type": "Positive",
+              "technique_used": "Query audit log storage for entries older than seven years and confirm presence",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability to query audit log storage for entries older than seven years",
+                  "expected_result": "Verify that audit logs are present for the specified date range"
+                }
+              ],
+              "expected_result": "Audit logs are retained for at least seven years",
+              "assumption_required": true,
+              "assumptions": [
+                "Location of audit logs is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that audit logs are retained for at least seven years.",
+                "technique_used": "Query audit log storage for entries older than seven years and confirm presence"
+              },
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Location of audit logs",
+            "Mechanism to query logs for date range",
+            "Format of audit log entries"
+          ],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Location of audit logs",
+            "Mechanism to query logs for date range",
+            "Format of audit log entries"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that audit logs are retained for at least seven years.",
+              "test_type": "Positive",
+              "technique_used": "Query audit log storage for entries older than seven years and confirm presence",
+              "priority": "High",
+              "rationale": "Ensures compliance with retention policy",
+              "source_basis": [
+                "retain audit logs for at least seven years"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.28199999999197,
+        "provider_wait_by_stage": {
+          "planner": 41.562999999994645,
+          "reviewer": 41.71899999999732
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.28199999999197
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System Recovery after Database Failover",
+              "objective": "Verify the system recovers normal service within fifteen minutes after a database failover.",
+              "test_type": "Recovery",
+              "technique_used": "Simulated failover with time measurement",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify the system recovers normal service within fifteen minutes."
+                }
+              ],
+              "expected_result": "Normal service is restored within fifteen minutes.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact definition of 'normal service' (e.g., response time, error rate) is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "System recovers normal service within fifteen minutes after a database failover",
+                "technique_used": "Simulated failover with time measurement"
+              },
+              "source_basis": [
+                "recover normal service within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Specific method to initiate database failover",
+            "Exact definition of \"normal service\" (e.g., response time, error rate)"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Reviewer unavailable; generated cases require human review"
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Specific method to initiate database failover",
+            "Exact definition of \"normal service\" (e.g., response time, error rate)"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "System recovers normal service within fifteen minutes after a database failover",
+              "test_type": "Recovery",
+              "technique_used": "Simulated failover with time measurement",
+              "priority": "High",
+              "rationale": "Verifies compliance with recovery time objective",
+              "source_basis": [
+                "recover normal service within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 43.29699999999866,
+        "provider_wait_by_stage": {
+          "planner": 43.29699999999866
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 43.29699999999866
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_008",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "PROVIDER_FAILED",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "status": "PROVIDER_FAILED",
+          "test_cases": [],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "Planner failed during test case generation: LLM failed after 0 retries: [Errno 11001] getaddrinfo failed"
+          ],
+          "reason": "Planner failed during test case generation: LLM failed after 0 retries: [Errno 11001] getaddrinfo failed"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display dates and currency values using the user's selected locale.",
+          "requirement_type": "NFR",
+          "testable": false,
+          "safe_to_generate": false,
+          "risk_level": "Medium",
+          "ambiguity_level": "High",
+          "blocking_missing_information": [
+            "Planner batch failed"
+          ],
+          "missing_information": [],
+          "coverage_items": [],
+          "recommended_test_case_count": 0,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 1,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {},
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 0.0,
+        "provider_wait_by_stage": {},
+        "provider_wait_by_provider": {}
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_009",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify application error recording",
+              "objective": "Ensure the system records application errors with timestamp, request ID, and severity level.",
+              "test_type": "Positive",
+              "technique_used": "Generate error and inspect log",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the system records an error entry containing a timestamp, request ID, and severity level."
+                }
+              ],
+              "expected_result": "The system records an error entry containing a timestamp, request ID, and severity level.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for generating an application error is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that when an application error occurs, the system records an error entry containing a timestamp, request ID, and severity level.",
+                "technique_used": "Generate error and inspect log"
+              },
+              "source_basis": [
+                "record application errors with timestamp, request ID, and severity level"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record application errors with timestamp, request ID, and severity level.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that when an application error occurs, the system records an error entry containing a timestamp, request ID, and severity level.",
+              "test_type": "Positive",
+              "technique_used": "Generate error and inspect log",
+              "priority": "High",
+              "rationale": "Ensures logging meets the specified NFR",
+              "source_basis": [
+                "record application errors with timestamp, request ID, and severity level"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.89100000000326,
+        "provider_wait_by_stage": {
+          "planner": 43.875,
+          "reviewer": 42.01600000000326
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.89100000000326
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify nightly report generation completion before 6:00 AM local time",
+              "objective": "Measure completion of nightly report generation against deadline",
+              "test_type": "Performance",
+              "technique_used": "Measure completion timestamp against deadline",
+              "priority": "High",
+              "preconditions": [
+                "Configured schedule for nightly report generation is in place",
+                "Configured measurement approach and representative operating conditions are available"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Measure the completion timestamp of nightly report generation",
+                  "expected_result": "The completion timestamp is before 6:00 AM local time"
+                }
+              ],
+              "expected_result": "The completion timestamp is before 6:00 AM local time",
+              "assumption_required": true,
+              "assumptions": [
+                "Start time of nightly report generation is known",
+                "Definition of what constitutes completion of report generation is known"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time.",
+                "technique_used": "Measure completion timestamp against deadline"
+              },
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Start time of nightly report generation",
+            "Definition of what constitutes completion of report generation"
+          ],
+          "assumptions": [
+            "Configured schedule for nightly report generation is in place",
+            "System clock is synchronized to local time"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Medium",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Start time of nightly report generation",
+            "Definition of what constitutes completion of report generation"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time.",
+              "test_type": "Performance",
+              "technique_used": "Measure completion timestamp against deadline",
+              "priority": "High",
+              "rationale": "Ensures reporting availability for business users by the required deadline.",
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured schedule for nightly report generation is in place",
+            "System clock is synchronized to local time"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 83.125,
+        "provider_wait_by_stage": {
+          "planner": 43.21899999999732,
+          "reviewer": 39.90600000000268
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 83.125
+        }
+      }
+    }
+  }
+]

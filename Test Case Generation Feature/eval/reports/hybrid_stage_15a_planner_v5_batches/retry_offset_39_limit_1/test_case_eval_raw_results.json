@@ -1,0 +1,132 @@
+[
+  {
+    "eval_id": "EVAL_NFR_010",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Nightly report generation completes before deadline",
+              "objective": "Confirm that the nightly report generation finishes before 6:00 AM local time.",
+              "test_type": "Performance",
+              "technique_used": "Measure completion timestamp and compare to 6:00 AM deadline",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Observe the nightly report generation process for a scheduled run.",
+                  "expected_result": "The report generation completes before 6:00 AM local time."
+                }
+              ],
+              "expected_result": "Report generation completes before 6:00 AM local time.",
+              "assumption_required": true,
+              "assumptions": [
+                "System clock is synchronized to the intended local time zone",
+                "Report generation is triggered automatically each night without manual intervention"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time",
+                "technique_used": "Measure completion timestamp and compare to 6:00 AM deadline"
+              },
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Definition of the start point for nightly report generation (e.g., scheduled start time)",
+            "Specification of the time zone that constitutes \"local time\" for the deadline",
+            "Details of the test environment schedule and whether it mirrors production timing"
+          ],
+          "assumptions": [
+            "System clock is synchronized to the intended local time zone",
+            "Report generation is triggered automatically each night without manual intervention"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall complete nightly report generation before 6:00 AM local time.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Definition of the start point for nightly report generation (e.g., scheduled start time)",
+            "Specification of the time zone that constitutes \"local time\" for the deadline",
+            "Details of the test environment schedule and whether it mirrors production timing"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that nightly report generation completes before 6:00 AM local time",
+              "test_type": "Performance",
+              "technique_used": "Measure completion timestamp and compare to 6:00 AM deadline",
+              "priority": "High",
+              "rationale": "Ensures the system meets the defined time-based NFR",
+              "source_basis": [
+                "complete nightly report generation before 6:00 AM local time"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "System clock is synchronized to the intended local time zone",
+            "Report generation is triggered automatically each night without manual intervention"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498857, Requested 2771. Please try again in 4m41.3184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 86.0,
+        "provider_wait_by_stage": {
+          "generator": 42.90599999999904,
+          "reviewer": 43.09400000000096
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 86.0
+        }
+      }
+    }
+  }
+]

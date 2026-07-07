@@ -1,0 +1,124 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify user receives notification after email address change",
+              "objective": "Confirm that the system notifies the user when their account email address is changed.",
+              "test_type": "Positive",
+              "technique_used": "Functional test via UI/email change flow",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Change the account email address to a new valid email address.",
+                  "expected_result": "The user receives a notification indicating that the email address has been changed."
+                }
+              ],
+              "expected_result": "The user receives a notification indicating that the email address has been changed.",
+              "assumption_required": true,
+              "assumptions": [
+                "Notification delivery method is assumed to be configured appropriately.",
+                "Notification content/template is assumed to be defined."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user receives a notification after changing their account email address.",
+                "technique_used": "Functional test via UI/email change flow"
+              },
+              "source_basis": [
+                "notify a user when their account email address is changed"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Notification delivery method (e.g., email, in-app) not specified",
+            "Notification content/template not specified"
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Notification delivery method (e.g., email, in-app) not specified",
+            "Notification content/template not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user receives a notification after changing their account email address.",
+              "test_type": "Positive",
+              "technique_used": "Functional test via UI/email change flow",
+              "priority": "High",
+              "rationale": "Ensures the system fulfills the notification requirement upon email change.",
+              "source_basis": [
+                "notify a user when their account email address is changed"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 497910, Requested 2723. Please try again in 1m49.3824s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.89099999999962,
+        "provider_wait_by_stage": {
+          "generator": 42.76599999999962,
+          "reviewer": 43.125
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.89099999999962
+        }
+      }
+    }
+  }
+]

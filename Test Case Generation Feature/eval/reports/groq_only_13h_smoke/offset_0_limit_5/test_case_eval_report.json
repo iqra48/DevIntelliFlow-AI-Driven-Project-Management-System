@@ -1,0 +1,35 @@
+{
+  "total_eval_items": 5,
+  "schema_pass_rate": 1.0,
+  "requirement_id_mismatch_total": 0,
+  "coverage_item_mismatch_total": 0,
+  "unsupported_invention_rate": null,
+  "average_test_cases_per_requirement": 0.8,
+  "average_calls_used": 3.0,
+  "average_estimated_tokens": 2299.2,
+  "rate_limit_failures": 0,
+  "provider_failures": 0,
+  "blocked_results": 0,
+  "failed_schema_results": 0,
+  "status_counts": {
+    "NEEDS_REVIEW": 5
+  },
+  "category_counts": {
+    "simple_fr": 5
+  },
+  "quality_gates": {
+    "schema_pass_rate_gte_95": true,
+    "requirement_id_mismatch_zero": true,
+    "coverage_item_mismatch_zero": true,
+    "unsupported_invention_lte_5_percent": null,
+    "no_rate_limit_failures": true
+  },
+  "offset": 0,
+  "limit": 5,
+  "selected_eval_items": 5,
+  "provider": "groq",
+  "strict_provider": "true",
+  "groq_daily_token_limit": "500000",
+  "groq_only_evaluation_incomplete": false,
+  "groq_only_incomplete_reason": null
+}

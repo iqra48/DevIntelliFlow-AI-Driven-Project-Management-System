@@ -1,0 +1,116 @@
+[
+  {
+    "eval_id": "EVAL_FR_SIMPLE_010",
+    "category": "simple_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that a user can add a comment to an existing support ticket",
+              "objective": "To ensure that users can add comments to existing support tickets",
+              "test_type": "Positive",
+              "technique_used": "Functional test via UI or API",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the system allows a user to add a comment to an existing support ticket."
+                }
+              ],
+              "expected_result": "The system allows a user to add a comment to an existing support ticket.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for adding a comment is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user can add a comment to an existing support ticket",
+                "technique_used": "Functional test via UI or API"
+              },
+              "source_basis": [
+                "allow a user to add a comment to an existing support ticket"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to add a comment to an existing support ticket.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Low",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user can add a comment to an existing support ticket",
+              "test_type": "Positive",
+              "technique_used": "Functional test via UI or API",
+              "priority": "High",
+              "rationale": "Ensures the core comment functionality works as specified",
+              "source_basis": [
+                "allow a user to add a comment to an existing support ticket"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.95300000000134,
+        "provider_wait_by_stage": {
+          "reviewer": 41.95300000000134
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.95300000000134
+        }
+      }
+    }
+  }
+]

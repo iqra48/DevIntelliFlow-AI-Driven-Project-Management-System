@@ -1,0 +1,56 @@
+{
+  "total_eval_items": 11,
+  "schema_pass_rate": 1.0,
+  "requirement_id_mismatch_total": 0,
+  "coverage_item_mismatch_total": 0,
+  "unsupported_invention_rate": null,
+  "average_test_cases_per_requirement": 1.0,
+  "average_calls_used": 3.0,
+  "average_estimated_tokens": 2292.181818181818,
+  "rate_limit_failures": 0,
+  "provider_failures": 0,
+  "blocked_results": 0,
+  "failed_schema_results": 0,
+  "status_counts": {
+    "SUCCESS": 5,
+    "NEEDS_REVIEW": 6
+  },
+  "category_counts": {
+    "simple_fr": 3,
+    "validation_rule_fr": 1,
+    "login_security_fr": 4,
+    "nfr": 3
+  },
+  "provider_signature_counts": {
+    "planner=cerebras|generator=groq|reviewer=cerebras": 11
+  },
+  "primary_provider_counts": {
+    "groq": 11
+  },
+  "planner_provider_counts": {
+    "cerebras": 11
+  },
+  "generator_provider_counts": {
+    "groq": 11
+  },
+  "reviewer_provider_counts": {
+    "cerebras": 11
+  },
+  "fallback_used_count": 0,
+  "fallback_provider_counts": {},
+  "rate_limit_type_counts": {},
+  "provider_wait_seconds_total": 415.07899999999063,
+  "provider_wait_by_stage": {
+    "reviewer": 415.07899999999063
+  },
+  "provider_wait_by_provider": {
+    "cerebras": 415.07899999999063
+  },
+  "quality_gates": {
+    "schema_pass_rate_gte_95": true,
+    "requirement_id_mismatch_zero": true,
+    "coverage_item_mismatch_zero": true,
+    "unsupported_invention_lte_5_percent": null,
+    "no_rate_limit_failures": true
+  }
+}

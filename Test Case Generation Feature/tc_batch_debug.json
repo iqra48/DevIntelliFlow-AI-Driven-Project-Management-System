@@ -1,0 +1,177 @@
+﻿{
+    "status":  "BLOCKED_MISSING_INFORMATION",
+    "results":  [
+                    {
+                        "requirement_id":  "REQ_2",
+                        "requirement_text":  "The system shall allow users to log in using email and password.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    },
+                    {
+                        "requirement_id":  "REQ_4",
+                        "requirement_text":  "The system shall allow users to update their profile information.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    },
+                    {
+                        "requirement_id":  "REQ_5",
+                        "requirement_text":  "The system shall allow users to log out of the application.",
+                        "requirement_type":  "FR",
+                        "status":  "BLOCKED_MISSING_INFORMATION",
+                        "test_cases":  [
+
+                                       ],
+                        "missing_information":  [
+
+                                                ],
+                        "assumptions":  [
+
+                                        ],
+                        "warnings":  [
+                                         "Malformed planner response"
+                                     ],
+                        "reason":  "Malformed planner response"
+                    }
+                ],
+    "plans":  [
+                  {
+                      "requirement_id":  "REQ_2",
+                      "requirement_text":  "The system shall allow users to log in using email and password.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null
+                  },
+                  {
+                      "requirement_id":  "REQ_4",
+                      "requirement_text":  "The system shall allow users to update their profile information.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null
+                  },
+                  {
+                      "requirement_id":  "REQ_5",
+                      "requirement_text":  "The system shall allow users to log out of the application.",
+                      "requirement_type":  "FR",
+                      "testable":  false,
+                      "safe_to_generate":  false,
+                      "risk_level":  "Medium",
+                      "ambiguity_level":  "High",
+                      "blocking_missing_information":  [
+                                                           "Malformed planner response"
+                                                       ],
+                      "missing_information":  [
+
+                                              ],
+                      "coverage_items":  [
+
+                                         ],
+                      "recommended_test_case_count":  0,
+                      "assumptions":  [
+
+                                      ],
+                      "why_negative_not_generated":  null,
+                      "why_boundary_not_generated":  null,
+                      "coverage_replan_attempted":  false,
+                      "coverage_replan_reason":  null,
+                      "coverage_replan_succeeded":  null
+                  }
+              ],
+    "warnings":  [
+
+                 ],
+    "budget":  {
+                   "mode":  "mvp_fast",
+                   "estimated_calls":  4,
+                   "estimated_tokens":  3968,
+                   "calls_used":  1,
+                   "primary_provider":  "groq",
+                   "strict_provider":  false,
+                   "provider_used_by_stage":  {
+                                                  "planner":  "cerebras"
+                                              },
+                   "provider_role_map":  {
+                                             "planner":  "cerebras",
+                                             "generator":  "groq",
+                                             "reviewer":  "cerebras"
+                                         },
+                   "fallback_used":  false,
+                   "fallback_provider":  null,
+                   "fallback_reason":  null,
+                   "rate_limit_stage":  null,
+                   "rate_limit_type":  null,
+                   "retry_attempts":  0,
+                   "provider_wait_seconds_total":  3.1409999999996217,
+                   "provider_wait_by_stage":  {
+                                                  "planner":  3.1409999999996217
+                                              },
+                   "provider_wait_by_provider":  {
+                                                     "cerebras":  3.1409999999996217
+                                                 }
+               }
+}

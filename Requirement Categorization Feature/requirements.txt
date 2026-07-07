@@ -1,0 +1,23 @@
+# Requirement Categorization Feature dependencies
+
+# API server
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+python-dotenv>=1.0.1
+python-multipart>=0.0.9
+
+# LLM provider
+groq>=0.9.0
+
+# Document upload processing
+python-docx==1.1.0
+pdfplumber==0.10.3
+pandas==2.2.2
+openpyxl>=3.1.2
+xlrd>=2.0.1
+
+# Requirement validation, categorization, and deduplication
+regex==2023.12.25
+numpy>=1.26.0
+scikit-learn>=1.4.0
+sentence-transformers>=2.7.0

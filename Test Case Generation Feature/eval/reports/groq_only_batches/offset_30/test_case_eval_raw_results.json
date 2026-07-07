@@ -1,0 +1,820 @@
+[
+  {
+    "eval_id": "EVAL_NFR_001",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Load project dashboard within three seconds for 95 percent of requests",
+              "objective": "Verify the system loads the project dashboard within three seconds for 95 percent of requests",
+              "test_type": "Performance",
+              "technique_used": "load project dashboard",
+              "priority": "High",
+              "preconditions": [
+                "System is up and running"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Send a request to load the project dashboard",
+                  "expected_result": "The dashboard loads within three seconds"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify the dashboard loads within three seconds for 95 percent of requests",
+                  "expected_result": "Assumption: The system meets the 95 percent threshold"
+                }
+              ],
+              "expected_result": "The system loads the project dashboard within three seconds for 95 percent of requests",
+              "assumption_required": true,
+              "assumptions": [
+                "The system meets the 95 percent threshold"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "load project dashboard within three seconds",
+                "technique_used": "load project dashboard"
+              },
+              "source_basis": [
+                "within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "missing_information": [
+            "response time threshold",
+            "percentage of requests"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by assuming a slow network.",
+            "TC_REQ_1_003: The test case invents unsupported behavior by assuming a high load."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall load the project dashboard within three seconds for 95 percent of requests.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "response time threshold",
+            "percentage of requests"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "load project dashboard within three seconds",
+              "test_type": "Performance",
+              "technique_used": "load project dashboard",
+              "priority": "High",
+              "rationale": "load project dashboard within three seconds for 95 percent of requests is a performance requirement",
+              "source_basis": [
+                "within three seconds for 95 percent of requests"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2300,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_002",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Concurrent user support - 100 users",
+              "objective": "Verify the system supports 100 concurrent users without errors.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "500 concurrent users are logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in 100 users",
+                  "expected_result": "No errors occur"
+                }
+              ],
+              "expected_result": "No errors occur",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Concurrent user support",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall support 500 concurrent users viewing reports without errors."
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Concurrent user support - 250 users",
+              "objective": "Verify the system supports 250 concurrent users without errors.",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "preconditions": [
+                "500 concurrent users are logged in"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Log in 250 users",
+                  "expected_result": "No errors occur"
+                }
+              ],
+              "expected_result": "No errors occur",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Concurrent user support",
+                "technique_used": "Equivalence partitioning"
+              },
+              "source_basis": [
+                "The system shall support 500 concurrent users viewing reports without errors."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case may be usable but depends on missing detail.",
+            "TC_REQ_1_003: The test case invents unsupported behavior."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall support 500 concurrent users viewing reports without errors.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Concurrent user support",
+              "test_type": "Positive",
+              "technique_used": "Equivalence partitioning",
+              "priority": "High",
+              "rationale": "To ensure the system can handle a large number of concurrent users without errors.",
+              "source_basis": [
+                "The system shall support 500 concurrent users viewing reports without errors."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify data encryption in production database",
+              "objective": "Ensure customer data is encrypted in the production database",
+              "test_type": "Security",
+              "technique_used": "Manual review of encryption settings",
+              "priority": "High",
+              "preconditions": [
+                "System is in production mode"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Review encryption settings in production database",
+                  "expected_result": "Encryption settings are enabled"
+                }
+              ],
+              "expected_result": "Data is encrypted in the production database",
+              "assumption_required": false,
+              "assumptions": [],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Data encryption",
+                "technique_used": "Manual review of encryption settings"
+              },
+              "source_basis": [
+                "The system shall encrypt customer data while it is stored in the production database."
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior by specifying 'sensitive fields'.",
+            "TC_REQ_1_003: The test case invents unsupported behavior by specifying 'deleted data'."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "High",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Data encryption",
+              "test_type": "Security",
+              "technique_used": "Manual review of encryption settings",
+              "priority": "High",
+              "rationale": "To ensure customer data is protected.",
+              "source_basis": [
+                "The system shall encrypt customer data while it is stored in the production database."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_004",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify monthly availability for the reporting module",
+              "objective": "Verify the system maintains 99.5 percent monthly availability for the reporting module",
+              "test_type": "Reliability",
+              "technique_used": "Black box testing",
+              "priority": "High",
+              "preconditions": [
+                "The reporting module is accessible"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Access the reporting module",
+                  "expected_result": "The system is available"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Verify the system is available for the entire month",
+                  "expected_result": "The system is available for the entire month"
+                }
+              ],
+              "expected_result": "The system maintains 99.5 percent monthly availability for the reporting module",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurable criteria for 99.5 percent monthly availability is not defined"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify monthly availability for the reporting module",
+                "technique_used": "Black box testing"
+              },
+              "source_basis": [
+                "The system shall maintain 99.5 percent monthly availability for the reporting module."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurable criteria for 99.5 percent monthly availability"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as high traffic.",
+            "TC_REQ_1_003: The test case invents unsupported behavior, such as network failure."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall maintain 99.5 percent monthly availability for the reporting module.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurable criteria for 99.5 percent monthly availability"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify monthly availability for the reporting module",
+              "test_type": "Reliability",
+              "technique_used": "Black box testing",
+              "priority": "High",
+              "rationale": "To ensure the system meets the availability requirement",
+              "source_basis": [
+                "The system shall maintain 99.5 percent monthly availability for the reporting module."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_005",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Keyboard navigation for primary form fields",
+              "objective": "Verify keyboard navigation for primary form fields",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "preconditions": [
+                "Primary form fields are defined in the project context"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Navigate to a primary form field using the keyboard",
+                  "expected_result": "The primary form field is focused and editable"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Use the keyboard to navigate to the next primary form field",
+                  "expected_result": "The next primary form field is focused and editable"
+                }
+              ],
+              "expected_result": "Keyboard navigation is provided for all primary form fields",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume primary form fields are defined in the project context"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Keyboard navigation for primary form fields",
+                "technique_used": "Manual testing"
+              },
+              "source_basis": [
+                "The system shall provide keyboard navigation for all primary form fields."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Keyboard navigation for primary form fields not specified in detail."
+          ],
+          "assumptions": [
+            "Assume primary form fields are defined in the project context."
+          ],
+          "warnings": [
+            "TC_REQ_1_002: The test case invents unsupported behavior, such as an edge case."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall provide keyboard navigation for all primary form fields.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Keyboard navigation for primary form fields not specified in detail."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Keyboard navigation for primary form fields",
+              "test_type": "Positive",
+              "technique_used": "Manual testing",
+              "priority": "High",
+              "rationale": "To ensure accessibility and usability of the application.",
+              "source_basis": [
+                "The system shall provide keyboard navigation for all primary form fields."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "Assume primary form fields are defined in the project context."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_006",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit log retention for at least seven years",
+              "objective": "To ensure that audit logs are retained for at least seven years",
+              "test_type": "Positive",
+              "technique_used": "Manual review",
+              "priority": "High",
+              "preconditions": [
+                "Audit logs are generated and stored"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Review audit logs for the past seven years",
+                  "expected_result": "Audit logs are available for the past seven years"
+                }
+              ],
+              "expected_result": "Audit logs are retained for at least seven years",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurable criteria for audit log retention are not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify audit log retention for at least seven years",
+                "technique_used": "Manual review"
+              },
+              "source_basis": [
+                "The system shall retain audit logs for at least seven years."
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify audit log retention for at least seven years (partial)",
+              "objective": "To ensure that audit logs are retained for at least seven years, but with missing information",
+              "test_type": "Positive",
+              "technique_used": "Manual review",
+              "priority": "High",
+              "preconditions": [
+                "Audit logs are generated and stored"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Review audit logs for the past seven years",
+                  "expected_result": "Audit logs are available for the past seven years"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Check for missing information",
+                  "expected_result": "Measurable criteria for audit log retention are not specified"
+                }
+              ],
+              "expected_result": "Audit logs are retained for at least seven years, but with missing information",
+              "assumption_required": true,
+              "assumptions": [
+                "Measurable criteria for audit log retention are not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify audit log retention for at least seven years",
+                "technique_used": "Manual review"
+              },
+              "source_basis": [
+                "The system shall retain audit logs for at least seven years."
+              ]
+            }
+          ],
+          "missing_information": [
+            "Measurable criteria for audit log retention"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_002: The test case may be usable but depends on missing detail.",
+            "TC_REQ_1_003: The test case invents unsupported behavior (no logs)."
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall retain audit logs for at least seven years.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Measurable criteria for audit log retention"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify audit log retention for at least seven years",
+              "test_type": "Positive",
+              "technique_used": "Manual review",
+              "priority": "High",
+              "rationale": "To ensure compliance with regulatory requirements",
+              "source_basis": [
+                "The system shall retain audit logs for at least seven years."
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "System recovers normal service within fifteen minutes after database failover",
+              "objective": "Verify system recovers normal service within fifteen minutes after database failover",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "Database failover occurs"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate database failover",
+                  "expected_result": "System recovers normal service within fifteen minutes"
+                }
+              ],
+              "expected_result": "System recovers normal service within fifteen minutes",
+              "assumption_required": true,
+              "assumptions": [
+                "Database failover timing is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Recover normal service within fifteen minutes",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "System does not recover normal service within fifteen minutes after database failover",
+              "objective": "Verify system does not recover normal service within fifteen minutes after database failover",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "Database failover occurs"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate database failover",
+                  "expected_result": "System does not recover normal service within fifteen minutes"
+                }
+              ],
+              "expected_result": "System does not recover normal service within fifteen minutes",
+              "assumption_required": true,
+              "assumptions": [
+                "Database failover timing is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Recover normal service within fifteen minutes",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_003",
+              "requirement_id": "REQ_1",
+              "title": "System recovers normal service within a shorter time after database failover",
+              "objective": "Verify system recovers normal service within a shorter time after database failover",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "preconditions": [
+                "Database failover occurs"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Simulate database failover",
+                  "expected_result": "System recovers normal service within a shorter time"
+                }
+              ],
+              "expected_result": "System recovers normal service within a shorter time",
+              "assumption_required": true,
+              "assumptions": [
+                "Database failover timing is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Recover normal service within fifteen minutes",
+                "technique_used": "..."
+              },
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "missing_information": [
+            "database failover timing"
+          ],
+          "assumptions": [
+            "database failover timing is not specified"
+          ],
+          "warnings": [
+            "Reviewer unavailable because Groq-only provider was blocked by governor"
+          ],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "database failover timing"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Recover normal service within fifteen minutes",
+              "test_type": "Reliability",
+              "technique_used": "...",
+              "priority": "High",
+              "rationale": "...",
+              "source_basis": [
+                "within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 3,
+          "assumptions": [
+            "database failover timing is not specified"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3
+      }
+    }
+  }
+]

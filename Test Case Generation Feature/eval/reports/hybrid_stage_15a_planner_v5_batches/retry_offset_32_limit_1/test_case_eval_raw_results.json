@@ -1,0 +1,125 @@
+[
+  {
+    "eval_id": "EVAL_NFR_003",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify encryption of stored customer data",
+              "objective": "Confirm that customer data in the production database is stored encrypted.",
+              "test_type": "Security",
+              "technique_used": "Data inspection and encryption validation",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Access the production database and retrieve a representative sample of stored customer data.",
+                  "expected_result": "The retrieved data appears as non‑plaintext bytes, indicating it is encrypted."
+                }
+              ],
+              "expected_result": "Customer data retrieved from the production database is encrypted (non‑plaintext).",
+              "assumption_required": true,
+              "assumptions": [
+                "Assume that encrypted data appears as non‑plaintext bytes in the database."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that customer data stored in the production database is encrypted.",
+                "technique_used": "Data inspection and encryption validation"
+              },
+              "source_basis": [
+                "encrypt customer data while it is stored in the production database"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Encryption algorithm and key management details are not specified."
+          ],
+          "assumptions": [
+            "Assume that encrypted data appears as non-plaintext bytes in the database."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall encrypt customer data while it is stored in the production database.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Encryption algorithm and key management details are not specified."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that customer data stored in the production database is encrypted.",
+              "test_type": "Security",
+              "technique_used": "Data inspection and encryption validation",
+              "priority": "High",
+              "rationale": "Ensures that the system meets the encryption at rest security requirement.",
+              "source_basis": [
+                "encrypt customer data while it is stored in the production database"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Assume that encrypted data appears as non-plaintext bytes in the database."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499289, Requested 2732. Please try again in 5m49.2288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.86000000000058,
+        "provider_wait_by_stage": {
+          "generator": 42.8130000000001,
+          "reviewer": 43.04700000000048
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.86000000000058
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,1325 @@
+[
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_001",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User can log in with valid email and password",
+              "objective": "Verify that a registered user can log in with a valid email address and password.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system logs in the user successfully."
+                }
+              ],
+              "expected_result": "The system logs in the user successfully.",
+              "assumption_required": true,
+              "assumptions": [
+                "A registered user account with a valid email and password exists"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User can log in with valid email and password",
+                "technique_used": "Functional UI test"
+              },
+              "source_basis": [
+                "allow a registered user to log in with a valid email address and password"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Login UI location or entry point not specified"
+          ],
+          "assumptions": [
+            "A registered user account with a valid email and password exists"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a registered user to log in with a valid email address and password.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Login UI location or entry point not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "User can log in with valid email and password",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "rationale": "Verifies that the system permits authentication for a registered user with correct credentials",
+              "source_basis": [
+                "allow a registered user to log in with a valid email address and password"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "A registered user account with a valid email and password exists"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 41.0,
+        "provider_wait_by_stage": {
+          "reviewer": 41.0
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 41.0
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_002",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Error message displayed when login credentials are invalid",
+              "objective": "Verify that an error message is displayed when login credentials are invalid",
+              "test_type": "Negative",
+              "technique_used": "Functional UI testing",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured login capability using invalid login credentials",
+                  "expected_result": "An error message is displayed"
+                }
+              ],
+              "expected_result": "An error message is displayed",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact error message text not specified",
+                "UI location of error message not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that an error message is displayed when login credentials are invalid",
+                "technique_used": "Functional UI testing"
+              },
+              "source_basis": [
+                "display an error message when login credentials are invalid"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Exact error message text not specified",
+            "UI location of error message not specified"
+          ],
+          "assumptions": [
+            "Configured login entry point is available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall display an error message when login credentials are invalid.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Exact error message text not specified",
+            "UI location of error message not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that an error message is displayed when login credentials are invalid",
+              "test_type": "Negative",
+              "technique_used": "Functional UI testing",
+              "priority": "High",
+              "rationale": "Ensures user receives appropriate feedback for invalid login attempts",
+              "source_basis": [
+                "display an error message when login credentials are invalid"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured login entry point is available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.49999999999272,
+        "provider_wait_by_stage": {
+          "planner": 42.7809999999954,
+          "reviewer": 41.71899999999732
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.49999999999272
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_003",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Request password reset link for a registered email address",
+              "objective": "Verify that a user can request a password reset link for a registered email address",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "User has a registered email address in the system."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system shall allow a user to request a password reset link for a registered email address."
+                }
+              ],
+              "expected_result": "The system shall allow a user to request a password reset link for a registered email address.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for password reset request is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User can request a password reset link for a registered email address",
+                "technique_used": "Functional test"
+              },
+              "source_basis": [
+                "allow a user to request a password reset link for a registered email address"
+              ]
+            }
+          ],
+          "missing_information": [
+            "UI entry point for password reset request not specified"
+          ],
+          "assumptions": [
+            "User has a registered email address in the system"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow a user to request a password reset link for a registered email address.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "UI entry point for password reset request not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "User can request a password reset link for a registered email address",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "rationale": "Verifies that the core password reset functionality works as specified",
+              "source_basis": [
+                "allow a user to request a password reset link for a registered email address"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "User has a registered email address in the system"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2326,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.68800000000192,
+        "provider_wait_by_stage": {
+          "planner": 43.36000000000058,
+          "reviewer": 41.32800000000134
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.68800000000192
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_004",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify that selecting logout ends the user's session.",
+              "objective": "To ensure that the system ends a user's session when the logout option is selected.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The user's session is ended."
+                }
+              ],
+              "expected_result": "The user's session is ended.",
+              "assumption_required": true,
+              "assumptions": [
+                "Logout UI element (button/link) not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that selecting logout ends the user's session.",
+                "technique_used": "Functional UI test"
+              },
+              "source_basis": [
+                "end a user's session when the user selects logout"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Logout UI element (button/link) not specified"
+          ],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall end a user's session when the user selects logout.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Logout UI element (button/link) not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that selecting logout ends the user's session.",
+              "test_type": "Positive",
+              "technique_used": "Functional UI test",
+              "priority": "High",
+              "rationale": "Logout functionality is critical for security and session management.",
+              "source_basis": [
+                "end a user's session when the user selects logout"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2264,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.06299999999464,
+        "provider_wait_by_stage": {
+          "planner": 43.29699999999866,
+          "reviewer": 40.765999999995984
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.06299999999464
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_005",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify one-time code prompt after valid login credentials",
+              "objective": "Verify that the system prompts for a one-time code after submitting valid login credentials",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid login credentials",
+                  "expected_result": "The system prompts for a one-time code"
+                },
+                {
+                  "step_number": 2,
+                  "action": "Provide a valid one-time code",
+                  "expected_result": "The system accepts the one-time code and completes authentication"
+                }
+              ],
+              "expected_result": "The system accepts the one-time code and completes authentication",
+              "assumption_required": true,
+              "assumptions": [
+                "OTP delivery method not specified",
+                "Exact UI prompt location not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that after submitting valid login credentials, the system prompts for a one-time code and accepts a valid code to complete authentication",
+                "technique_used": "Functional test"
+              },
+              "source_basis": [
+                "require a user to enter a one-time code after submitting valid login credentials"
+              ]
+            }
+          ],
+          "missing_information": [
+            "OTP delivery method not specified",
+            "Exact UI prompt location not specified"
+          ],
+          "assumptions": [
+            "Configured OTP generation mechanism is available"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a user to enter a one-time code after submitting valid login credentials.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "OTP delivery method not specified",
+            "Exact UI prompt location not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that after submitting valid login credentials, the system prompts for a one-time code and accepts a valid code to complete authentication",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "rationale": "Ensures OTP enforcement for two-factor authentication",
+              "source_basis": [
+                "require a user to enter a one-time code after submitting valid login credentials"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured OTP generation mechanism is available"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2312,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.01600000000326,
+        "provider_wait_by_stage": {
+          "planner": 42.75,
+          "reviewer": 41.26600000000326
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.01600000000326
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_006",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify administrator permission for user management page access",
+              "objective": "Ensure that users with administrator permission can access the user management page.",
+              "test_type": "Positive",
+              "technique_used": "Role-based access verification",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "Authenticated session is established for the user"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The user management page is accessible."
+                }
+              ],
+              "expected_result": "The user management page is accessible.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact URL or navigation path to the user management page is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user with administrator permission can open the user management page.",
+                "technique_used": "Role-based access verification"
+              },
+              "source_basis": [
+                "administrator permission"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Verify access denial for non-administrator user",
+              "objective": "Ensure that users without administrator permission are prevented from accessing the user management page.",
+              "test_type": "Negative",
+              "technique_used": "Access control denial test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available.",
+                "User roles, including administrator, are defined in the system"
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The user management page is not accessible."
+                }
+              ],
+              "expected_result": "The user management page is not accessible.",
+              "assumption_required": true,
+              "assumptions": [
+                "Mechanism for determining administrator permission is not specified"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a user without administrator permission is prevented from opening the user management page.",
+                "technique_used": "Access control denial test"
+              },
+              "source_basis": [
+                "prevent users without administrator permission"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Exact URL or navigation path to the user management page is not specified",
+            "Mechanism for determining administrator permission is not specified"
+          ],
+          "assumptions": [
+            "Authenticated session is established for the user",
+            "User roles, including administrator, are defined in the system"
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall prevent users without administrator permission from opening the user management page.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "High",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Exact URL or navigation path to the user management page is not specified",
+            "Mechanism for determining administrator permission is not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a user with administrator permission can open the user management page.",
+              "test_type": "Positive",
+              "technique_used": "Role-based access verification",
+              "priority": "High",
+              "rationale": "Ensures that authorized users have access, confirming correct permission handling.",
+              "source_basis": [
+                "administrator permission"
+              ]
+            },
+            {
+              "coverage_item": "Verify that a user without administrator permission is prevented from opening the user management page.",
+              "test_type": "Negative",
+              "technique_used": "Access control denial test",
+              "priority": "High",
+              "rationale": "Validates that the system enforces the restriction as specified.",
+              "source_basis": [
+                "prevent users without administrator permission"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "Authenticated session is established for the user",
+            "User roles, including administrator, are defined in the system"
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2288,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.79699999999866,
+        "provider_wait_by_stage": {
+          "planner": 43.29699999999866,
+          "reviewer": 41.5
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.79699999999866
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_007",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "SUCCESS",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "status": "SUCCESS",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Verify successful login record creation",
+              "objective": "Validate that a successful login creates a record containing the login timestamp and the user ID.",
+              "test_type": "Positive",
+              "technique_used": "Inspect audit log or database entry after login",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the created record contains the login timestamp and the user ID."
+                }
+              ],
+              "expected_result": "The created record contains the login timestamp and the user ID.",
+              "assumption_required": true,
+              "assumptions": [
+                "Exact entry point for login is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Verify that a successful login creates a record containing the login timestamp and the user ID.",
+                "technique_used": "Inspect audit log or database entry after login"
+              },
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall record the time and user ID for each successful login.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that a successful login creates a record containing the login timestamp and the user ID.",
+              "test_type": "Positive",
+              "technique_used": "Inspect audit log or database entry after login",
+              "priority": "High",
+              "rationale": "Ensures the system fulfills the logging requirement.",
+              "source_basis": [
+                "record the time and user ID for each successful login"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.68800000000192,
+        "provider_wait_by_stage": {
+          "planner": 43.04699999999866,
+          "reviewer": 41.64100000000326
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.68800000000192
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_008",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Administrator deactivates a user account successfully",
+              "objective": "Verify that an administrator can deactivate a user account.",
+              "test_type": "Positive",
+              "technique_used": "Manual or automated UI interaction",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the capability to deactivate a user account using valid input consistent with the requirement.",
+                  "expected_result": "The user account is successfully deactivated."
+                }
+              ],
+              "expected_result": "The user account is successfully deactivated.",
+              "assumption_required": true,
+              "assumptions": [
+                "Specific UI screen or API endpoint for deactivating a user account is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Administrator deactivates a user account successfully",
+                "technique_used": "Manual or automated UI interaction"
+              },
+              "source_basis": [
+                "allow an administrator to deactivate a user account"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Specific UI screen or API endpoint for deactivating a user account is not specified.",
+            "Details of confirmation or audit logging are not specified."
+          ],
+          "assumptions": [],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall allow an administrator to deactivate a user account.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Specific UI screen or API endpoint for deactivating a user account is not specified.",
+            "Details of confirmation or audit logging are not specified."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Administrator deactivates a user account successfully",
+              "test_type": "Positive",
+              "technique_used": "Manual or automated UI interaction",
+              "priority": "High",
+              "rationale": "Verifies that the system fulfills the functional requirement to allow administrators to deactivate user accounts.",
+              "source_basis": [
+                "allow an administrator to deactivate a user account"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2252,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 84.06300000000192,
+        "provider_wait_by_stage": {
+          "planner": 43.04699999999866,
+          "reviewer": 41.01600000000326
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 84.06300000000192
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_009",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User accepts updated terms and is then able to access the dashboard.",
+              "objective": "Verify that users can access the dashboard after accepting updated terms.",
+              "test_type": "Positive",
+              "technique_used": "Manual",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system allows access to the dashboard."
+                }
+              ],
+              "expected_result": "The system allows access to the dashboard.",
+              "assumption_required": true,
+              "assumptions": [
+                "Mechanism for presenting and capturing acceptance of updated terms is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User accepts updated terms and is then able to access the dashboard.",
+                "technique_used": "Manual"
+              },
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "User attempts to access the dashboard without accepting updated terms and is denied access.",
+              "objective": "Verify that users are denied access to the dashboard without accepting updated terms.",
+              "test_type": "Negative",
+              "technique_used": "Manual",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using invalid input consistent with the requirement.",
+                  "expected_result": "The system denies access to the dashboard."
+                }
+              ],
+              "expected_result": "The system denies access to the dashboard.",
+              "assumption_required": true,
+              "assumptions": [
+                "Mechanism for presenting and capturing acceptance of updated terms is not specified."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User attempts to access the dashboard without accepting updated terms and is denied access.",
+                "technique_used": "Manual"
+              },
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Mechanism for presenting and capturing acceptance of updated terms is not specified."
+          ],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require users to accept updated terms before accessing the dashboard.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Mechanism for presenting and capturing acceptance of updated terms is not specified."
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "User accepts updated terms and is then able to access the dashboard.",
+              "test_type": "Positive",
+              "technique_used": "Manual",
+              "priority": "High",
+              "rationale": "Verifies that acceptance enables dashboard access as required.",
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            },
+            {
+              "coverage_item": "User attempts to access the dashboard without accepting updated terms and is denied access.",
+              "test_type": "Negative",
+              "technique_used": "Manual",
+              "priority": "High",
+              "rationale": "Ensures the system enforces acceptance requirement.",
+              "source_basis": [
+                "require users to accept updated terms before accessing the dashboard"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 82.42099999999482,
+        "provider_wait_by_stage": {
+          "planner": 41.18699999999808,
+          "reviewer": 41.23399999999674
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 82.42099999999482
+        }
+      }
+    }
+  },
+  {
+    "eval_id": "EVAL_FR_LOGIN_SECURITY_010",
+    "category": "login_security_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "User receives notification after their account email address is changed",
+              "objective": "Verify that the system notifies a user when their account email address is changed.",
+              "test_type": "Positive",
+              "technique_used": "Automated functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "Verify that the user receives a notification after their account email address is changed."
+                }
+              ],
+              "expected_result": "The user receives a notification after their account email address is changed.",
+              "assumption_required": true,
+              "assumptions": [
+                "Notification channel not specified (e.g., email, in-app, SMS)"
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "User receives notification after their account email address is changed",
+                "technique_used": "Automated functional test"
+              },
+              "source_basis": [
+                "notify a user when their account email address is changed"
+              ]
+            }
+          ],
+          "missing_information": [
+            "Notification channel not specified (e.g., email, in-app, SMS)"
+          ],
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall notify a user when their account email address is changed.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Notification channel not specified (e.g., email, in-app, SMS)"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "User receives notification after their account email address is changed",
+              "test_type": "Positive",
+              "technique_used": "Automated functional test",
+              "priority": "High",
+              "rationale": "Verify that the system sends a notification to the user upon email address change as required.",
+              "source_basis": [
+                "notify a user when their account email address is changed"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": [
+            "Configured prerequisites for exercising this capability are available."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 85.21899999999732,
+        "provider_wait_by_stage": {
+          "planner": 43.0,
+          "reviewer": 42.21899999999732
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 85.21899999999732
+        }
+      }
+    }
+  }
+]

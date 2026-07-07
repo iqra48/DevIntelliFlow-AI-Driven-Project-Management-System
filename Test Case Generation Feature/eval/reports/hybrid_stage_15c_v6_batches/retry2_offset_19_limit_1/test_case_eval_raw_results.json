@@ -1,0 +1,167 @@
+[
+  {
+    "eval_id": "EVAL_FR_VALIDATION_010",
+    "category": "validation_rule_fr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [
+            {
+              "test_case_id": "TC_REQ_1_001",
+              "requirement_id": "REQ_1",
+              "title": "Cancel approved booking providing a cancellation reason",
+              "objective": "Verify that the system requires a cancellation reason when cancelling an approved booking",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using valid input consistent with the requirement.",
+                  "expected_result": "The system prompts for a cancellation reason."
+                }
+              ],
+              "expected_result": "The system requires a cancellation reason when cancelling an approved booking.",
+              "assumption_required": true,
+              "assumptions": [
+                "A cancellation action is available for approved bookings.",
+                "The system provides a means to input a cancellation reason."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Cancel approved booking providing a cancellation reason",
+                "technique_used": "Functional test"
+              },
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            },
+            {
+              "test_case_id": "TC_REQ_1_002",
+              "requirement_id": "REQ_1",
+              "title": "Attempt to cancel approved booking without providing a cancellation reason",
+              "objective": "Verify that the system does not allow cancelling an approved booking without a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "preconditions": [
+                "Configured prerequisites for exercising this capability are available."
+              ],
+              "test_data": {},
+              "steps": [
+                {
+                  "step_number": 1,
+                  "action": "Exercise the configured capability using invalid input consistent with the requirement.",
+                  "expected_result": "The system rejects the cancellation attempt."
+                }
+              ],
+              "expected_result": "The system does not allow cancelling an approved booking without a cancellation reason.",
+              "assumption_required": true,
+              "assumptions": [
+                "A cancellation action is available for approved bookings.",
+                "The system provides a means to input a cancellation reason."
+              ],
+              "traceability": {
+                "requirement_id": "REQ_1",
+                "coverage_item": "Attempt to cancel approved booking without providing a cancellation reason",
+                "technique_used": "Functional test"
+              },
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "missing_information": [],
+          "assumptions": [
+            "A cancellation action is available for approved bookings.",
+            "The system provides a means to input a cancellation reason."
+          ],
+          "warnings": [],
+          "reason": null
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall require a cancellation reason when an approved booking is cancelled.",
+          "requirement_type": "FR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [],
+          "coverage_items": [
+            {
+              "coverage_item": "Cancel approved booking providing a cancellation reason",
+              "test_type": "Positive",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "rationale": "Verifies that the system accepts a cancellation when a reason is supplied, satisfying the requirement.",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            },
+            {
+              "coverage_item": "Attempt to cancel approved booking without providing a cancellation reason",
+              "test_type": "Negative",
+              "technique_used": "Functional test",
+              "priority": "High",
+              "rationale": "Verifies that the system enforces the requirement by rejecting cancellation without a reason.",
+              "source_basis": [
+                "require a cancellation reason"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 2,
+          "assumptions": [
+            "A cancellation action is available for approved bookings.",
+            "The system provides a means to input a cancellation reason."
+          ]
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": false,
+        "fallback_provider": null,
+        "fallback_reason": null,
+        "rate_limit_stage": null,
+        "rate_limit_type": null,
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 42.10899999999674,
+        "provider_wait_by_stage": {
+          "reviewer": 42.10899999999674
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 42.10899999999674
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,4 @@
+eval_id,category,mode,backend_status,requirement_count,result_count,plan_count,total_test_cases,calls_used,estimated_calls,estimated_tokens,schema_pass,requirement_id_mismatch_count,coverage_item_mismatch_count,rate_limited,provider_failed,blocked_count,failed_schema_count,needs_review_count,success_count,manual_unsupported_invention,manual_human_edit_needed,manual_notes
+EVAL_NFR_008,nfr,mvp_fast,NEEDS_REVIEW,1,1,1,1,3,3,2276,True,0,0,False,False,0,0,1,0,,,
+EVAL_NFR_009,nfr,mvp_fast,NEEDS_REVIEW,1,1,1,1,3,3,2276,True,0,0,False,False,0,0,1,0,,,
+EVAL_NFR_010,nfr,mvp_fast,NEEDS_REVIEW,1,1,1,1,3,3,2264,True,0,0,False,False,0,0,1,0,,,

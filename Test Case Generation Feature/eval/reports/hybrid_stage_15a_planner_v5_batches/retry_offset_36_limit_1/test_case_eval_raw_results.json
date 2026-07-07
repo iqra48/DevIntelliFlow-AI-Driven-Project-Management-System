@@ -1,0 +1,90 @@
+[
+  {
+    "eval_id": "EVAL_NFR_007",
+    "category": "nfr",
+    "mode": "mvp_fast",
+    "result": {
+      "status": "NEEDS_REVIEW",
+      "results": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "status": "NEEDS_REVIEW",
+          "test_cases": [],
+          "missing_information": [
+            "Definition of 'normal service' not specified"
+          ],
+          "assumptions": [],
+          "warnings": [
+            "TC_REQ_1_001: The test case invents a definition of \"normal service\" in its assumptions, which is not provided in the requirement, project context, planner coverage, or source basis.",
+            "All generated test cases were rejected by reviewer"
+          ],
+          "reason": "All generated test cases were rejected by reviewer"
+        }
+      ],
+      "plans": [
+        {
+          "requirement_id": "REQ_1",
+          "requirement_text": "The system shall recover normal service within fifteen minutes after a database failover.",
+          "requirement_type": "NFR",
+          "testable": true,
+          "safe_to_generate": true,
+          "risk_level": "Medium",
+          "ambiguity_level": "Low",
+          "blocking_missing_information": [],
+          "missing_information": [
+            "Definition of 'normal service' not specified"
+          ],
+          "coverage_items": [
+            {
+              "coverage_item": "Verify that the system restores normal service within 15 minutes after a database failover.",
+              "test_type": "Recovery",
+              "technique_used": "Measure elapsed time from failover initiation to service restoration",
+              "priority": "High",
+              "rationale": "Ensures compliance with the recovery time objective defined in the requirement.",
+              "source_basis": [
+                "recover normal service within fifteen minutes after a database failover"
+              ]
+            }
+          ],
+          "recommended_test_case_count": 1,
+          "assumptions": []
+        }
+      ],
+      "warnings": [],
+      "budget": {
+        "mode": "mvp_fast",
+        "estimated_calls": 3,
+        "estimated_tokens": 2276,
+        "calls_used": 3,
+        "primary_provider": "groq",
+        "strict_provider": false,
+        "provider_used_by_stage": {
+          "planner": "cerebras",
+          "generator": "cerebras",
+          "reviewer": "cerebras"
+        },
+        "provider_role_map": {
+          "planner": "cerebras",
+          "generator": "groq",
+          "reviewer": "cerebras"
+        },
+        "fallback_used": true,
+        "fallback_provider": "cerebras",
+        "fallback_reason": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kjmkft89et29sq4kwc0xfepx` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499960, Requested 2718. Please try again in 7m42.7584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+        "rate_limit_stage": "generator",
+        "rate_limit_type": "TPD",
+        "retry_attempts": 0,
+        "provider_wait_seconds_total": 86.17199999999866,
+        "provider_wait_by_stage": {
+          "generator": 42.90599999999904,
+          "reviewer": 43.26599999999962
+        },
+        "provider_wait_by_provider": {
+          "cerebras": 86.17199999999866
+        }
+      }
+    }
+  }
+]
